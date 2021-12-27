@@ -1,7 +1,14 @@
 body {
   background-color: black;
+  font-family: Consolas, "Courier New", Courier, monospace;
+  text-align: center;
+  color: white;
 }
 
-p {
-  color: white;
+.center-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh; /* 100% of viewport screen */
 }
