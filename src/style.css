@@ -1,0 +1,31 @@
+html, body {
+    font-family: "Times New Roman", Times, serif;
+    max-width: 544px;
+    width: 80vw;
+    overflow: hidden;
+}
+
+h1:after { /*not working, eould also need to stop using <hr>*/
+    margin: 3px 0px; 
+    border-bottom: 1px solid black;
+}
+
+h2:before {
+    content: "~$ ";
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.navbar {
+    padding-bottom: 10px;
+}
+
+.navbar a {
+    padding-left: 10px;
+}
