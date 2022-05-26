@@ -40,3 +40,10 @@ a:hover {
    /** padding-top: 10px;*/
 }
 
+pre code {
+    overflow: auto;
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    white-space: pre-line;
+}
