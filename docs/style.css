@@ -1,8 +1,11 @@
 body {
     font-family: "Times New Roman", Times, serif;
     max-width: 544px;
+    margin: 0px;
     width: 80vw;
     overflow: hidden;
+    position: absolute;
+    left: 10vw;
 }
 
 h1:after { /*not working, eould also need to stop using <hr>*/
@@ -22,11 +25,18 @@ a:hover {
     text-decoration: none;
 }
 
+.navbar {
+    overflow: hidden;
+}
+
 .navbar a {
-    padding-left: 10px;
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .navbar img {
-    padding-top: 10px;
+   /** padding-top: 10px;*/
 }
 
