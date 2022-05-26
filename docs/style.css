@@ -1,4 +1,4 @@
-html, body {
+body {
     font-family: "Times New Roman", Times, serif;
     max-width: 544px;
     width: 80vw;
@@ -22,10 +22,11 @@ a:hover {
     text-decoration: none;
 }
 
-.navbar {
-    padding-bottom: 10px;
-}
-
 .navbar a {
     padding-left: 10px;
 }
+
+.navbar img {
+    padding-top: 10px;
+}
+
