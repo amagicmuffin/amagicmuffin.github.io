@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>amuffin's corner</title>
+    <meta name="description" content="a personal webbed site">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/heart16x16.png">
+  </head>
+
+  <body>
+    <div class="left-spacer"></div>
+    
+    <div class="navbar">
+      <a href="index.html">home</a>
+      <a href="temp.html">interests</a>
+      <a href="blog.html">blog</a>
+      <a href="temp.html">projects</a>
+      <img src="assets/nighttime.png">
+    </div>
+
+    <h1>settings</h1>
+
+    <script>
+      function temp() {
+	  console.log("maxwidth: " + getMaxWidth());
+	  console.log("type of thing: " + (typeof "544px"));
+	  console.log("type of maxwidth: " + (typeof getMaxWidth()));
+	  console.log("t/f: " + (getMaxWidth() == "544px"));
+	  //console.log(("544px"  == "544px") ? "true" : "false");
+	  //console.log((getMaxWidth() == "544px") ? "0px" : "544px");
+	  //setMaxWidth((getMaxWidth() == "544px") ? "0px" : "544px");
+      }
+
+      function getMaxWidth() {
+	  return getComputedStyle(document.documentElement)
+	      .getPropertyValue('--max-width');
+      }
+
+      function setMaxWidth(pixels) {
+	  document.documentElement.style
+	      .setProperty('--maxwidth', pixels);
+      }
+    </script>
+    
+    <ul class="settings-bar">
+      <li><a onClick = "temp();">toggle full width screen (this is so broken right now)</a></li>
+    </ul>
+    
+  </body>
+</html>
+
+

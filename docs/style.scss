@@ -1,6 +1,11 @@
+// variables
+:root {
+    --max-width: 544px;
+}
+
 body {
     font-family: "Times New Roman", Times, serif;
-    max-width: 544px;
+    max-width: var(--max-width); // 544px is size of header image
     margin: 0px;
     width: 80vw;
     overflow: hidden;
@@ -20,6 +25,16 @@ h2:before {
 a {
     color: black;
 
+    // these below are set explicitly to make all links work
+    // for example, the <a> in settings don't have href links,
+    // so if these aren't here they'll be like normal text
+    // without interactive underlining and hand cursor
+    cursor: pointer;
+    
+    &:not(:hover) {
+	text-decoration: underline;
+    }
+	
     &:hover {
 	text-decoration: none;
     }
@@ -27,12 +42,22 @@ a {
 
 .navbar {
     overflow: hidden;
+    max-width: inherit;
 
     a {
 	display: inline-block;
 	margin-left: 10px;
 	margin-bottom: 10px;
 	margin-top: 10px;
+    }
+
+    .settings-btn {
+	float: right;
+	margin-right: 10px;
+    }
+
+    img {
+	display: block;
     }
 }
 
