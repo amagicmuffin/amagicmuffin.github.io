@@ -1,0 +1,61 @@
+:root {
+  --max-width: 544px;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  max-width: var(--max-width);
+  margin: 0px;
+  width: 80vw;
+  overflow: hidden;
+  position: absolute;
+  left: 10vw;
+}
+
+h1:after {
+  margin: 3px 0px;
+  border-bottom: 1px solid black;
+}
+
+h2:before {
+  content: "~$ ";
+}
+
+a {
+  color: black;
+  cursor: pointer;
+}
+a:not(:hover) {
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.navbar {
+  overflow: hidden;
+  max-width: inherit;
+}
+.navbar a {
+  display: inline-block;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.navbar .settings-btn {
+  float: right;
+  margin-right: 10px;
+}
+.navbar img {
+  display: block;
+}
+
+pre code {
+  overflow: auto;
+  background-color: #eee;
+  border: 1px solid #999;
+  display: block;
+  white-space: pre-line;
+}
+
+/*# sourceMappingURL=style.css.map */
