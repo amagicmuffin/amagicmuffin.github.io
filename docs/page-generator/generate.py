@@ -51,7 +51,7 @@ def formatText(text: str, file: str) -> str:
     """
     if len(file) >= 5:
         if file[-5:] == ".html":
-            return ABOVE + text + BELOW
+            return ABOVE + doubleIndent(text) + BELOW
 
     return text
 
