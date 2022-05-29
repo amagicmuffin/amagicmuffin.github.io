@@ -1,6 +1,8 @@
-// variables
+// || variables
 :root {
-    --max-width: 544px;
+    --max-width: 544px; // make mobile better later
+    --bg: white;
+    --text: black;
 }
 
 body {
@@ -11,11 +13,8 @@ body {
     overflow: hidden;
     position: absolute;
     left: 10vw;
-}
-
-h1:after { 
-    margin: 3px 0px; 
-    border-bottom: 1px solid black;
+    background: var(--bg);
+    color: var(--text);
 }
 
 h2:before {
@@ -23,7 +22,7 @@ h2:before {
 }
 
 a {
-    color: black;
+    color: var(--text);
 
     // these below are set explicitly to make all links work
     // for example, the <a> in settings don't have href links,
@@ -58,6 +57,12 @@ a {
 
     img {
 	display: block;
+    }
+}
+
+.settings-bar {
+    li {
+	margin-bottom: 10px;
     }
 }
 

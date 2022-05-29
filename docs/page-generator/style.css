@@ -1,5 +1,7 @@
 :root {
   --max-width: 544px;
+  --bg: white;
+  --text: black;
 }
 
 body {
@@ -10,11 +12,8 @@ body {
   overflow: hidden;
   position: absolute;
   left: 10vw;
-}
-
-h1:after {
-  margin: 3px 0px;
-  border-bottom: 1px solid black;
+  background: var(--bg);
+  color: var(--text);
 }
 
 h2:before {
@@ -22,7 +21,7 @@ h2:before {
 }
 
 a {
-  color: black;
+  color: var(--text);
   cursor: pointer;
 }
 a:not(:hover) {
@@ -48,6 +47,10 @@ a:hover {
 }
 .navbar img {
   display: block;
+}
+
+.settings-bar li {
+  margin-bottom: 10px;
 }
 
 pre code {
