@@ -39,6 +39,10 @@ a {
     }
 } 
 
+li {
+    margin-bottom: 10px;
+}
+
 .navbar {
     overflow: hidden;
     max-width: inherit;
@@ -57,12 +61,6 @@ a {
 
     img {
 	display: block;
-    }
-}
-
-.settings-bar {
-    li {
-	margin-bottom: 10px;
     }
 }
 

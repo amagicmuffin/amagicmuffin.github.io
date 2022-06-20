@@ -22,7 +22,7 @@ ABOVE: str = """<!DOCTYPE html>
       <a href="index.html">home</a>
       <a href="temp.html">interests</a>
       <a href="blog.html">blog</a>
-      <a href="temp.html">projects</a>
+      <a href="projects.html">projects</a>
       <a class="settings-btn" href="settings.html">settings</a>
       <img src="assets/nighttime.png">
     </div>
