@@ -1,3 +1,4 @@
+
 /////////////// SETTING UP THE DATA STRUCTURE
 
 let park = [
@@ -131,7 +132,7 @@ function randint(start, stop) {
 
 const CONTENT_ID_TO_ANIMATE = "content";
 
-let DOC_WIDTH = window.innerWidth;
+let DOC_WIDTH = document.body.clientWidth;
 let DOC_HEIGHT = window.innerHeight; // others height values are wrong for some reason
 const CONTENT_WIDTH = document.getElementById(CONTENT_ID_TO_ANIMATE).offsetWidth;
 const CONTENT_HEIGHT = document.getElementById(CONTENT_ID_TO_ANIMATE).offsetHeight;
