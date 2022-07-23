@@ -139,7 +139,7 @@ const CONTENT_HEIGHT = document.getElementById(CONTENT_ID_TO_ANIMATE).offsetHeig
 
 // Optional. If off, will have wrong dimensions on resize.
 addEventListener('resize', (event) => {
-    DOC_WIDTH = window.innerWidth;
+    DOC_WIDTH = document.body.clientWidth;
     DOC_HEIGHT = window.innerHeight;
 });
 

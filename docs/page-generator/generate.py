@@ -20,7 +20,6 @@ ABOVE: str = """<!DOCTYPE html>
 
     <div class="navbar">
       <a href="index.html">home</a>
-      <a href="temp.html">interests</a>
       <a href="blog.html">blog</a>
       <a href="projects.html">projects</a>
       <a href="stuff.html">stuff</a>
@@ -42,7 +41,7 @@ def doubleIndent(text: str) -> str:
 
 
 def shouldExport(file: str) -> bool:
-    """should this file be exported?"""
+    """should this file be exported? returns true if file is a html, css, or js file"""
     return file[-5:] == ".html" or file[-4:] == ".css" or file[-3:] == ".js"
 
 
@@ -60,7 +59,7 @@ def formatText(text: str, file: str) -> str:
         
 def genFiles():
     """generate files"""
-    # get html files to generate
+    # get files to generate
     filesInDirectory: list[str] = listdir()
     filesToExport: list[str] = [file for file in filesInDirectory if (shouldExport(file))]
 

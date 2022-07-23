@@ -1,0 +1,31 @@
+// this is pissing me off. might just make this a .js
+[
+    {
+        "project_id": 0,
+        "name_of_project": "this!",
+        "link": "https://amuffin.is-a.dev",
+        "desc": "this project!",
+        "date": "07-21-2022"
+    },
+    {
+        "project_id": 1,
+        "name_of_project": "test1",
+        "link": "https://amuffin.is-a.dev",
+        "desc": "this project!",
+        "date": "07-21-1000"
+    },
+    {
+        "project_id": 2,
+        "name_of_project": "test2",
+        "link": "https://amuffin.is-a.dev",
+        "desc": "this project!",
+        "date": "07-21-6000"
+    },
+    {
+        "project_id": 3,
+        "name_of_project": "test3",
+        "link": "https://amuffin.is-a.dev",
+        "desc": "this project!",
+        "date": "07-21-5000"
+    }
+]
