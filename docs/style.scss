@@ -1,0 +1,72 @@
+:root {
+    --max-width: 544px; // make mobile better later
+    --bg: white;
+    --text: black;
+}
+
+body {
+    font-family: "Times New Roman", Times, serif;
+    max-width: var(--max-width); // 544px is size of header image
+    margin: 0px;
+    width: 80vw;
+    overflow: hidden;
+    position: absolute;
+    left: 10vw;
+    background: var(--bg);
+    color: var(--text);
+}
+
+h2:before {
+    content: "~$ ";
+}
+
+a {
+    color: var(--text);
+
+    // these below are set explicitly to make all links work
+    // for example, the <a> in settings don't have href links,
+    // so if these aren't here they'll be like normal text
+    // without interactive underlining and hand cursor
+    cursor: pointer;
+    
+    &:not(:hover) {
+	text-decoration: underline;
+    }
+	
+    &:hover {
+	text-decoration: none;
+    }
+} 
+
+li {
+    margin-bottom: 10px;
+}
+
+.navbar {
+    overflow: hidden;
+    max-width: inherit;
+
+    a {
+	display: inline-block;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+    }
+
+    .settings-btn {
+	float: right;
+	margin-right: 10px;
+    }
+
+    img {
+	display: block;
+    }
+}
+
+pre code {
+    overflow: auto;
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    white-space: pre-line;
+}
