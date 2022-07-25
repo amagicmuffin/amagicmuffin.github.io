@@ -9,7 +9,6 @@ body {
   max-width: var(--max-width);
   margin: 0px;
   width: 80vw;
-  overflow: hidden;
   position: absolute;
   left: 10vw;
   background: var(--bg);
