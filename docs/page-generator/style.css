@@ -50,6 +50,7 @@ li {
 }
 .navbar img {
   display: block;
+  image-rendering: pixelated;
 }
 
 pre code {
