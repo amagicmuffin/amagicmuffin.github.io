@@ -106,13 +106,18 @@ def genFiles():
         # save the text from inputFile into string variable text
         with open(file, "r") as inputFile:
             text = inputFile.read()
+            if "<p>written 29 O" in text:
+                print("YESYESYESYESLKSDJFLKFDJSSLDKFJLSDKFJ")
+                print(text) # TODO rm this
+            else:
+                print("NONONONOLKSADJFLKSAJDFLKSJFLSKDJFLSKDFJSLKDJF")
             print(f"  Input text ./{file} read")
 
         # write into output file
         with open(f"../{file}", "w") as outputFile:
             outputFile.write(formatText(text, file))
 
-            print("  Text in output file replaced")
+            print(f"  Text in output file ../{file} replaced")
 
         print("  Done")
 
