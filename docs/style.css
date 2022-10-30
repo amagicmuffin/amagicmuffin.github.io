@@ -19,6 +19,14 @@ h2:before {
   content: "~$ ";
 }
 
+.spoiler {
+  background-color: black;
+}
+
+.spoiler:hover {
+  background-color: white;
+}
+
 a {
   color: var(--text);
   cursor: pointer;

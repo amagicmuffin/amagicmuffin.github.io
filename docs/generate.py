@@ -105,6 +105,8 @@ def genFiles():
 
         # save the text from inputFile into string variable text
         with open(file, "r") as inputFile:
+            if "metaYoutubeMusic.html" in file:
+                print("DEBUGHERE: file is " + file)
             text = inputFile.read()
             if "<p>written 29 O" in text:
                 print("YESYESYESYESLKSDJFLKFDJSSLDKFJLSDKFJ")
