@@ -2,8 +2,8 @@
 # figure out how that works
 
 from os import listdir
-
 from typing import List
+import sys
 
 """generate.py
 when ran, takes all html files in this directory and formats them with stuff and puts that in the upper directory
@@ -92,7 +92,7 @@ def formatText(text: str, file: str) -> str:
 
         
 def genFiles():
-    """generate files"""
+    """generate all files"""
     filesToExport = getFilesRecur(".")
 
     print(f"detected files: {filesToExport}\n")
@@ -105,14 +105,7 @@ def genFiles():
 
         # save the text from inputFile into string variable text
         with open(file, "r") as inputFile:
-            if "metaYoutubeMusic.html" in file:
-                print("DEBUGHERE: file is " + file)
             text = inputFile.read()
-            if "<p>written 29 O" in text:
-                print("YESYESYESYESLKSDJFLKFDJSSLDKFJLSDKFJ")
-                print(text) # TODO rm this
-            else:
-                print("NONONONOLKSADJFLKSAJDFLKSJFLSKDJFLSKDFJSLKDJF")
             print(f"  Input text ./{file} read")
 
         # write into output file
@@ -124,10 +117,43 @@ def genFiles():
         print("  Done")
 
     print("Done")
+    
+    
+def genFile(file: str):
+    """generate from filepath file in parent (/doc) directory"""
+    print(f"Working on output file ../{file}")
+
+    text: str = ""
+
+    # save the text from inputFile into string variable text
+    with open(file, "r") as inputFile:
+        text = inputFile.read()
+        print(f"  Input text ./{file} read")
+
+    # write into output file
+    with open(f"../{file}", "w") as outputFile:
+        outputFile.write(formatText(text, file))
+
+        print(f"  Text in output file ../{file} replaced")
+
+    print("  Done")
+  
+
+def printHelp():
+    print("Enter a filepath such as blog-posts/music.html to generate it in the parent directory.")
+    print("--help to print this message or --all or -A to generate all detectable files.")
 
 
 def main():
-    genFiles()
+    if len(sys.argv) == 1:
+        printHelp()
+    else:
+        if sys.argv[1] == "--help":
+            printHelp()
+        elif sys.argv[1] == "--all" or sys.argv[1] == "-A":
+            genFiles()
+        else:
+            genFile(sys.argv[1])
 
 
 if __name__ == "__main__":
