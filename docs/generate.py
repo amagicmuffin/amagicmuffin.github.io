@@ -59,14 +59,14 @@ def formatText(text: str, file: str) -> str:
   <body>
     <div class="left-spacer"></div>
 
-    <div class="navbar">
+    <nav>
       <a href="{layers}index.html">home</a>
       <a href="{layers}blog.html">blog</a>
       <a href="{layers}projects.html">projects</a>
       <a href="{layers}stuff.html">stuff</a>
       <a class="settings-btn" href="{layers}settings.html">settings</a>
       <img src="{layers}assets/nighttime.png">
-    </div>
+    </nav>
 
     """
 

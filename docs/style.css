@@ -42,21 +42,21 @@ li {
   margin-bottom: 10px;
 }
 
-.navbar {
+nav {
   overflow: hidden;
   max-width: inherit;
 }
-.navbar a {
+nav a {
   display: inline-block;
   margin-left: 10px;
   margin-bottom: 10px;
   margin-top: 10px;
 }
-.navbar .settings-btn {
+nav .settings-btn {
   float: right;
   margin-right: 10px;
 }
-.navbar img {
+nav img {
   display: block;
   image-rendering: pixelated;
 }
