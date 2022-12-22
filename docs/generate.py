@@ -71,7 +71,6 @@ def formatText(text: str, file: str) -> str:
     """
 # TODO: above: wrap nav in <header> but not the <img>. will need to update style.scss
     BELOW: str = """
-
   </body>
 </html>"""
 

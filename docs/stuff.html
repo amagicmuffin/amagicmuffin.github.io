@@ -21,15 +21,88 @@
       <img src="assets/nighttime.png">
     </nav>
 
-    <p>This is a thing I made at the 2022 Harvard Pre-college program.</p>
+    <h1>stuff</h1>
     
-    <div id="content" style="position: absolute; text-align: center; border: thin solid black; padding: 10px"></div>
+    <p>Stuff I've made, stuff I've joined, etc etc.</p>
     
-    <script type="text/javascript" src="stuff.js"></script>
+    <h2>my webrings</h2>
+    <details>
+        <summary>what the heck are webrings?</summary>
+        <p>(explanation adapted from the
+    	<a href="https://hotlinewebring.club/" target="_blank" rel="noopener noreferrer">Hotline Webring</a>)</p>
+    	<p>Do you long for a simpler time, when America was Online and the only person you could Ask was Jeeves? Hotline Webring is bringing that time back, with Webrings!</p>
+    
+    	<p>In the 90s, search engines were of generally low quality, and people wanted a way to discover related sites. "I wish I could see more sites about puppies," you might say to yourself over the sonorous clang of your modem, while waiting for a bitmap of a Clumber Spaniel to load.</p>
+    
+    	<p>So people with websites joined webrings, which were collections of sites where each site linked to their neighbors to form a ring. Sometimes there was one button on each site that'd take you to a random site in the webring. People got more traffic and less-popular sites benefited from being linked to more-popular ones.</p>
+    
+    	<p>Now, in 2022 C.E., there are search engines and aggregators so finding related sites isn't that hard, and webrings have fallen by the wayside.</p>
+    
+    	<p>They're still pretty cool though.</p>
+    </details><br>
+    
+    (add webrings here)
+    
+    <h2>links in and out</h2>
+    <details>
+        <summary>and what's all this then?</summary>
+        <p>this looks like a lil tradition among the yesterweb community. i think it's cute</p>
+    </details><br>
+    <a href="https://murid.neocities.org"><img src="assets/buttonNeocitiesMurid.png"></a>
+    <a href="https://neoratz.neocities.org"><img src="assets/buttonNeocitiesNeoratz.gif"></a>
+    <a href="https://seapunk.xyz"><img src="assets/buttonSeapunk.gif"></a>
+    <a href="https://www.idi.moe"><img src="assets/buttonIdi.png"></a>
+    <a href="https://itsevergreen.rip"><img src="assets/buttonItsevergreen.png"></a>
+    <a href="https://links.yesterweb.org"><img src="assets/buttonYesterlinks.png"></a>
+    <a href="https://www.lejlart.com/apple.html"><img src="assets/buttonAppledust.gif"></a>
+    <a href="https://sus.omg.lol"><img src="assets/buttonVukky.png"></a>
     
     
-    <!-- make this a webpage with a list of the stuff you have on this website -->
+    <h2>my toybox</h2>
+    <details>
+        <summary>ok muffin none of these words are in the bible</summary>
+        <p>something abt adoptables? claimables? idk man im tired and i just want to finish this site update and go to sleep.</p>
+    	<p>its another way to link to other websites and for pixel artists to spread their art ig</p>
+    </details><br>
+    <a href="https://sleepysprout.neocities.org/index1"><img src="assets/toyFrog.png"></a>
+    <a href="http://caz.pausedlife.com/homepage.html"><img src="assets/toyStump.gif"></a>
+    <a href="https://www.lejlart.com/apple.html"><img src="assets/toyPlant1.gif"></a>
+    <a href="https://www.lejlart.com/apple.html"><img src="assets/toyPlant2.gif"></a>
+    <a href="https://www.lejlart.com/apple.html"><img src="assets/toyPlant3.gif"></a>
+    <a href="https://www.lejlart.com/apple.html"><img src="assets/toyLacroixDaisy.gif"></a>
+    <a href="https://www.lejlart.com/apple.html"><img src="assets/toyLacroixHydrangea.gif"></a>
+    <a href="https://www.lejlart.com/apple.html"><img src="assets/toyLacroixSunflower.gif"></a>
+    <a href="https://www.lejlart.com/apple.html"><img src="assets/toyLacroixTulip.gif"></a>
+    <br>todo: make an in button later
     
-
+    <h2>gosh that seems like a lot of work muffin</h2>
+    <p>yeah lmfao this is what the toybox looks like rn</p>
+    <pre><code>&lt;a href="https://sleepysprout.neocities.org/index1">&lt;img src="assets/toyFrog.png"></a>
+    &lt;a href="http://caz.pausedlife.com/homepage.html">&lt;img src="assets/toyStump.gif"></a>
+    &lt;a href="https://www.lejlart.com/apple.html">&lt;img src="assets/toyPlant1.gif"></a>
+    &lt;a href="https://www.lejlart.com/apple.html">&lt;img src="assets/toyPlant2.gif"></a>
+    &lt;a href="https://www.lejlart.com/apple.html">&lt;img src="assets/toyPlant3.gif"></a>
+    &lt;a href="https://www.lejlart.com/apple.html">&lt;img src="assets/toyLacroixDaisy.gif"></a>
+    &lt;a href="https://www.lejlart.com/apple.html">&lt;img src="assets/toyLacroixHydrangea.gif"></a>
+    &lt;a href="https://www.lejlart.com/apple.html">&lt;img src="assets/toyLacroixSunflower.gif"></a>
+    &lt;a href="https://www.lejlart.com/apple.html">&lt;img src="assets/toyLacroixTulip.gif"></a></code></pre>
+    <p>i know how to code tho so
+    
+    <pre><code># x.py
+    import sys
+    x = [line.split("/ (") for line in sys.stdin]
+    
+    for i in x:  # this next print should be indented idk why its not
+    	print(f'&lt;a href="{i[0].strip()}">&lt;img src="assets/{i[1].strip()}"></a>')</code></pre>
+    	
+    <pre><code># in.txt
+    http://caz.pausedlife.com/homepage.html/ (toyStump.gif</code></pre>
+    
+    <pre><code># console
+    python x.py < in.txt</code></pre>
+    
+    <pre><code># console output
+    &lt;a href="http://caz.pausedlife.com/homepage.html">&lt;img src="assets/toyStump.gif"></a></code></pre>
+    
   </body>
 </html>
