@@ -53,6 +53,10 @@ li {
   margin-bottom: 10px;
 }
 
+img {
+  image-rendering: pixelated;
+}
+
 nav {
   overflow: hidden;
   max-width: inherit;
