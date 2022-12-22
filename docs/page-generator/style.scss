@@ -16,8 +16,19 @@ body {
     color: var(--text);
 }
 
+h2 {
+	border-bottom: 1px solid black;
+}
 h2:before {
-    content: "~$ ";
+	content: "~$ ";
+}
+
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: black;
+	margin: 4px 0px 4px;
 }
 
 .spoiler {
