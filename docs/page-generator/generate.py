@@ -120,6 +120,9 @@ def genFiles():
     
 def genFile(file: str):
     """generate from filepath file in parent (/doc) directory"""
+    while "\\" in file: 
+        file.replace("\\", "/")
+    
     print(f"Working on output file ../{file}")
 
     text: str = ""
