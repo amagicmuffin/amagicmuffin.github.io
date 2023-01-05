@@ -27,6 +27,10 @@
     <summary>and what's all this then?</summary>
     <p>this looks like a lil tradition among the yesterweb community. i think it's cute</p>
 </details><br>
+<p>here's mine (thanks <a href="https://sadgrl.online/projects/88x31-button-maker">sadgrl</a>):</p>
+<a href="https://amuffin.is-a.dev"><img src="assets/buttonAmuffin.png"></a><br>
+
+<p>here's others' (clickable):</p>
 <a href="https://murid.neocities.org"><img src="assets/buttonNeocitiesMurid.png"></a>
 <a href="https://neoratz.neocities.org"><img src="assets/buttonNeocitiesNeoratz.gif"></a>
 <a href="https://seapunk.xyz"><img src="assets/buttonSeapunk.gif"></a>
@@ -35,7 +39,7 @@
 <a href="https://links.yesterweb.org"><img src="assets/buttonYesterlinks.png"></a>
 <a href="https://www.lejlart.com/apple.html"><img src="assets/buttonAppledust.gif"></a>
 <a href="https://sus.omg.lol"><img src="assets/buttonVukky.png"></a>
-<a href="https://nimravidae.neocities.org/"><img style="background-color:#dbd9c5" src="assets/buttonNimravidae.gif"></a>
+<a href="https://nimravidae.neocities.org/"><img style="background-color:#3D3E34" src="assets/buttonNimravidae.gif"></a>
 
 
 <h2>my toybox</h2>
@@ -54,35 +58,6 @@
 <a href="https://www.lejlart.com/apple.html"><img src="assets/toyLacroixSunflower.gif"></a>
 <a href="https://www.lejlart.com/apple.html"><img src="assets/toyLacroixTulip.gif"></a>
 <br>todo: make an in button later
-
-<h2>gosh that seems like a lot of work muffin</h2>
-<p>yeah lmfao this is what the toybox looks like rn</p>
-<pre><code>&lt;a href="https://sleepysprout.neocities.org/index1">&lt;img src="assets/toyFrog.png"></a>
-&lt;a href="http://caz.pausedlife.com/homepage.html">&lt;img src="assets/toyStump.gif"></a>
-&lt;a href="https://www.lejlart.com/apple.html">&lt;img src="assets/toyPlant1.gif"></a>
-&lt;a href="https://www.lejlart.com/apple.html">&lt;img src="assets/toyPlant2.gif"></a>
-&lt;a href="https://www.lejlart.com/apple.html">&lt;img src="assets/toyPlant3.gif"></a>
-&lt;a href="https://www.lejlart.com/apple.html">&lt;img src="assets/toyLacroixDaisy.gif"></a>
-&lt;a href="https://www.lejlart.com/apple.html">&lt;img src="assets/toyLacroixHydrangea.gif"></a>
-&lt;a href="https://www.lejlart.com/apple.html">&lt;img src="assets/toyLacroixSunflower.gif"></a>
-&lt;a href="https://www.lejlart.com/apple.html">&lt;img src="assets/toyLacroixTulip.gif"></a></code></pre>
-<p>i know how to code tho so
-
-<pre><code># x.py
-import sys
-x = [line.split("/ (") for line in sys.stdin]
-
-for i in x:  # this next print should be indented idk why its not
-	print(f'&lt;a href="{i[0].strip()}">&lt;img src="assets/{i[1].strip()}"></a>')</code></pre>
-	
-<pre><code># in.txt
-http://caz.pausedlife.com/homepage.html/ (toyStump.gif</code></pre>
-
-<pre><code># console
-python x.py < in.txt</code></pre>
-
-<pre><code># console output	
-&lt;a href="http://caz.pausedlife.com/homepage.html">&lt;img src="assets/toyStump.gif"></a></code></pre>
 
 <!-- cursed shenanigans start here -->
 
@@ -136,7 +111,7 @@ function dragElement(elmnt) {
 let sheepBoxes = 0;
 function spawnPlatform() {   
 	sheepBoxes += 1;
-	document.body.insertAdjacentHTML('beforeend',`<div id="dragSheepBox${sheepBoxes}" style="text-align:center;position:absolute; height: 50px; width: 300px; background-color: white; border: solid black 1px; padding: 10px">
+	document.body.insertAdjacentHTML('beforeend',`<div id="dragSheepBox${sheepBoxes}" style="text-align:center;position:absolute; height: 50px; width: 300px; background-color: var(--bg); color: var(--text); border: solid var(--text) 1px; padding: 10px">
 	draggable platform for the sheep to land on.
 	<button style="margin-top:10px" onclick="var sheep = new eSheep(); sheep.Start();">another sheep</button>
 	<button style="margin-top:10px" onclick="spawnPlatform()">another platform</button>
@@ -146,7 +121,7 @@ function spawnPlatform() {
 </script>
 
 <h2>the sheep can be dragged btw</h2>
-<div id="dragSheepBox" style="text-align:center;position:absolute; height: 50px; width: 300px; background-color: white; border: solid black 1px; padding: 10px">
+<div id="dragSheepBox" style="text-align:center;position:absolute; height: 50px; width: 300px; background-color: var(--bg); color: var(--text); border: solid var(--text) 1px; padding: 10px">
 	platform for the sheep to land on.
 	<button style="margin-top:10px" onclick="var sheep = new eSheep(); sheep.Start();">another sheep</button>
 	<button style="margin-top:10px" onclick="spawnPlatform()">another platform</button>

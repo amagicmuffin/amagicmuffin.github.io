@@ -4,10 +4,10 @@ function checkDarkmode() {
 	var bgColor = getComputedStyle(r).getPropertyValue("--bg");
 
 	console.log("cookie is " + document.cookie);
-	if(document.cookie == "darkmode=Off") { // bg should be white
+	if(document.cookie == "darkmode=On") {
 		console.log("switch TO DARK")
-		r.style.setProperty('--bg', 'black');
-		r.style.setProperty('--text', 'white');
+		r.style.setProperty('--bg', '#20384B');
+		r.style.setProperty('--text', '#E1F2FF');
 	} else {
 		console.log("switch TO LIGHT")
 		r.style.setProperty('--bg', 'white');

@@ -16,7 +16,7 @@ body {
 }
 
 h2 {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--text);
 }
 
 h2:before {
@@ -26,16 +26,16 @@ h2:before {
 hr {
   border: none;
   height: 1px;
-  background-color: black;
+  background-color: var(--text);
   margin: 4px 0px 4px;
 }
 
 .spoiler {
-  background-color: black;
+  background-color: var(--text);
 }
 
 .spoiler:hover {
-  background-color: white;
+  background-color: var(--bg);
 }
 
 a {
@@ -79,6 +79,7 @@ nav img {
 pre code {
   overflow: auto;
   background-color: #eee;
+  color: black;
   border: 1px solid #999;
   display: block;
   white-space: pre-line;
