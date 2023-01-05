@@ -10,6 +10,8 @@
   </head>
 
   <body>
+    <script src="darkmode.js"></script>
+  
     <div class="left-spacer"></div>
 
     <nav>
@@ -53,16 +55,13 @@
       }
       
       function toggleDarkMode() {
-          var r = document.querySelector(':root');
-          var bgColor = getComputedStyle(r).getPropertyValue("--bg");
-    
-          if(bgColor == "white") {
-    	  r.style.setProperty('--bg', 'black');
-    	  r.style.setProperty('--text', 'white');
-          } else {
-    	  r.style.setProperty('--bg', 'white');
-    	  r.style.setProperty('--text', 'black');
-          }
+        if(document.cookie=="darkmode=Off"){
+    	  document.cookie = "darkmode=On; path=/";
+    	} else {
+    	  document.cookie = "darkmode=Off; path=/";
+        }
+    	console.log(document.cookie);
+    	checkDarkmode();
       }
     </script>
     

@@ -68,6 +68,8 @@ def formatText(text: str, file: str) -> str:
   </head>
 
   <body>
+    <script src="darkmode.js"></script>
+  
     <div class="left-spacer"></div>
 
     <nav>
@@ -80,7 +82,7 @@ def formatText(text: str, file: str) -> str:
     </nav>
 
     """
-# TODO: above: wrap nav in <header> but not the <img>. will need to update style.scss
+# TODO: above: wrap nav in <header> but not the <img>. will need to update style.scss # wait why lol
     BELOW: str = """
   </body>
 </html>"""
