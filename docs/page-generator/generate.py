@@ -19,7 +19,6 @@ def shouldExport(file: str) -> bool:
     """should this file be exported? returns true if """
     blacklist = {
         "build.bat",
-        "CNAME",
         "generate.py",
         "README.md",
     }
