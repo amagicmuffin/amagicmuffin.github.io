@@ -22,7 +22,13 @@ def shouldExport(file: str) -> bool:
         "generate.py",
         "README.md",
     }
-    return file not in blacklist 
+    whitelist = {  # WARNING: SHOULD WHITELIST ALL FILES WITHOUT EXTENSIONS, OR ERROR
+        "CNAME",
+    }
+    if file in whitelist:  # whitelist has prio
+        return True
+    
+    return "." in file and file not in blacklist
 
 
 def getFilesRecur(filepath: str):
@@ -37,10 +43,9 @@ def getFilesRecur(filepath: str):
     ans = []
 
     for item in items:
-        if "." in item:  # then, it is a file
-            if shouldExport(item):
-                ans.append(f"{filepath}/{item}")
-        else:  # isn't a file
+        if shouldExport(item):
+            ans.append(f"{filepath}/{item}")
+        elif "." not in item:  # if all extension-less files are whitelisted, this should rep all dirs
             ans += getFilesRecur(item)
 
     return ans
@@ -114,10 +119,10 @@ def genFiles():
             print(f"  Input text ./{file} read")
 
         # write into output file
-        with open(f"../{file}", "w") as outputFile:
+        with open(f"../docs/{file}", "w") as outputFile:
             outputFile.write(formatText(text, file))
 
-            print(f"  Text in output file ../{file} replaced")
+            print(f"  Text in output file ../docs/{file} replaced")
 
         print("  Done")
 
@@ -139,10 +144,10 @@ def genFile(file: str):
         print(f"  Input text ./{file} read")
 
     # write into output file
-    with open(f"../{file}", "w") as outputFile:
+    with open(f"../docs/{file}", "w") as outputFile:
         outputFile.write(formatText(text, file))
 
-        print(f"  Text in output file ../{file} replaced")
+        print(f"  Text in output file ../docs/{file} replaced")
 
     print("  Done")
   
@@ -165,4 +170,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main() #change
