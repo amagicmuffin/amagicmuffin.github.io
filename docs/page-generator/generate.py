@@ -15,6 +15,17 @@ def doubleIndent(text: str) -> str:
     return text.replace("\n", "\n    ")
 
 
+def shouldExport(file: str) -> bool:
+    """should this file be exported? returns true if """
+    blacklist = {
+        "build.bat",
+        "CNAME",
+        "generate.py",
+        "README.md",
+    }
+    return file not in blacklist 
+
+
 def getFilesRecur(filepath: str):
     """
     YOOOO i think i can make this recursive
@@ -28,16 +39,12 @@ def getFilesRecur(filepath: str):
 
     for item in items:
         if "." in item:  # then, it is a file
-            ans.append(f"{filepath}/{item}")
-        else:  # is a file
+            if shouldExport(item):
+                ans.append(f"{filepath}/{item}")
+        else:  # isn't a file
             ans += getFilesRecur(item)
 
     return ans
-
-
-def shouldExport(file: str) -> bool:
-    """UNUSED RN: should this file be exported? returns true if file is a html, css, or js file"""
-    return file[-5:] == ".html" or file[-4:] == ".css" or file[-3:] == ".js"
 
 
 def formatText(text: str, file: str) -> str:
