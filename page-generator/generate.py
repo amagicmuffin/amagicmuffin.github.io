@@ -68,6 +68,7 @@ def formatText(text: str, file: str) -> str:
   </head>
 
   <body>
+  <div id=site-container>
     <script src="darkmode.js"></script>
   
     <div class="left-spacer"></div>
@@ -84,6 +85,7 @@ def formatText(text: str, file: str) -> str:
     """
 # TODO: above: wrap nav in <header> but not the <img>. will need to update style.scss # wait why lol
     BELOW: str = """
+  </div>
   </body>
 </html>"""
 
