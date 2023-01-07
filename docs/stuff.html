@@ -142,7 +142,7 @@
     let sheepBoxes = 0;
     function spawnPlatform() {   
     	sheepBoxes += 1;
-    	document.body.insertAdjacentHTML('beforeend',`<div id="dragSheepBox${sheepBoxes}" style="text-align:center;position:absolute; height: 50px; width: 300px; background-color: var(--bg); color: var(--text); border: solid var(--text) 1px; padding: 10px">
+    	document.getElementById('site-container').insertAdjacentHTML('beforeend',`<div id="dragSheepBox${sheepBoxes}" style="text-align:center;position:absolute; height: 50px; width: 300px; background-color: var(--bg); color: var(--text); border: solid var(--text) 1px; padding: 10px">
     	draggable platform for the sheep to land on.
     	<button style="margin-top:10px" onclick="var sheep = new eSheep(); sheep.Start();">another sheep</button>
     	<button style="margin-top:10px" onclick="spawnPlatform()">another platform</button>

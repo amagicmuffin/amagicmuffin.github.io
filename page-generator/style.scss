@@ -4,6 +4,10 @@
     --text: black;
 }
 
+body {
+    background-color: var(--bg);
+}
+
 #site-container {
     font-family: "Times New Roman", Times, serif;
     max-width: var(--max-width); // 544px is size of header image
@@ -12,7 +16,6 @@
     // overflow: hidden;
     position: absolute;
     left: 10vw;
-    background: var(--bg);
     color: var(--text);
 }
 
@@ -70,7 +73,7 @@ nav {
     display: inline-block;
     margin-left: 10px;
     margin-bottom: 10px;
-    margin-top: 10px;
+    margin-top: 2px;
     }
 
     .settings-btn {

@@ -4,6 +4,10 @@
   --text: black;
 }
 
+body {
+  background-color: var(--bg);
+}
+
 #site-container {
   font-family: "Times New Roman", Times, serif;
   max-width: var(--max-width);
@@ -11,7 +15,6 @@
   width: 80vw;
   position: absolute;
   left: 10vw;
-  background: var(--bg);
   color: var(--text);
 }
 
@@ -65,7 +68,7 @@ nav a {
   display: inline-block;
   margin-left: 10px;
   margin-bottom: 10px;
-  margin-top: 10px;
+  margin-top: 2px;
 }
 nav .settings-btn {
   float: right;
