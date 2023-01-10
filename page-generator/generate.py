@@ -69,7 +69,7 @@ def formatText(text: str, file: str) -> str:
 
   <body>
   <div id=site-container>
-    <script src="darkmode.js"></script>
+    <script src="{layers}darkmode.js"></script>
   
     <div class="left-spacer"></div>
 
