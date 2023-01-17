@@ -63,23 +63,23 @@ def formatText(text: str, file: str) -> str:
     <meta charset="utf-8">
     <title>amuffin's corner</title>
     <meta name="description" content="a personal webbed site">
-    <link href="/style.css" rel="stylesheet" type="text/css">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/heart16x16.png">
+    <link href="{layers}style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" sizes="16x16" href="{layers}assets/heart16x16.png">
   </head>
 
   <body>
   <div id=site-container>
-    <script src="/darkmode.js"></script>
+    <script src="{layers}darkmode.js"></script>
   
     <div class="left-spacer"></div>
 
     <nav>
-      <a href="/index.html">home</a>
-      <a href="/blog.html">blog</a>
-      <a href="/projects.html">projects</a>
-      <a href="/stuff.html">stuff</a>
-      <a class="settings-btn" href="/settings.html">settings</a>
-      <img src="/assets/nighttime.png">
+      <a href="{layers}index.html">home</a>
+      <a href="{layers}blog.html">blog</a>
+      <a href="{layers}projects.html">projects</a>
+      <a href="{layers}stuff.html">stuff</a>
+      <a class="settings-btn" href="{layers}settings.html">settings</a>
+      <img src="{layers}assets/nighttime.png">
     </nav>
 
     """
@@ -91,7 +91,17 @@ def formatText(text: str, file: str) -> str:
 
     if len(file) >= 5:
         if file[-5:] == ".html":
-            return ABOVE + doubleIndent(text) + BELOW
+            # an absolute mess I am so sorry
+            # this figures out how deep in the folder structure file is
+            # and adjusts how many layers of "../" to put into the template html
+            # for example, "../index.html" instead of "index.html" if needed
+
+            longFile = file  # such as "./blog.html" or "blog-posts/keepingMemories.html"
+            shortFile = longFile.replace("./", "")  # such as "blog.html" or "blog-posts/keepingMemories.html"
+            levelsDeep = shortFile.count("/")
+            replaceLayers: str = "../" * levelsDeep
+            return ABOVE.format(layers=replaceLayers) + doubleIndent(text) + BELOW.format(layers=replaceLayers)
+
     return text
 
         
