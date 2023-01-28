@@ -7,8 +7,21 @@
   <li><a onClick = "toggleDarkMode();">toggle dark mode</a></li>
 </ul>
 
+<script>  
+  function toggleDarkMode() {
+    if(document.cookie=="darkmode=Off" || document.cookie == ""){
+	  document.cookie = "darkmode=On; path=/";
+	} else {
+	  document.cookie = "darkmode=Off; path=/";
+    }
+	console.log(document.cookie);
+	checkDarkmode();
+  }
+</script>
 
+<!--
 <script>
+/* Toggle Full width screen. Broken so much, disregard. */
   function temp() {
       console.log("maxwidth: " + getMaxWidth());
       console.log("type of thing: " + (typeof "544px"));
@@ -29,13 +42,7 @@
 	  .setProperty('--maxwidth', pixels);
   }
   
-  function toggleDarkMode() {
-    if(document.cookie=="darkmode=Off"){
-	  document.cookie = "darkmode=On; path=/";
-	} else {
-	  document.cookie = "darkmode=Off; path=/";
-    }
-	console.log(document.cookie);
-	checkDarkmode();
-  }
 </script>
+
+
+-->
