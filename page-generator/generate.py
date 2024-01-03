@@ -59,7 +59,7 @@ def formatText(text: str, file: str) -> str:
     """
     ABOVE: str = """<!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>amuffin's corner</title>
