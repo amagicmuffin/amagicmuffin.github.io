@@ -21,6 +21,7 @@ def shouldExport(file: str) -> bool:
         "build.bat",
         "generate.py",
         "README.md",
+        ".sass-cache"
     }
     whitelist = {  # WARNING: SHOULD WHITELIST ALL FILES WITHOUT EXTENSIONS, OR ERROR
         "CNAME",
@@ -81,7 +82,7 @@ def formatText(text: str, file: str) -> str:
       <a href="/projects.html">projects</a>
       <a href="/stuff.html">stuff</a>
       <a class="settings-btn" href="/settings.html">settings</a>
-      <img src="/assets/nighttime.png">
+      <img src="/assets/nighttime.png" alt="">
     </nav>
 
     """
