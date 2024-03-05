@@ -1,0 +1,90 @@
+<p>written 05 March 2024</p>
+
+<p>
+Typst and Latex are pretty cool. This is about to get pretty technical, because I'm probably also going to use this to backup knowledge of how to repoduce my
+typsetting setup.
+</p>
+
+<p>
+  I've been typesetting a lot lately for school and for fun. Latex is nice because it's been around for so long, so it's math typesetting, typesetting in general 
+  abilities are really guaranteed everywhere. If something doesn't work, you can hack it to work.
+</p>
+
+<p>
+  The Tectonic typesetting project is also really cool. It made getting a latex compiler on a new machine so fast, no need to download a whole TexLive 5gb 
+  package or whatever. I guess things like TinyTex exist but ehhh, I learned LaTex on texlive so I'm a bit averse to learning a different style of package
+  management now. (TexLive's package management being: no need to, you've already installed the entire damn thing :p.) To get tectonic to play nice with Latex Workshop
+  for VS Code, all you need is 
+</p>
+
+<pre><code>
+// for using vscode/latex workshop/tectonic together 
+// this is the v1 code version https://github.com/tectonic-typesetting/tectonic/discussions/896#discussioncomment-2850685
+"latex-workshop.latex.recipe.default": "tectonic",
+"latex-workshop.latex.recipes": [
+  {
+    "name": "tectonic",
+    "tools": ["tectonic"]
+  }
+],
+"latex-workshop.latex.tools": [
+  {
+    "name": "tectonic",
+    "command": "tectonic",
+    "args": ["%DOC%.tex", "--keep-intermediates"],
+    "env": {}
+  }
+],
+</code></pre>
+
+<p>
+  in a settings.json. If tectonic ever finishes upgrading to v2, there's an updated solution in that same github link. But like this, I can preserve
+  pdflatex/tectonic compile outputs. (ie, not need to have the default directory tree for tectonic v2).
+</p>
+
+<p>
+  Though, I had to learn package managing anyways, in a way. I've kinda fallen in love with EB Garamond, and you can apparently get that font through LaTex.
+</p>
+
+<pre><code>
+~$ wget https://tug.org/fonts/getnonfreefonts/install-getnonfreefonts
+~$ texlua install-getnonfreefonts
+~$ getnonfreefonts garamond
+</code></pre>
+
+<p>
+I had some weird errors about texlua not having permissions to edit the /etc/... dir, and sudo texlua not being able to find texlua at all, but
+sudo su was a quick workaround that let everything run correctly.
+</p>
+
+<p>
+  After that, any .tex document with
+</p>
+
+<pre><code>
+\usepackage[T1]{fontenc}
+\usepackage[urw-garamond]{mathdesign}
+\let\circledS\undefined
+</code></pre>
+
+<p>
+  included is able to render the document in garamond. Undefining circledS has to be done because it urw-garamond sets it, which conflicts with 
+  amssymb. Amssym's looks much better. Unfortunately, it seems like tectonic won't be able to support this any time soon as per 
+  <a href="https://github.com/tectonic-typesetting/tectonic/issues/478">https://github.com/tectonic-typesetting/tectonic/issues/478</a>.
+  "OK, I've identified what's going on here. The TeXLive 2020 update won't help, unfortunately. In the standard TeXLive stack, the PDF generation process automatically generates a "PK" font file from the requested BBM font, by launching an external program mktexpk. Tectonic isn't in a position to do that, leading to the missing-font problem."
+</p>
+
+<p>
+  I don't quite like how the numbers are rendered, though. The 0 character especially looks quite off, very wide. Not like EB Garamond that comes with
+  google docs. Garamond-Math created at <a href="https://github.com/YuanshengZhao/Garamond-Math/">https://github.com/YuanshengZhao/Garamond-Math/</a> and
+  <a href="https://mirrors.mit.edu/CTAN/fonts/garamond-math/Garamond-Math.pdf">https://mirrors.mit.edu/CTAN/fonts/garamond-math/Garamond-Math.pdf</a> is absolutely
+  beautiful, though. Check out those sample fonts! Mwah.
+</p>
+
+<p>
+  Note to self: i should probably make a blog post doubling as an archive for my dotfile/home folder structure and all.
+</p>
+
+<p>
+Been on a Bastille kick. Laughter Lines and Icarus are good songs.
+</p>
