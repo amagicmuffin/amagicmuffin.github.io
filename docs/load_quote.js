@@ -1,7 +1,7 @@
 quotes = [
-    ["http://backrooms-wiki.wikidot.com/the-red-knight", "A broken ring of mail"],
-    ["http://backrooms-wiki.wikidot.com/the-red-knight", "erstwhile"],
-    ["http://backrooms-wiki.wikidot.com/the-red-knight", "a finger of an arm of a body that died eons ago."],
+    ["https://backrooms-wiki.wikidot.com/entity-71", "A broken ring of mail"],
+    ["https://backrooms-wiki.wikidot.com/entity-71", "erstwhile"],
+    ["https://backrooms-wiki.wikidot.com/entity-71", "a finger of an arm of a body that died eons ago."],
     ["https://www.google.com/search?q=Adib+Sin+-+To+Eternity", "you were dancing to a thousand stars"],
 ];
 
