@@ -63,6 +63,7 @@ def formatText(text: str, file: str) -> str:
   <head>
     <meta charset="utf-8">
     <title>amuffin's corner</title>
+    <script src="/darkmode.js"></script>
     <meta name="description" content="a personal webbed site">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/style.css" rel="stylesheet" type="text/css">
@@ -70,8 +71,7 @@ def formatText(text: str, file: str) -> str:
   </head>
 
   <body>
-  <div id=site-container>
-    <script src="/darkmode.js"></script>
+    <div id=site-container>
   
     <div class="left-spacer"></div>
 
