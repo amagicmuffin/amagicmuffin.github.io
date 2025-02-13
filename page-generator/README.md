@@ -1,1 +1,0 @@
-run `python build.py` to build stuff in parent directory

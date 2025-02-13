@@ -1,0 +1,19 @@
+{
+  "name": "amagicmuffin.github.io",
+  "version": "1.0.0",
+  "description": "My personal website.",
+  "main": ".eleventy.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

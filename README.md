@@ -14,5 +14,4 @@ https://robertheaton.com/2018/12/17/wavefunction-collapse-algorithm/
 
 https://github.com/tectonic-typesetting/tectonic and https://laurmaedje.github.io/posts/comemo/ and https://github.com/tectonic-typesetting/tectonic/discussions/896
 
-python3 -m http.server 8000
-https://localhost:8000
+`npm start defined in package.json`
