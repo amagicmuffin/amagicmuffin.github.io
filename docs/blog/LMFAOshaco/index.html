@@ -4,11 +4,31 @@
   <head>
     <meta charset="utf-8">
     <title>amuffin's league story</title>
-    <script src="/darkmode.js"></script>
     <meta name="description" content="a personal webbed site">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/style.css" rel="stylesheet" type="text/css">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/heart16x16.png">
+    
+    <script>
+    function checkDarkmode() {
+      //console.log("got here");
+      let root = document.documentElement.style;
+      // let bgColor = getComputedStyle(root).getPropertyValue("--bg");
+
+      //console.log("cookie is " + document.cookie);
+      if(document.cookie == "darkmode=On") {
+        //console.log("switch TO DARK")
+        root.setProperty('--bg', '#20384B');
+        root.setProperty('--text', '#E1F2FF');
+      } else {
+        //console.log("switch TO LIGHT")
+        root.setProperty('--bg', 'white');
+        root.setProperty('--text', 'black');
+      }
+    }
+
+    checkDarkmode();
+    </script>
   </head>
 
   <body>
