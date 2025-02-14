@@ -16,7 +16,7 @@
       // let bgColor = getComputedStyle(root).getPropertyValue("--bg");
 
       //console.log("cookie is " + document.cookie);
-      if(document.cookie == "darkmode=On") {
+      if(localStorage.getItem("darkmode") == "On") {
         //console.log("switch TO DARK")
         root.setProperty('--bg', '#20384B');
         root.setProperty('--text', '#E1F2FF');

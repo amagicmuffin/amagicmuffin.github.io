@@ -16,7 +16,7 @@
       // let bgColor = getComputedStyle(root).getPropertyValue("--bg");
 
       //console.log("cookie is " + document.cookie);
-      if(document.cookie == "darkmode=On") {
+      if(localStorage.getItem("darkmode") == "On") {
         //console.log("switch TO DARK")
         root.setProperty('--bg', '#20384B');
         root.setProperty('--text', '#E1F2FF');
@@ -56,12 +56,11 @@
 
 <script>  
   function toggleDarkMode() {
-    if(document.cookie=="darkmode=Off" || document.cookie == ""){
-	  document.cookie = "darkmode=On; path=/";
+    if(localStorage.getItem("darkmode") == "Off" || localStorage.getItem("darkmode") === null){
+	  localStorage.setItem("darkmode", "On");
 	} else {
-	  document.cookie = "darkmode=Off; path=/";
+	  localStorage.setItem("darkmode", "Off");
     }
-	console.log(document.cookie);
 	checkDarkmode();
   }
 

@@ -9,12 +9,11 @@ layout: "base.njk"
 
 <script>  
   function toggleDarkMode() {
-    if(document.cookie=="darkmode=Off" || document.cookie == ""){
-	  document.cookie = "darkmode=On; path=/";
+    if(localStorage.getItem("darkmode") == "Off" || localStorage.getItem("darkmode") === null){
+	  localStorage.setItem("darkmode", "On");
 	} else {
-	  document.cookie = "darkmode=Off; path=/";
+	  localStorage.setItem("darkmode", "Off");
     }
-	console.log(document.cookie);
 	checkDarkmode();
   }
 
