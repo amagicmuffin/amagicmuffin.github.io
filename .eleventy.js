@@ -1,6 +1,7 @@
 module.exports = function (eleventyConfig) {
     const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
     eleventyConfig.addPassthroughCopy("./src/CNAME")
+    eleventyConfig.addPassthroughCopy("./src/404.html")
     eleventyConfig.addPassthroughCopy("./src/*.css")
     eleventyConfig.addPassthroughCopy("./src/*.js")
     eleventyConfig.addPassthroughCopy("./src/assets/*")
