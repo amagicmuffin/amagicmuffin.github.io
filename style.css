@@ -5,6 +5,8 @@
 }
 
 body {
+  font-family: "Times New Roman", Times, serif;
+  color: var(--text);
   background-color: var(--bg);
   height: 100%;
   margin: 0;
@@ -17,13 +19,11 @@ p {
 }
 
 #site-container {
-  font-family: "Times New Roman", Times, serif;
   max-width: var(--max-width);
   margin: 0px;
   width: 80vw;
   position: absolute;
   left: 10vw;
-  color: var(--text);
 }
 
 h2 {
