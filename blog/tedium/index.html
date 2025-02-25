@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>amuffin's grr tedium</title>
+    <meta name="description" content="a personal webbed site">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/heart16x16.png">
+    
+    <script>
+    function checkDarkmode() {
+      //console.log("got here");
+      let root = document.documentElement.style;
+      // let bgColor = getComputedStyle(root).getPropertyValue("--bg");
+
+      //console.log("cookie is " + document.cookie);
+      if(localStorage.getItem("darkmode") == "On") {
+        //console.log("switch TO DARK")
+        root.setProperty('--bg', '#20384B');
+        root.setProperty('--text', '#E1F2FF');
+      } else {
+        //console.log("switch TO LIGHT")
+        root.setProperty('--bg', 'white');
+        root.setProperty('--text', 'black');
+      }
+    }
+
+    checkDarkmode();
+    </script>
+  </head>
+
+  <body>
+    <div id=site-container>
+  
+      <div class="left-spacer"></div>
+
+      <nav>
+        <a href="/">home</a>
+        <a href="/blog/">blog</a>
+        <a href="/poetry/">poetry</a>
+        <a href="/stuff/">stuff</a>
+        <a class="settings-btn" href="/settings/">settings</a>
+        <img src="/assets/nighttime.png" alt="">
+      </nav>
+
+      <header>
+        <h1>grr tedium</h1>
+      </header>
+
+      <p>written 25 February 2025</p>
+
+
+<p>
+This is a lot of work because this is such an old project that 
+my repo is still named "master" instead of "main," which is what I think is messing things up.
+</p>
+
+
+<p>
+Should be fixed now?
+</p>
+
+    </div>
+  </body>
+</html>
