@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>amuffin's blog has RSS now!</title>
+    <meta name="description" content="a personal webbed site">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/heart16x16.png">
+    
+    <script>
+    function checkDarkmode() {
+      //console.log("got here");
+      let root = document.documentElement.style;
+      // let bgColor = getComputedStyle(root).getPropertyValue("--bg");
+
+      //console.log("cookie is " + document.cookie);
+      if(localStorage.getItem("darkmode") == "On") {
+        //console.log("switch TO DARK")
+        root.setProperty('--bg', '#20384B');
+        root.setProperty('--text', '#E1F2FF');
+      } else {
+        //console.log("switch TO LIGHT")
+        root.setProperty('--bg', 'white');
+        root.setProperty('--text', 'black');
+      }
+    }
+
+    checkDarkmode();
+    </script>
+  </head>
+
+  <body>
+    <div id=site-container>
+  
+      <div class="left-spacer"></div>
+
+      <nav>
+        <a href="/">home</a>
+        <a href="/blog/">blog</a>
+        <a href="/poetry/">poetry</a>
+        <a href="/stuff/">stuff</a>
+        <a class="settings-btn" href="/settings/">settings</a>
+        <img src="/assets/nighttime.png" alt="">
+      </nav>
+
+      <header>
+        <h1>blog has RSS now!</h1>
+      </header>
+
+      <p>written 28 February 2025</p>
+
+
+<p>
+Eleventy lets me do this really really painlessly. Cool!
+</p>
+
+<p>
+Found this one guy's really cool blog post/website while I was at it:
+<a href="https://kevincox.ca/2023/06/27/decade-of-rss-via-email/">https://kevincox.ca/2023/06/27/decade-of-rss-via-email/</a>.
+I love low CSS sites like this one. Hmmm, I should get an RSS reader so I can look at this kind of stuff.
+</p>
+
+<p>
+Transgender by Crystal Castles is pretty nice. found a video of some youtube channel "wontbelong" dancing to it some while back: 
+<a href=https://youtu.be/aWvS7i7Eri4>https://youtu.be/aWvS7i7Eri4</a>. Has a nice pixel filter that makes it feel real old.
+Speaking of old things, check out this cool video/channel CS Ghost with that tangential vibe (flipnote haneta style): 
+<a href="https://youtu.be/nso9U0jlGfY">https://youtu.be/nso9U0jlGfY</a>. Highly rec the entire channel.
+</p>
+
+<p>
+footnote reminder: I should really turn all these blog post links from <code>camelCase</code> to kebab-<code>case</code>. (love this naming convention,
+here's some more: <code>PascalCase</code>, <code>snake_case</code>, <code>SCREAMING_SNAKE_CASE</code>!!!).
+</p>
+
+    </div>
+  </body>
+</html>
