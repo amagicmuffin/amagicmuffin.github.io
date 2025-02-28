@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>amuffin's perceptual color spaces</title>
+    <meta name="description" content="a personal webbed site">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/heart16x16.png">
+    
+    <script>
+    function checkDarkmode() {
+      //console.log("got here");
+      let root = document.documentElement.style;
+      // let bgColor = getComputedStyle(root).getPropertyValue("--bg");
+
+      //console.log("cookie is " + document.cookie);
+      if(localStorage.getItem("darkmode") == "On") {
+        //console.log("switch TO DARK")
+        root.setProperty('--bg', '#20384B');
+        root.setProperty('--text', '#E1F2FF');
+      } else {
+        //console.log("switch TO LIGHT")
+        root.setProperty('--bg', 'white');
+        root.setProperty('--text', 'black');
+      }
+    }
+
+    checkDarkmode();
+    </script>
+  </head>
+
+  <body>
+    <div id=site-container>
+  
+      <div class="left-spacer"></div>
+
+      <nav>
+        <a href="/">home</a>
+        <a href="/blog/">blog</a>
+        <a href="/poetry/">poetry</a>
+        <a href="/stuff/">stuff</a>
+        <a class="settings-btn" href="/settings/">settings</a>
+        <img src="/assets/nighttime.png" alt="">
+      </nav>
+
+      <header>
+        <h1>perceptual color spaces</h1>
+      </header>
+
+      <p>written 27 February 2025</p>
+
+
+<p>
+Have I really not made a post about perceptually uniform color spaces yet? They're pretty cool.
+</p>
+
+<p>
+check out these links!
+<ul>
+    <li><a href="https://bottosson.github.io/posts/colorwrong/">https://bottosson.github.io/posts/colorwrong/</a></li>
+    <li><a href="https://bottosson.github.io/misc/colorpicker/">https://bottosson.github.io/misc/colorpicker/</a></li>
+    <li><a href="https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html">https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html</a></li>
+</ul>
+</p>
+
+<p>Hollow Knight soundtrack is pretty nice. </p>
+
+    </div>
+  </body>
+</html>
