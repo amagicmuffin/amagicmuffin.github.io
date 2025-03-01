@@ -1,0 +1,37 @@
+---
+title: kebab-cased
+tags: blog-post
+date: 2025-03-01
+description: changed all my blog posts from <code>camelCase</code> to <code>kebab-case</code>
+layout: "blog_post.njk"
+---
+
+<p><code>kebab-case</code> is the standard for web links, so I did a conversion. Here's the script:</p>
+
+<pre><code>
+import shutil 
+import string
+import os
+dirs = os.listdir()
+
+EXCEPTIONS = {
+    "blogRSS.njk",
+    "LMFAOshaco.njk",
+}
+
+mapping = dict()
+for d in dirs:
+    x = d
+    if d not in EXCEPTIONS:
+        for c in string.ascii_uppercase:
+            x = x.replace(c, "-" + c.lower())
+    
+    mapping[d] = x
+for i in mapping.items():
+    print(i)
+
+input("continue? (ctrl c to exit)")
+
+for src, dest in mapping.items():
+    shutil.move(src, dest)
+</code></pre>
