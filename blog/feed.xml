@@ -4,11 +4,47 @@
   <subtitle>various microblogs, ramblings, fun thematic gatherings of links, and other blog posts.</subtitle>
   <link href="https://amuffin.is-a.dev/blog/feed.xml" rel="self" />
   <link href="https://amuffin.is-a.dev/" />
-  <updated>2025-02-28T00:00:00Z</updated>
+  <updated>2025-03-01T00:00:00Z</updated>
   <id>https://amuffin.is-a.dev/</id>
   <author>
     <name>amuffin</name>
   </author>
+  <entry>
+    <title>kebab-cased</title>
+    <link href="https://amuffin.is-a.dev/blog/kebab-cased/" />
+    <updated>2025-03-01T00:00:00Z</updated>
+    <id>https://amuffin.is-a.dev/blog/kebab-cased/</id>
+    <content type="html">
+&lt;p&gt;&lt;code&gt;kebab-case&lt;/code&gt; is the standard for web links, so I did a conversion. Here&#39;s the script:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;
+import shutil 
+import string
+import os
+dirs = os.listdir()
+
+EXCEPTIONS = {
+    &quot;blogRSS.njk&quot;,
+    &quot;LMFAOshaco.njk&quot;,
+}
+
+mapping = dict()
+for d in dirs:
+    x = d
+    if d not in EXCEPTIONS:
+        for c in string.ascii_uppercase:
+            x = x.replace(c, &quot;-&quot; + c.lower())
+    
+    mapping[d] = x
+for i in mapping.items():
+    print(i)
+
+input(&quot;continue? (ctrl c to exit)&quot;)
+
+for src, dest in mapping.items():
+    shutil.move(src, dest)
+&lt;/code&gt;&lt;/pre&gt;</content>
+  </entry>
   <entry>
     <title>blog has RSS now!</title>
     <link href="https://amuffin.is-a.dev/blog/blogRSS/" />
@@ -76,9 +112,9 @@ Should be fixed now?
   </entry>
   <entry>
     <title>wave function collapse and the duck konundrum</title>
-    <link href="https://amuffin.is-a.dev/blog/waveFnDuck/" />
+    <link href="https://amuffin.is-a.dev/blog/wave-fn-duck/" />
     <updated>2025-02-15T00:00:00Z</updated>
-    <id>https://amuffin.is-a.dev/blog/waveFnDuck/</id>
+    <id>https://amuffin.is-a.dev/blog/wave-fn-duck/</id>
     <content type="html">
 &lt;p&gt;I found a wave function collapse explanation that was really cool: &lt;a href=&quot;https://robertheaton.com/2018/12/17/wavefunction-collapse-algorithm/&quot;&gt;
 https://robertheaton.com/2018/12/17/wavefunction-collapse-algorithm/&lt;/a&gt;.&lt;/p&gt;
@@ -136,9 +172,9 @@ bm&#39;d me with &quot;What is your strategy?&quot; &quot;Attack the enemy with 
   </entry>
   <entry>
     <title>techno cosplayer</title>
-    <link href="https://amuffin.is-a.dev/blog/lost_techno/" />
+    <link href="https://amuffin.is-a.dev/blog/lost-techno/" />
     <updated>2024-05-28T00:00:00Z</updated>
-    <id>https://amuffin.is-a.dev/blog/lost_techno/</id>
+    <id>https://amuffin.is-a.dev/blog/lost-techno/</id>
     <content type="html">
 &lt;p&gt;I had to hard reset my phone so I lost all non-backed up photos but I just realized that means I also lost
     selfies I took with a cosplay Technoblade :(&lt;/p&gt;
@@ -185,100 +221,5 @@ bm&#39;d me with &quot;What is your strategy?&quot; &quot;Attack the enemy with 
     ignite is an old but good one. legends never die is a classic. RISE, too.
 &lt;/p&gt;
 </content>
-  </entry>
-  <entry>
-    <title>typst, latex (with garamond!), and tectonic</title>
-    <link href="https://amuffin.is-a.dev/blog/typesetting/" />
-    <updated>2024-03-05T00:00:00Z</updated>
-    <id>https://amuffin.is-a.dev/blog/typesetting/</id>
-    <content type="html">
-&lt;p&gt;
-Typst and Latex are pretty cool. This is about to get pretty technical, because I&#39;m probably also going to use this to backup knowledge of how to repoduce my
-typsetting setup.
-&lt;/p&gt;
-
-&lt;p&gt;
-  I&#39;ve been typesetting a lot lately for school and for fun. Latex is nice because it&#39;s been around for so long, so it&#39;s math typesetting, typesetting in general 
-  abilities are really guaranteed everywhere. If something doesn&#39;t work, you can hack it to work.
-&lt;/p&gt;
-
-&lt;p&gt;
-  The Tectonic typesetting project is also really cool. It made getting a latex compiler on a new machine so fast, no need to download a whole TexLive 5gb 
-  package or whatever. I guess things like TinyTex exist but ehhh, I learned LaTex on texlive so I&#39;m a bit averse to learning a different style of package
-  management now. (TexLive&#39;s package management being: no need to, you&#39;ve already installed the entire damn thing :p.) To get tectonic to play nice with Latex Workshop
-  for VS Code, all you need is 
-&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;
-// for using vscode/latex workshop/tectonic together 
-// this is the v1 code version https://github.com/tectonic-typesetting/tectonic/discussions/896#discussioncomment-2850685
-&quot;latex-workshop.latex.recipe.default&quot;: &quot;tectonic&quot;,
-&quot;latex-workshop.latex.recipes&quot;: [
-  {
-    &quot;name&quot;: &quot;tectonic&quot;,
-    &quot;tools&quot;: [&quot;tectonic&quot;]
-  }
-],
-&quot;latex-workshop.latex.tools&quot;: [
-  {
-    &quot;name&quot;: &quot;tectonic&quot;,
-    &quot;command&quot;: &quot;tectonic&quot;,
-    &quot;args&quot;: [&quot;%DOC%.tex&quot;, &quot;--keep-intermediates&quot;],
-    &quot;env&quot;: {}
-  }
-],
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;
-  in a settings.json. If tectonic ever finishes upgrading to v2, there&#39;s an updated solution in that same github link. But like this, I can preserve
-  pdflatex/tectonic compile outputs. (ie, not need to have the default directory tree for tectonic v2).
-&lt;/p&gt;
-
-&lt;p&gt;
-  Though, I had to learn package managing anyways, in a way. I&#39;ve kinda fallen in love with EB Garamond, and you can apparently get that font through LaTex.
-&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;
-~$ wget https://tug.org/fonts/getnonfreefonts/install-getnonfreefonts
-~$ texlua install-getnonfreefonts
-~$ getnonfreefonts garamond
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;
-I had some weird errors about texlua not having permissions to edit the /etc/... dir, and sudo texlua not being able to find texlua at all, but
-sudo su was a quick workaround that let everything run correctly.
-&lt;/p&gt;
-
-&lt;p&gt;
-  After that, any .tex document with
-&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;
-&#92;usepackage[T1]{fontenc}
-&#92;usepackage[urw-garamond]{mathdesign}
-&#92;let&#92;circledS&#92;undefined
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;
-  included is able to render the document in garamond. Undefining circledS has to be done because it urw-garamond sets it, which conflicts with 
-  amssymb. Amssym&#39;s looks much better. Unfortunately, it seems like tectonic won&#39;t be able to support this any time soon as per 
-  &lt;a href=&quot;https://github.com/tectonic-typesetting/tectonic/issues/478&quot;&gt;https://github.com/tectonic-typesetting/tectonic/issues/478&lt;/a&gt;.
-  &quot;OK, I&#39;ve identified what&#39;s going on here. The TeXLive 2020 update won&#39;t help, unfortunately. In the standard TeXLive stack, the PDF generation process automatically generates a &quot;PK&quot; font file from the requested BBM font, by launching an external program mktexpk. Tectonic isn&#39;t in a position to do that, leading to the missing-font problem.&quot;
-&lt;/p&gt;
-
-&lt;p&gt;
-  I don&#39;t quite like how the numbers are rendered, though. The 0 character especially looks quite off, very wide. Not like EB Garamond that comes with
-  google docs. Garamond-Math created at &lt;a href=&quot;https://github.com/YuanshengZhao/Garamond-Math/&quot;&gt;https://github.com/YuanshengZhao/Garamond-Math/&lt;/a&gt; and
-  &lt;a href=&quot;https://mirrors.mit.edu/CTAN/fonts/garamond-math/Garamond-Math.pdf&quot;&gt;https://mirrors.mit.edu/CTAN/fonts/garamond-math/Garamond-Math.pdf&lt;/a&gt; is absolutely
-  beautiful, though. Check out those sample fonts! Mwah.
-&lt;/p&gt;
-
-&lt;p&gt;
-  Note to self: i should probably make a blog post doubling as an archive for my dotfile/home folder structure and all.
-&lt;/p&gt;
-
-&lt;p&gt;
-Been on a Bastille kick. Laughter Lines and Icarus are good songs.
-&lt;/p&gt;</content>
   </entry>
 </feed>

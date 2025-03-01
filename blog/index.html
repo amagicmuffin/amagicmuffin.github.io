@@ -10,21 +10,27 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/heart16x16.png">
     
     <script>
+    const THEMES = {
+      dark: {
+        "--bg": "#20384B",
+        "--text": "#E1F2FF",
+        "--code-bg": "#E1F2FF",
+        "--code-text": "#20384B",
+      },
+      light: {
+        "--bg": "white",
+        "--text": "black",
+        "--code-bg": "#363636",
+        "--code-text": "#E3E3E3",
+      }
+    }
     function checkDarkmode() {
       //console.log("got here");
       let root = document.documentElement.style;
-      // let bgColor = getComputedStyle(root).getPropertyValue("--bg");
-
-      //console.log("cookie is " + document.cookie);
-      if(localStorage.getItem("darkmode") == "On") {
-        //console.log("switch TO DARK")
-        root.setProperty('--bg', '#20384B');
-        root.setProperty('--text', '#E1F2FF');
-      } else {
-        //console.log("switch TO LIGHT")
-        root.setProperty('--bg', 'white');
-        root.setProperty('--text', 'black');
-      }
+      
+      Object.entries(THEMES[localStorage.getItem("theme")]).forEach((propval) =>
+        root.setProperty(propval[0], propval[1])
+      );
     }
 
     checkDarkmode();
@@ -57,28 +63,31 @@
 </p>
 
 <hr><p>
+    <a href="/blog/kebab-cased/">kebab-cased</a>
+    changed all my blog posts from <code>camelCase</code> to <code>kebab-case</code>
+</p><p>
     <a href="/blog/blogRSS/">blog has RSS now!</a>
     hip, hip, hooray.
 </p><p>
     <a href="/blog/perceptually-uniform/">perceptual color spaces</a>
-    but don&#39;t they look pretty?
+    but don't they look pretty?
 </p><p>
     <a href="/blog/tedium/">grr tedium</a>
     github actions with eleventy
 </p><p>
-    <a href="/blog/waveFnDuck/">wave function collapse and the duck konundrum</a>
+    <a href="/blog/wave-fn-duck/">wave function collapse and the duck konundrum</a>
     neat!
 </p><p>
     <a href="/blog/eleventy/">eleventy and more updates</a>
     yahoo
 </p><p>
     <a href="/blog/dithering/">dithering and age of empires 2</a>
-    it&#39;s really pretty. it&#39;s really funny.
+    it's really pretty. it's really funny.
 </p><p>
     <a href="/blog/LMFAOshaco/">league story</a>
     tilted shaco wins the game
 </p><p>
-    <a href="/blog/lost_techno/">techno cosplayer</a>
+    <a href="/blog/lost-techno/">techno cosplayer</a>
     lost my selfie with them ;-;
 </p><p>
     <a href="/blog/league/">league nostalgia</a>
@@ -96,7 +105,7 @@
     <a href="/blog/transcript1/">a groupchat transcription</a>
     tumblr lore
 </p><p>
-    <a href="/blog/oldestEmojis/">emojis</a>
+    <a href="/blog/oldest-emojis/">emojis</a>
     old ones, specifically
 </p><p>
     <a href="/blog/rambles3/">yearning</a>
@@ -105,44 +114,44 @@
     <a href="/blog/archiving/">archiving</a>
     aaa
 </p><p>
-    <a href="/blog/grrrAliasingDrawings/">grr ms paint aliasing</a>
-    i am mad about it &gt;:(
+    <a href="/blog/grrr-aliasing-drawings/">grr ms paint aliasing</a>
+    i am mad about it >:(
 </p><p>
     <a href="/blog/rambles2/">rant: more gaming </a>
-    games both old and new (and Alan Becker&#39;s Animator v Animation from 2007)
+    games both old and new (and Alan Becker's Animator v Animation from 2007)
 </p><p>
-    <a href="/blog/interestingArticles/">interesting articles</a>
+    <a href="/blog/interesting-articles/">interesting articles</a>
     ooo wowee
 </p><p>
-    <a href="/blog/toLast/">Will this website last?</a>
-    I&#39;ll do my best &lt;3 (Also, first double digit blog post yayy ^^)
+    <a href="/blog/to-last/">Will this website last?</a>
+    I'll do my best <3 (Also, first double digit blog post yayy ^^)
 </p><p>
     <a href="/blog/est/">est</a>
     microblog abt the abbreviation
 </p><p>
-    <a href="/blog/wikipediaFunnies/">Wikipedia and Tom Scott</a>
+    <a href="/blog/wikipedia-funnies/">Wikipedia and Tom Scott</a>
     talking about blog automation, more radiation things, the museum of bad art, the beverley clock, and The Best Thing
 </p><p>
-    <a href="/blog/devilDaggers/">Devil daggers and i got a sword</a>
+    <a href="/blog/devil-daggers/">Devil daggers and i got a sword</a>
     short one. DD is a video game. the sword is irl.
 </p><p>
-    <a href="/blog/weirdSports/">weird games</a>
+    <a href="/blog/weird-sports/">weird games</a>
     chess boxing, combat juggling, etc
 </p><p>
     <a href="/blog/typography/">nerd stuff but about ui and fonts</a>
     code that makes useless but entertaining websites, web apps, fonts, and animations. also font and color stuff.
 </p><p>
-    <a href="/blog/coolMathAndSciFi/">cool math and scifi</a>
+    <a href="/blog/cool-math-and-sci-fi/">cool math and scifi</a>
     aaa
 </p><p>
-    <a href="/blog/metaYoutubeMusic/">meta music</a>
+    <a href="/blog/meta-youtube-music/">meta music</a>
     Media that reference applications that we know are cool.
 </p><p>
     <a href="/blog/rambles1/">rambles</a>
     Obligations, inline skating, English, and plenty of misc. topics.
 </p><p>
-    <a href="/blog/keepingMemories/">keeping memories</a>
-    first blog post!! i&#39;ve been postponing it because coding it to work was so scuffed. finally got it done, though.
+    <a href="/blog/keeping-memories/">keeping memories</a>
+    first blog post!! i've been postponing it because coding it to work was so scuffed. finally got it done, though.
 </p>
 
     </div>

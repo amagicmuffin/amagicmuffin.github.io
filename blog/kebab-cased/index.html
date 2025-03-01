@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>amuffin's home</title>
+    <title>amuffin's kebab-cased</title>
     <meta name="description" content="a personal webbed site">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/style.css" rel="stylesheet" type="text/css">
@@ -52,41 +52,41 @@
       </nav>
 
       <header>
-        <h1>home</h1>
+        <h1>kebab-cased</h1>
       </header>
 
-      
-<hr>
-<div id="quote">> </div>
-<noscript>
-  <a id="noscript-quote" target="_blank" rel="noopener noreferrer" href="https://backrooms-wiki.wikidot.com/entity-71">> A broken ring of mail</a>
-</noscript>
-<hr>
+      <p>written 1 March 2025</p>
 
-<p>Heyo, it's amagicmuffin. Welcome to my little corner of the internet ^^</p>
 
-<h2>who?</h2>
+<p><code>kebab-case</code> is the standard for web links, so I did a conversion. Here's the script:</p>
 
-<p>Yeah I'm still figuring that one out.</p>
+<pre><code>
+import shutil 
+import string
+import os
+dirs = os.listdir()
 
-<p>I always have trouble writing bios because my interests change so often. 
-My current ones are (as of the last time I updated this, Dec 2022) 
-coding, inline skating (I just figured out how to soul slide! :D), and needlework. 
-</p>
+EXCEPTIONS = {
+    "blogRSS.njk",
+    "LMFAOshaco.njk",
+}
 
-<p>
-<a href="https://murid.neocities.org/about.html" target="_blank" rel="noopener noreferrer">About pages are curious things.</a> I hope mine was an interesting read &lt;3
-</p>
+mapping = dict()
+for d in dirs:
+    x = d
+    if d not in EXCEPTIONS:
+        for c in string.ascii_uppercase:
+            x = x.replace(c, "-" + c.lower())
+    
+    mapping[d] = x
+for i in mapping.items():
+    print(i)
 
-<p>If you want to vibe check me more, you should check out the 
-<a href="/blog/">blog</a> page.</p>
+input("continue? (ctrl c to exit)")
 
-<h2>asked?</h2>
-
-<p>aw man</p>
-
-<script src="/load_quote.js"></script>
-
+for src, dest in mapping.items():
+    shutil.move(src, dest)
+</code></pre>
 
     </div>
   </body>

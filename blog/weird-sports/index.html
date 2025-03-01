@@ -10,21 +10,27 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/heart16x16.png">
     
     <script>
+    const THEMES = {
+      dark: {
+        "--bg": "#20384B",
+        "--text": "#E1F2FF",
+        "--code-bg": "#E1F2FF",
+        "--code-text": "#20384B",
+      },
+      light: {
+        "--bg": "white",
+        "--text": "black",
+        "--code-bg": "#363636",
+        "--code-text": "#E3E3E3",
+      }
+    }
     function checkDarkmode() {
       //console.log("got here");
       let root = document.documentElement.style;
-      // let bgColor = getComputedStyle(root).getPropertyValue("--bg");
-
-      //console.log("cookie is " + document.cookie);
-      if(localStorage.getItem("darkmode") == "On") {
-        //console.log("switch TO DARK")
-        root.setProperty('--bg', '#20384B');
-        root.setProperty('--text', '#E1F2FF');
-      } else {
-        //console.log("switch TO LIGHT")
-        root.setProperty('--bg', 'white');
-        root.setProperty('--text', 'black');
-      }
+      
+      Object.entries(THEMES[localStorage.getItem("theme")]).forEach((propval) =>
+        root.setProperty(propval[0], propval[1])
+      );
     }
 
     checkDarkmode();
