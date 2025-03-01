@@ -9,10 +9,10 @@ layout: "base.njk"
 
 <script>  
   function toggleDarkMode() {
-    if(localStorage.getItem("darkmode") == "Off" || localStorage.getItem("darkmode") === null){
-	  localStorage.setItem("darkmode", "On");
+    if(localStorage.getItem("theme") == "light" || localStorage.getItem("theme") === null){
+	  localStorage.setItem("theme", "dark");
 	} else {
-	  localStorage.setItem("darkmode", "Off");
+	  localStorage.setItem("theme", "light");
     }
 	checkDarkmode();
   }

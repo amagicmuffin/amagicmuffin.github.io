@@ -1,7 +1,7 @@
 :root {
   --max-width: 544px;
-  --bg: white;
-  --text: black;
+  /* --bg: white; */
+  /* --text: black; */
 }
 
 body {
@@ -91,11 +91,13 @@ nav img {
 
 pre code {
   overflow: auto;
-  background-color: #eee;
-  color: black;
-  border: 1px solid #999;
+  background-color: var(--code-bg);
+  color: var(--code-text);
+  /* border: 1px solid #999; */
   display: block;
   white-space: pre-wrap;
+  padding: 1em;
+  padding-top:0;
 }
 
 .temp {
