@@ -1,75 +1,79 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>amuffin's league story</title>
-    <meta name="description" content="a personal webbed site">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/style.css" rel="stylesheet" type="text/css">
-    <link rel="prefetch" href="/assets/nighttime.png"/>
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/heart16x16.png">
-    
-    <script>
-    const THEMES = {
-      dark: {
-        "--bg": "#20384B",
-        "--text": "#E1F2FF",
-        "--code-bg": "#E1F2FF",
-        "--code-text": "#20384B",
-      },
-      light: {
-        "--bg": "white",
-        "--text": "black",
-        "--code-bg": "#363636",
-        "--code-text": "#E3E3E3",
-      }
-    }
-    function checkDarkmode() {
-      //console.log("got here");
-      let root = document.documentElement.style;
-      
-      Object.entries(THEMES[localStorage.getItem("theme")]).forEach((propval) =>
-        root.setProperty(propval[0], propval[1])
-      );
-    }
+    <head>
+        <meta charset="utf-8" />
+        <title>amuffin's league story</title>
+        <meta name="description" content="a personal webbed site" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="/style.css" rel="stylesheet" type="text/css" />
+        <link rel="prefetch" href="/assets/nighttime.png" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/assets/heart16x16.png"
+        />
 
-    checkDarkmode();
-    </script>
-  </head>
+        <script>
+            const THEMES = {
+                dark: {
+                    "--bg": "#20384B",
+                    "--text": "#E1F2FF",
+                    "--code-bg": "#E1F2FF",
+                    "--code-text": "#20384B",
+                },
+                light: {
+                    "--bg": "white",
+                    "--text": "black",
+                    "--code-bg": "#363636",
+                    "--code-text": "#E3E3E3",
+                },
+            };
+            function checkDarkmode() {
+                //console.log("got here");
+                let root = document.documentElement.style;
 
-  <body>
-    <div id=site-container>
-  
-      <div class="left-spacer"></div>
+                Object.entries(THEMES[localStorage.getItem("theme")]).forEach(
+                    (propval) => root.setProperty(propval[0], propval[1]),
+                );
+            }
 
-      <nav>
-        <a href="/">home</a>
-        <a href="/blog/">blog</a>
-        <a href="/poetry/">poetry</a>
-        <a href="/stuff/">stuff</a>
-        <a class="settings-btn" href="/settings/">settings</a>
-        <img src="/assets/nighttime.png" alt="">
-      </nav>
+            checkDarkmode();
+        </script>
+    </head>
 
-      <header>
-        <h1>league story</h1>
-      </header>
+    <body>
+        <div id="site-container">
+            <div class="left-spacer"></div>
 
-      <p>written 2 June 2024</p>
+            <nav>
+                <a href="/">home</a>
+                <a href="/blog/">blog</a>
+                <a href="/poetry/">poetry</a>
+                <a href="/stuff/">stuff</a>
+                <a class="settings-btn" href="/settings/">settings</a>
+                <img src="/assets/nighttime.png" alt="" />
+            </nav>
+
+            <header>
+                <h1>league story</h1>
+            </header>
+
+            
+<p>written 2 June 2024</p>
 
 
 <p>
-  Just playing a game of league, shaco mirror matchup support. Ours was winning and we were hard winning as a team, but 
-  the enemy shaco got so tilted in all chat that our fed master yi had such a good laugh they started a surrender vote and
-  we voted 3 yes/2 no to surrender LMFAO 
+    Just playing a game of league, shaco mirror matchup support. Ours was
+    winning and we were hard winning as a team, but the enemy shaco got so
+    tilted in all chat that our fed master yi had such a good laugh they started
+    a surrender vote and we voted 3 yes/2 no to surrender LMFAO
 </p>
 
-<p>
-  what a time to be alive
-</p>
+<p>what a time to be alive</p>
 
 
-    </div>
-  </body>
+        </div>
+    </body>
 </html>

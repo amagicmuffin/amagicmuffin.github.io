@@ -1,80 +1,102 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>amuffin's latex</title>
-    <meta name="description" content="a personal webbed site">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/style.css" rel="stylesheet" type="text/css">
-    <link rel="prefetch" href="/assets/nighttime.png"/>
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/heart16x16.png">
-    
-    <script>
-    const THEMES = {
-      dark: {
-        "--bg": "#20384B",
-        "--text": "#E1F2FF",
-        "--code-bg": "#E1F2FF",
-        "--code-text": "#20384B",
-      },
-      light: {
-        "--bg": "white",
-        "--text": "black",
-        "--code-bg": "#363636",
-        "--code-text": "#E3E3E3",
-      }
-    }
-    function checkDarkmode() {
-      //console.log("got here");
-      let root = document.documentElement.style;
-      
-      Object.entries(THEMES[localStorage.getItem("theme")]).forEach((propval) =>
-        root.setProperty(propval[0], propval[1])
-      );
-    }
+    <head>
+        <meta charset="utf-8" />
+        <title>amuffin's latex</title>
+        <meta name="description" content="a personal webbed site" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="/style.css" rel="stylesheet" type="text/css" />
+        <link rel="prefetch" href="/assets/nighttime.png" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/assets/heart16x16.png"
+        />
 
-    checkDarkmode();
-    </script>
-  </head>
+        <script>
+            const THEMES = {
+                dark: {
+                    "--bg": "#20384B",
+                    "--text": "#E1F2FF",
+                    "--code-bg": "#E1F2FF",
+                    "--code-text": "#20384B",
+                },
+                light: {
+                    "--bg": "white",
+                    "--text": "black",
+                    "--code-bg": "#363636",
+                    "--code-text": "#E3E3E3",
+                },
+            };
+            function checkDarkmode() {
+                //console.log("got here");
+                let root = document.documentElement.style;
 
-  <body>
-    <div id=site-container>
-  
-      <div class="left-spacer"></div>
+                Object.entries(THEMES[localStorage.getItem("theme")]).forEach(
+                    (propval) => root.setProperty(propval[0], propval[1]),
+                );
+            }
 
-      <nav>
-        <a href="/">home</a>
-        <a href="/blog/">blog</a>
-        <a href="/poetry/">poetry</a>
-        <a href="/stuff/">stuff</a>
-        <a class="settings-btn" href="/settings/">settings</a>
-        <img src="/assets/nighttime.png" alt="">
-      </nav>
+            checkDarkmode();
+        </script>
+    </head>
 
-      <header>
-        <h1>latex</h1>
-      </header>
+    <body>
+        <div id="site-container">
+            <div class="left-spacer"></div>
 
-      <p>written 7 January 2024</p>
+            <nav>
+                <a href="/">home</a>
+                <a href="/blog/">blog</a>
+                <a href="/poetry/">poetry</a>
+                <a href="/stuff/">stuff</a>
+                <a class="settings-btn" href="/settings/">settings</a>
+                <img src="/assets/nighttime.png" alt="" />
+            </nav>
 
+            <header>
+                <h1>latex</h1>
+            </header>
 
-<p>I use latex a looot now because of university. Tangent: it feels so weird to be the person now, saying "because
-of university." It's not too long ago that I was the young high schooler looking at those OLD PEOPLE at afar. anyways,</p>
-
-<p>Latex is cool i guess. I managed to get anki (the flash carding program, not the weird cable television-advertised 
-hotwheels ripoff(?)) working with latex which is pretty cool, I can study all my fancy formulas with anki and 
-spaced repetition now. Though, for some reason the font rendering is so ugly compared to normal latex i think.
-Not sure if this is a dvipng (program used to render the images for latex to anki, i think) issue or just me
-getting placebo effected from the font just being larger.</p>
-
-<p>Early into the semester, I wrote this gem with latex: <a href="./lady_tigers_unsolved.pdf">./lady_tigers_unsolved.pdf</a></p></p>
-
-<p>I forgot to mention that the end goal was to find where the lady was. Whoops, mb</p>
-
-<p>A friend recommended The Predatory Wasp of the Palisades Is Out to Get Us! by Sufjan Stevens. It's really good.</p>
+            
+<p>written 7 January 2024</p>
 
 
-    </div>
-  </body>
+<p>
+    I use latex a looot now because of university. Tangent: it feels so weird to
+    be the person now, saying "because of university." It's not too long ago
+    that I was the young high schooler looking at those OLD PEOPLE at afar.
+    anyways,
+</p>
+
+<p>
+    Latex is cool i guess. I managed to get anki (the flash carding program, not
+    the weird cable television-advertised hotwheels ripoff(?)) working with
+    latex which is pretty cool, I can study all my fancy formulas with anki and
+    spaced repetition now. Though, for some reason the font rendering is so ugly
+    compared to normal latex i think. Not sure if this is a dvipng (program used
+    to render the images for latex to anki, i think) issue or just me getting
+    placebo effected from the font just being larger.
+</p>
+
+<p>
+    Early into the semester, I wrote this gem with latex:
+    <a href="./lady_tigers_unsolved.pdf">./lady_tigers_unsolved.pdf</a>
+</p>
+
+<p>
+    I forgot to mention that the end goal was to find where the lady was.
+    Whoops, mb
+</p>
+
+<p>
+    A friend recommended The Predatory Wasp of the Palisades Is Out to Get Us!
+    by Sufjan Stevens. It's really good.
+</p>
+
+
+        </div>
+    </body>
 </html>

@@ -1,62 +1,67 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>amuffin's a groupchat transcription</title>
-    <meta name="description" content="a personal webbed site">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/style.css" rel="stylesheet" type="text/css">
-    <link rel="prefetch" href="/assets/nighttime.png"/>
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/heart16x16.png">
-    
-    <script>
-    const THEMES = {
-      dark: {
-        "--bg": "#20384B",
-        "--text": "#E1F2FF",
-        "--code-bg": "#E1F2FF",
-        "--code-text": "#20384B",
-      },
-      light: {
-        "--bg": "white",
-        "--text": "black",
-        "--code-bg": "#363636",
-        "--code-text": "#E3E3E3",
-      }
-    }
-    function checkDarkmode() {
-      //console.log("got here");
-      let root = document.documentElement.style;
-      
-      Object.entries(THEMES[localStorage.getItem("theme")]).forEach((propval) =>
-        root.setProperty(propval[0], propval[1])
-      );
-    }
+    <head>
+        <meta charset="utf-8" />
+        <title>amuffin's a groupchat transcription</title>
+        <meta name="description" content="a personal webbed site" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="/style.css" rel="stylesheet" type="text/css" />
+        <link rel="prefetch" href="/assets/nighttime.png" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/assets/heart16x16.png"
+        />
 
-    checkDarkmode();
-    </script>
-  </head>
+        <script>
+            const THEMES = {
+                dark: {
+                    "--bg": "#20384B",
+                    "--text": "#E1F2FF",
+                    "--code-bg": "#E1F2FF",
+                    "--code-text": "#20384B",
+                },
+                light: {
+                    "--bg": "white",
+                    "--text": "black",
+                    "--code-bg": "#363636",
+                    "--code-text": "#E3E3E3",
+                },
+            };
+            function checkDarkmode() {
+                //console.log("got here");
+                let root = document.documentElement.style;
 
-  <body>
-    <div id=site-container>
-  
-      <div class="left-spacer"></div>
+                Object.entries(THEMES[localStorage.getItem("theme")]).forEach(
+                    (propval) => root.setProperty(propval[0], propval[1]),
+                );
+            }
 
-      <nav>
-        <a href="/">home</a>
-        <a href="/blog/">blog</a>
-        <a href="/poetry/">poetry</a>
-        <a href="/stuff/">stuff</a>
-        <a class="settings-btn" href="/settings/">settings</a>
-        <img src="/assets/nighttime.png" alt="">
-      </nav>
+            checkDarkmode();
+        </script>
+    </head>
 
-      <header>
-        <h1>a groupchat transcription</h1>
-      </header>
+    <body>
+        <div id="site-container">
+            <div class="left-spacer"></div>
 
-      <p>written 30 September 2023</p>
+            <nav>
+                <a href="/">home</a>
+                <a href="/blog/">blog</a>
+                <a href="/poetry/">poetry</a>
+                <a href="/stuff/">stuff</a>
+                <a class="settings-btn" href="/settings/">settings</a>
+                <img src="/assets/nighttime.png" alt="" />
+            </nav>
+
+            <header>
+                <h1>a groupchat transcription</h1>
+            </header>
+
+            
+<p>written 30 September 2023</p>
 
 <p>at like 1 am. im eepy</p>
 <p>anyways heres another discord transcript:</p>
@@ -88,6 +93,6 @@
 <p>me and friends sang happy birthday to someone in like eight languages at the same time :)</p>
 
 
-    </div>
-  </body>
+        </div>
+    </body>
 </html>

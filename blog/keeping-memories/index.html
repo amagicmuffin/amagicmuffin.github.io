@@ -1,130 +1,133 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>amuffin's keeping memories</title>
-    <meta name="description" content="a personal webbed site">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/style.css" rel="stylesheet" type="text/css">
-    <link rel="prefetch" href="/assets/nighttime.png"/>
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/heart16x16.png">
-    
-    <script>
-    const THEMES = {
-      dark: {
-        "--bg": "#20384B",
-        "--text": "#E1F2FF",
-        "--code-bg": "#E1F2FF",
-        "--code-text": "#20384B",
-      },
-      light: {
-        "--bg": "white",
-        "--text": "black",
-        "--code-bg": "#363636",
-        "--code-text": "#E3E3E3",
-      }
-    }
-    function checkDarkmode() {
-      //console.log("got here");
-      let root = document.documentElement.style;
-      
-      Object.entries(THEMES[localStorage.getItem("theme")]).forEach((propval) =>
-        root.setProperty(propval[0], propval[1])
-      );
-    }
+    <head>
+        <meta charset="utf-8" />
+        <title>amuffin's keeping memories</title>
+        <meta name="description" content="a personal webbed site" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="/style.css" rel="stylesheet" type="text/css" />
+        <link rel="prefetch" href="/assets/nighttime.png" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/assets/heart16x16.png"
+        />
 
-    checkDarkmode();
-    </script>
-  </head>
+        <script>
+            const THEMES = {
+                dark: {
+                    "--bg": "#20384B",
+                    "--text": "#E1F2FF",
+                    "--code-bg": "#E1F2FF",
+                    "--code-text": "#20384B",
+                },
+                light: {
+                    "--bg": "white",
+                    "--text": "black",
+                    "--code-bg": "#363636",
+                    "--code-text": "#E3E3E3",
+                },
+            };
+            function checkDarkmode() {
+                //console.log("got here");
+                let root = document.documentElement.style;
 
-  <body>
-    <div id=site-container>
-  
-      <div class="left-spacer"></div>
+                Object.entries(THEMES[localStorage.getItem("theme")]).forEach(
+                    (propval) => root.setProperty(propval[0], propval[1]),
+                );
+            }
 
-      <nav>
-        <a href="/">home</a>
-        <a href="/blog/">blog</a>
-        <a href="/poetry/">poetry</a>
-        <a href="/stuff/">stuff</a>
-        <a class="settings-btn" href="/settings/">settings</a>
-        <img src="/assets/nighttime.png" alt="">
-      </nav>
+            checkDarkmode();
+        </script>
+    </head>
 
-      <header>
-        <h1>keeping memories</h1>
-      </header>
+    <body>
+        <div id="site-container">
+            <div class="left-spacer"></div>
 
-      <p>written 25 July 2022</p>
+            <nav>
+                <a href="/">home</a>
+                <a href="/blog/">blog</a>
+                <a href="/poetry/">poetry</a>
+                <a href="/stuff/">stuff</a>
+                <a class="settings-btn" href="/settings/">settings</a>
+                <img src="/assets/nighttime.png" alt="" />
+            </nav>
 
+            <header>
+                <h1>keeping memories</h1>
+            </header>
+
+            
+<p>written 25 July 2022</p>
+
+
+<p>It's so annoying to me that I forget things.</p>
 
 <p>
-  It's so annoying to me that I forget things.
+    I live my life, and there are events and accomplishments and things I do
+    that I want to remember. A funny little joke I see somewhere on the
+    internet, a really good book or movie or show that I've watched. But if I
+    ever try to think back to the past, I know my memory passes over a lot of
+    stuff that I'd rather not forget.
 </p>
 
 <p>
-  I live my life, and there are events and accomplishments and things I do that
-  I want to remember. A funny little joke I see somewhere on the internet, a
-  really good book or movie or show that I've watched. But if I ever try to
-  think back to the past, I know my memory passes over a lot of stuff that I'd
-  rather not forget.
+    I've been trying to record things that I want to remember, but that's even
+    harder than just trying to remember in the first place (but maybe only
+    because it's not really possible to *try* to remember).
 </p>
 
 <p>
-  I've been trying to record things that I want to remember, but that's even
-  harder than just trying to remember in the first place (but maybe only because
-  it's not really possible to *try* to remember). 
+    My camera roll is filled with screenshots and photos and videos of the
+    memories that make up me. A screenie of the park map for Canobie, that one
+    amusement park I went to during my Harvard pre-college program. The pretty
+    sunsets and sunrises at the airports I've been visiting so much this summer,
+    a video of me showing off a cool trick I did on roller blades taken with the
+    phone propped up against a curb.
 </p>
 
 <p>
-  My camera roll is filled with screenshots and photos and videos of the 
-  memories that make up me. A screenie of the park map for Canobie, that one
-  amusement park I went to during my Harvard pre-college program. The pretty
-  sunsets and sunrises at the airports I've been visiting so much this summer,
-  a video of me showing off a cool trick I did on roller blades taken with the
-  phone propped up against a curb.
+    I have a physical diary that I've been filling with thoughts, and my folder
+    system on my laptop also holds things that I've done—scraps of code from
+    various languages (I tried learning Rust a while ago), a .org file with
+    videos and music and books that I've liked, images that I've saved for
+    later.
 </p>
 
 <p>
-  I have a physical diary that I've been filling with thoughts, and my folder
-  system on my laptop also holds things that I've done—scraps of code
-  from various languages (I tried learning Rust a while ago), a .org file with
-  videos and music and books that I've liked, images that I've saved for later.
+    There's a picture frame on my bedroom wall with a collage of stuff I've
+    collected from various places. Greeting cards are my favorite, they make
+    them so prettily. I lost the one I got from Cornell, it was filled with
+    stars and had a quote I can't remember. It must've been good, though. A
+    piece of paper from the West Point gift shop, filled with seeds, made to be
+    planted in the ground. Wildflowers. A texture almost like watercolor paper,
+    so rough. It says "Constitution Island" on it, in a serif font. I love serif
+    fonts, they're so pretty. A thing with bees and lavender flowers from Barnes
+    n Nobles, a flower here and there highlighted with some gold colored film
+    that reflects the light so nicely.
 </p>
 
 <p>
-  There's a picture frame on my bedroom wall with a collage of stuff I've
-  collected from various places. Greeting cards are my favorite, they make them
-  so prettily. I lost the one I got from Cornell, it was filled with stars and
-  had a quote I can't remember. It must've been good, though. A piece of paper
-  from the West Point gift shop, filled with seeds, made to be planted in the
-  ground. Wildflowers. A texture almost like watercolor paper, so rough. It says
-  "Constitution Island" on it, in a serif font. I love serif fonts, they're so
-  pretty. A thing with bees and lavender flowers from Barnes n Nobles, a flower
-  here and there highlighted with some gold colored film that reflects the light
-  so nicely.
+    This next part is something that I've seen said plenty of times now, but
+    I'll say it again because it's important to me: it's so interesting that
+    every single person, everyone I pass on the street or go to class with, is a
+    human being with their own thoughts and memories. I don't think our brains
+    are really good at understanding that. It's pretty cool. Maybe this person
+    here likes arranging flowers or this other one's been practicing HEMA for
+    the past few years. You'd never know.
 </p>
+
+<p>I've always been bad at writing conclusions.</p>
 
 <p>
-  This next part is something that I've seen said plenty of times now, but I'll
-  say it again because it's important to me: it's so interesting that every
-  single person, everyone I pass on the street or go to class with, is a human
-  being with their own thoughts and memories. I don't think our brains are 
-  really good at understanding that. It's pretty cool. Maybe this person here
-  likes arranging flowers or this other one's been practicing HEMA for the past
-  few years. You'd never know.
-</p>
-
-<p>
-  I've always been bad at writing conclusions.
-</p>
-
-<p>
-  Current song stuck in head: Alesso & Marshmello - Chasing Stars ft. James Bay
+    Current song stuck in head: Alesso & Marshmello - Chasing Stars ft. James
+    Bay
 </p>
 
 
-    </div>
-  </body>
+        </div>
+    </body>
 </html>

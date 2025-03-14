@@ -15,8 +15,7 @@
     <updated>2025-03-14T00:00:00Z</updated>
     <id>https://amuffin.is-a.dev/blog/bookbinding-and-convos/</id>
     <content type="html">
-&lt;p&gt;
-&lt;/p&gt;&lt;ul&gt;
+&lt;ul&gt;
     &lt;li&gt;
         I first learned how to bookbind from this wonderful YouTube video by
         Jess Less:
@@ -50,33 +49,57 @@
     &lt;/li&gt;
 &lt;/ul&gt;
 
-
 &lt;p&gt;
-    Topic switch: I have a friend who&#39;s really into meta conversation (i.e. they converse
-    about conversation often (isn&#39;t meta a fun word and concept? see: wikipedia
-    or stackoverflow meta pages)). They make me want to be better at conversing.
-    So, I found this
+    Topic switch: I have a friend who&#39;s really into meta conversation (i.e. they
+    converse about conversation often (isn&#39;t meta a fun word and concept? see:
+    wikipedia or stackoverflow meta pages)). They make me want to be better at
+    conversing. So, I found this
     &lt;a href=&quot;https://www.reddit.com/r/socialskills/comments/buk459/my_list_of_the_35_best_social_skills_books_i/&quot;&gt;
         reddit post
     &lt;/a&gt;
-    aggregating some apparently good books on the topic. In that post is this other
-    &lt;a href=&quot;https://socialself.com/blog/books-making-conversation/&quot;&gt;blog post&lt;/a&gt;
+    aggregating some apparently good books on the topic. In that post is this
+    other
+    &lt;a href=&quot;https://socialself.com/blog/books-making-conversation/&quot;&gt;
+        blog post
+    &lt;/a&gt;
     from socialself.com that has another list. I&#39;ve been looking at that second
-    list. In particular, Conversationally Speaking by Alan Garner is REALLY GOOD!
-    It reads like a textbook, so I&#39;m right at home. socialself&#39;s blog post ITSELF is
-    also really really good. Each book on the list is accompanied by a summary 
-    of its contents and themes that might draw you to or turn you away from a book.
+    list. In particular, Conversationally Speaking by Alan Garner is REALLY
+    GOOD! It reads like a textbook, so I&#39;m right at home. socialself&#39;s blog post
+    ITSELF is also really really good. Each book on the list is accompanied by a
+    summary of its contents and themes that might draw you to or turn you away
+    from a book.
 &lt;/p&gt;
 
 &lt;p&gt;
-    On top of Conversationally Speaking (&lt;code&gt;ISBN-10 9781565656291&lt;/code&gt;), I&#39;ll hopefully be looking into these:
-    &lt;/p&gt;&lt;ul&gt;
-        &lt;li&gt;How to speak, how to listen (&lt;code&gt;ISBN-10 9780684846477&lt;/code&gt;)&lt;/li&gt;
-        &lt;li&gt;The fine art of small talk: how to start a conversation in any situation (&lt;code&gt;ISBN-10 1401302262&lt;/code&gt;)&lt;/li&gt;
-        &lt;li&gt;power questions build relationships, win new business, and influence others (&lt;code&gt;ISBN-10 1118119630&lt;/code&gt;)&lt;/li&gt;
-        &lt;li&gt;If I Understood You, Would I Have This Look on My Face? (&lt;code&gt;ISBN-10 9780812989151&lt;/code&gt;)&lt;/li&gt;
-    &lt;/ul&gt;
-&lt;p&gt;&lt;/p&gt;
+    On top of Conversationally Speaking (
+    &lt;code&gt;ISBN-10 9781565656291&lt;/code&gt;
+    ), I&#39;ll hopefully be looking into these:
+&lt;/p&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;
+        How to speak, how to listen (
+        &lt;code&gt;ISBN-10 9780684846477&lt;/code&gt;
+        )
+    &lt;/li&gt;
+    &lt;li&gt;
+        The fine art of small talk: how to start a conversation in any situation
+        (
+        &lt;code&gt;ISBN-10 1401302262&lt;/code&gt;
+        )
+    &lt;/li&gt;
+    &lt;li&gt;
+        power questions build relationships, win new business, and influence
+        others (
+        &lt;code&gt;ISBN-10 1118119630&lt;/code&gt;
+        )
+    &lt;/li&gt;
+    &lt;li&gt;
+        If I Understood You, Would I Have This Look on My Face? (
+        &lt;code&gt;ISBN-10 9780812989151&lt;/code&gt;
+        )
+    &lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;2007 Called, They Want Their Jeans Back is really fun and emoish.&lt;/p&gt;
 </content>
@@ -87,7 +110,10 @@
     <updated>2025-03-01T00:00:00Z</updated>
     <id>https://amuffin.is-a.dev/blog/kebab-cased/</id>
     <content type="html">
-&lt;p&gt;&lt;code&gt;kebab-case&lt;/code&gt; is the standard for web links, so I did a conversion. Here&#39;s the script:&lt;/p&gt;
+&lt;p&gt;
+    &lt;code&gt;kebab-case&lt;/code&gt;
+    is the standard for web links, so I did a conversion. Here&#39;s the script:
+&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;
 import shutil 
@@ -115,7 +141,8 @@ input(&quot;continue? (ctrl c to exit)&quot;)
 
 for src, dest in mapping.items():
     shutil.move(src, dest)
-&lt;/code&gt;&lt;/pre&gt;</content>
+&lt;/code&gt;&lt;/pre&gt;
+</content>
   </entry>
   <entry>
     <title>blog has RSS now!</title>
@@ -123,27 +150,42 @@ for src, dest in mapping.items():
     <updated>2025-02-28T00:00:00Z</updated>
     <id>https://amuffin.is-a.dev/blog/blogRSS/</id>
     <content type="html">
+&lt;p&gt;Eleventy lets me do this really really painlessly. Cool!&lt;/p&gt;
+
 &lt;p&gt;
-Eleventy lets me do this really really painlessly. Cool!
+    Found this one guy&#39;s really cool blog post/website while I was at it:
+    &lt;a href=&quot;https://kevincox.ca/2023/06/27/decade-of-rss-via-email/&quot;&gt;
+        https://kevincox.ca/2023/06/27/decade-of-rss-via-email/
+    &lt;/a&gt;
+    . I love low CSS sites like this one. Hmmm, I should get an RSS reader so I
+    can look at this kind of stuff.
 &lt;/p&gt;
 
 &lt;p&gt;
-Found this one guy&#39;s really cool blog post/website while I was at it:
-&lt;a href=&quot;https://kevincox.ca/2023/06/27/decade-of-rss-via-email/&quot;&gt;https://kevincox.ca/2023/06/27/decade-of-rss-via-email/&lt;/a&gt;.
-I love low CSS sites like this one. Hmmm, I should get an RSS reader so I can look at this kind of stuff.
+    Transgender by Crystal Castles is pretty nice. found a video of some youtube
+    channel &quot;wontbelong&quot; dancing to it some while back:
+    &lt;a href=&quot;https://youtu.be/aWvS7i7Eri4&quot;&gt;https://youtu.be/aWvS7i7Eri4&lt;/a&gt;
+    . Has a nice pixel filter that makes it feel real old. Speaking of old
+    things, check out this cool video/channel CS Ghost with that tangential vibe
+    (flipnote haneta style):
+    &lt;a href=&quot;https://youtu.be/nso9U0jlGfY&quot;&gt;https://youtu.be/nso9U0jlGfY&lt;/a&gt;
+    . Highly rec the entire channel.
 &lt;/p&gt;
 
 &lt;p&gt;
-Transgender by Crystal Castles is pretty nice. found a video of some youtube channel &quot;wontbelong&quot; dancing to it some while back: 
-&lt;a href=&quot;https://youtu.be/aWvS7i7Eri4&quot;&gt;https://youtu.be/aWvS7i7Eri4&lt;/a&gt;. Has a nice pixel filter that makes it feel real old.
-Speaking of old things, check out this cool video/channel CS Ghost with that tangential vibe (flipnote haneta style): 
-&lt;a href=&quot;https://youtu.be/nso9U0jlGfY&quot;&gt;https://youtu.be/nso9U0jlGfY&lt;/a&gt;. Highly rec the entire channel.
+    footnote reminder: I should really turn all these blog post links from
+    &lt;code&gt;camelCase&lt;/code&gt;
+    to kebab-
+    &lt;code&gt;case&lt;/code&gt;
+    . (love this naming convention, here&#39;s some more:
+    &lt;code&gt;PascalCase&lt;/code&gt;
+    ,
+    &lt;code&gt;snake_case&lt;/code&gt;
+    ,
+    &lt;code&gt;SCREAMING_SNAKE_CASE&lt;/code&gt;
+    !!!).
 &lt;/p&gt;
-
-&lt;p&gt;
-footnote reminder: I should really turn all these blog post links from &lt;code&gt;camelCase&lt;/code&gt; to kebab-&lt;code&gt;case&lt;/code&gt;. (love this naming convention,
-here&#39;s some more: &lt;code&gt;PascalCase&lt;/code&gt;, &lt;code&gt;snake_case&lt;/code&gt;, &lt;code&gt;SCREAMING_SNAKE_CASE&lt;/code&gt;!!!).
-&lt;/p&gt;</content>
+</content>
   </entry>
   <entry>
     <title>perceptual color spaces</title>
@@ -152,19 +194,32 @@ here&#39;s some more: &lt;code&gt;PascalCase&lt;/code&gt;, &lt;code&gt;snake_cas
     <id>https://amuffin.is-a.dev/blog/perceptually-uniform/</id>
     <content type="html">
 &lt;p&gt;
-Have I really not made a post about perceptually uniform color spaces yet? They&#39;re pretty cool.
+    Have I really not made a post about perceptually uniform color spaces yet?
+    They&#39;re pretty cool.
 &lt;/p&gt;
 
-&lt;p&gt;
-check out these links!
-&lt;/p&gt;&lt;ul&gt;
-    &lt;li&gt;&lt;a href=&quot;https://bottosson.github.io/posts/colorwrong/&quot;&gt;https://bottosson.github.io/posts/colorwrong/&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;https://bottosson.github.io/misc/colorpicker/&quot;&gt;https://bottosson.github.io/misc/colorpicker/&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href=&quot;https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html&quot;&gt;https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;check out these links!&lt;/p&gt;
 
-&lt;p&gt;Hollow Knight soundtrack is pretty nice. &lt;/p&gt;</content>
+&lt;ul&gt;
+    &lt;li&gt;
+        &lt;a href=&quot;https://bottosson.github.io/posts/colorwrong/&quot;&gt;
+            https://bottosson.github.io/posts/colorwrong/
+        &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a href=&quot;https://bottosson.github.io/misc/colorpicker/&quot;&gt;
+            https://bottosson.github.io/misc/colorpicker/
+        &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a href=&quot;https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html&quot;&gt;
+            https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html
+        &lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Hollow Knight soundtrack is pretty nice.&lt;/p&gt;
+</content>
   </entry>
   <entry>
     <title>grr tedium</title>
@@ -173,14 +228,13 @@ check out these links!
     <id>https://amuffin.is-a.dev/blog/tedium/</id>
     <content type="html">
 &lt;p&gt;
-This is a lot of work because this is such an old project that 
-my repo is still named &quot;master&quot; instead of &quot;main,&quot; which is what I think is messing things up.
+    This is a lot of work because this is such an old project that my repo is
+    still named &quot;master&quot; instead of &quot;main,&quot; which is what I think is messing
+    things up.
 &lt;/p&gt;
 
-
-&lt;p&gt;
-Should be fixed now?
-&lt;/p&gt;</content>
+&lt;p&gt;Should be fixed now?&lt;/p&gt;
+</content>
   </entry>
   <entry>
     <title>wave function collapse and the duck konundrum</title>
@@ -188,10 +242,22 @@ Should be fixed now?
     <updated>2025-02-15T00:00:00Z</updated>
     <id>https://amuffin.is-a.dev/blog/wave-fn-duck/</id>
     <content type="html">
-&lt;p&gt;I found a wave function collapse explanation that was really cool: &lt;a href=&quot;https://robertheaton.com/2018/12/17/wavefunction-collapse-algorithm/&quot;&gt;
-https://robertheaton.com/2018/12/17/wavefunction-collapse-algorithm/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;
+    I found a wave function collapse explanation that was really cool:
+    &lt;a href=&quot;https://robertheaton.com/2018/12/17/wavefunction-collapse-algorithm/&quot;&gt;
+        https://robertheaton.com/2018/12/17/wavefunction-collapse-algorithm/
+    &lt;/a&gt;
+    .
+&lt;/p&gt;
 
-&lt;p&gt;reminds me of &lt;a href=&quot;https://puzzles.mit.edu/2000/set5/6/Puzzle.html&quot;&gt;The Duck Konundrum&lt;/a&gt;, somehow.&lt;/p&gt;</content>
+&lt;p&gt;
+    reminds me of
+    &lt;a href=&quot;https://puzzles.mit.edu/2000/set5/6/Puzzle.html&quot;&gt;
+        The Duck Konundrum
+    &lt;/a&gt;
+    , somehow.
+&lt;/p&gt;
+</content>
   </entry>
   <entry>
     <title>eleventy and more updates</title>
@@ -199,12 +265,19 @@ https://robertheaton.com/2018/12/17/wavefunction-collapse-algorithm/&lt;/a&gt;.&
     <updated>2025-02-13T00:00:00Z</updated>
     <id>https://amuffin.is-a.dev/blog/eleventy/</id>
     <content type="html">
-&lt;p&gt;site generated with eleventy. now. ouch so much work. &lt;/p&gt;
+&lt;p&gt;site generated with eleventy. now. ouch so much work.&lt;/p&gt;
 
-&lt;p&gt;see: &lt;a href=&quot;https://brandur.org/fragments/dark-mode-notes&quot;&gt;https://brandur.org/fragments/dark-mode-notes&lt;/a&gt; where apparently I should apparently 
-have had that darkmode.js inline. and so it is, now.&lt;/p&gt;
+&lt;p&gt;
+    see:
+    &lt;a href=&quot;https://brandur.org/fragments/dark-mode-notes&quot;&gt;
+        https://brandur.org/fragments/dark-mode-notes
+    &lt;/a&gt;
+    where apparently I should apparently have had that darkmode.js inline. and
+    so it is, now.
+&lt;/p&gt;
 
-&lt;p&gt;go listen/watch Giant Steps the jazz thing&lt;/p&gt;</content>
+&lt;p&gt;go listen/watch Giant Steps the jazz thing&lt;/p&gt;
+</content>
   </entry>
   <entry>
     <title>dithering and age of empires 2</title>
@@ -212,17 +285,37 @@ have had that darkmode.js inline. and so it is, now.&lt;/p&gt;
     <updated>2025-02-13T00:00:00Z</updated>
     <id>https://amuffin.is-a.dev/blog/dithering/</id>
     <content type="html">
-&lt;p&gt;oooo dithering ooooo! it makes things look really pretty. I think i have a laptop sticker somewhere that&#39;s dithered clouds or something and it 
-looks real nice. Check out this tool for dithering: &lt;a href=&quot;https://doodad.dev/dither-me-this/&quot;&gt;https://doodad.dev/dither-me-this/&lt;/a&gt;.
-Ordered dithering with mat height 2 or 4 looks great. the Commodore pallet is great. b and w is fine.&lt;/p&gt;
+&lt;p&gt;
+    oooo dithering ooooo! it makes things look really pretty. I think i have a
+    laptop sticker somewhere that&#39;s dithered clouds or something and it looks
+    real nice. Check out this tool for dithering:
+    &lt;a href=&quot;https://doodad.dev/dither-me-this/&quot;&gt;
+        https://doodad.dev/dither-me-this/
+    &lt;/a&gt;
+    . Ordered dithering with mat height 2 or 4 looks great. the Commodore pallet
+    is great. b and w is fine.
+&lt;/p&gt;
 
-&lt;p&gt;Also aoe2 is really funny for having a &lt;a href=&quot;https://ageofempires.fandom.com/wiki/Taunt&quot;&gt;soundboard&lt;/a&gt; with taunts that get played globally when you 
-type in numbers. I&#39;ve been using number 7 &quot;aaaaaaa.&quot; pretty often. In a game once where I did something stupid with monks, the enemy team 
-bm&#39;d me with &quot;What is your strategy?&quot; &quot;Attack the enemy with monks.&quot; Had me on the floor.&lt;/p&gt;
+&lt;p&gt;
+    Also aoe2 is really funny for having a
+    &lt;a href=&quot;https://ageofempires.fandom.com/wiki/Taunt&quot;&gt;soundboard&lt;/a&gt;
+    with taunts that get played globally when you type in numbers. I&#39;ve been
+    using number 7 &quot;aaaaaaa.&quot; pretty often. In a game once where I did something
+    stupid with monks, the enemy team bm&#39;d me with &quot;What is your strategy?&quot;
+    &quot;Attack the enemy with monks.&quot; Had me on the floor.
+&lt;/p&gt;
 
-&lt;p&gt;Some honorable mentions are dadgum (sounds like &quot;Dad? Gone!&quot;) and the iconic wololo.&lt;/p&gt;
+&lt;p&gt;
+    Some honorable mentions are dadgum (sounds like &quot;Dad? Gone!&quot;) and the iconic
+    wololo.
+&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://idialedyournumber.bandcamp.com/album/hourglass&quot;&gt;idialedyournumber&lt;/a&gt; sounds really nice. Found them from Bunny Goes 2 Business School on youtube.&lt;/p&gt;
+&lt;p&gt;
+    &lt;a href=&quot;https://idialedyournumber.bandcamp.com/album/hourglass&quot;&gt;
+        idialedyournumber
+    &lt;/a&gt;
+    sounds really nice. Found them from Bunny Goes 2 Business School on youtube.
+&lt;/p&gt;
 </content>
   </entry>
   <entry>
@@ -232,14 +325,13 @@ bm&#39;d me with &quot;What is your strategy?&quot; &quot;Attack the enemy with 
     <id>https://amuffin.is-a.dev/blog/LMFAOshaco/</id>
     <content type="html">
 &lt;p&gt;
-  Just playing a game of league, shaco mirror matchup support. Ours was winning and we were hard winning as a team, but 
-  the enemy shaco got so tilted in all chat that our fed master yi had such a good laugh they started a surrender vote and
-  we voted 3 yes/2 no to surrender LMFAO 
+    Just playing a game of league, shaco mirror matchup support. Ours was
+    winning and we were hard winning as a team, but the enemy shaco got so
+    tilted in all chat that our fed master yi had such a good laugh they started
+    a surrender vote and we voted 3 yes/2 no to surrender LMFAO
 &lt;/p&gt;
 
-&lt;p&gt;
-  what a time to be alive
-&lt;/p&gt;
+&lt;p&gt;what a time to be alive&lt;/p&gt;
 </content>
   </entry>
   <entry>
@@ -248,26 +340,37 @@ bm&#39;d me with &quot;What is your strategy?&quot; &quot;Attack the enemy with 
     <updated>2024-05-28T00:00:00Z</updated>
     <id>https://amuffin.is-a.dev/blog/lost-techno/</id>
     <content type="html">
-&lt;p&gt;I had to hard reset my phone so I lost all non-backed up photos but I just realized that means I also lost
-    selfies I took with a cosplay Technoblade :(&lt;/p&gt;
-
 &lt;p&gt;
-    I miss Techno, he&#39;s probably the only person I would be fine with watching youtube for. I don&#39;t really
-    care about any other content creator&#39;s content, they&#39;re all not really as captivating? Not sure how 
-    to put it. Michael Reeves is pretty nice though, but that doesn&#39;t count because I&#39;m moving the goalposts.
-    Techno made probably the only vlogs I&#39;ll ever be excited to watch. Sad I won&#39;t get to see new ones.
+    I had to hard reset my phone so I lost all non-backed up photos but I just
+    realized that means I also lost selfies I took with a cosplay Technoblade :(
 &lt;/p&gt;
 
 &lt;p&gt;
-    His visual persona is so cool as well, with so many fan fiction (text, image, animation, etc) made with it and others.
-    Philza is cool too, crow god and all. Passerine is a good fanfiction. I printed out and hand bound it.
+    I miss Techno, he&#39;s probably the only person I would be fine with watching
+    youtube for. I don&#39;t really care about any other content creator&#39;s content,
+    they&#39;re all not really as captivating? Not sure how to put it. Michael
+    Reeves is pretty nice though, but that doesn&#39;t count because I&#39;m moving the
+    goalposts. Techno made probably the only vlogs I&#39;ll ever be excited to
+    watch. Sad I won&#39;t get to see new ones.
 &lt;/p&gt;
 
 &lt;p&gt;
-    The cosplayer had the techno dangling earring too. Darn. I should keep more regular backups or smth.
+    His visual persona is so cool as well, with so many fan fiction (text,
+    image, animation, etc) made with it and others. Philza is cool too, crow god
+    and all. Passerine is a good fanfiction. I printed out and hand bound it.
 &lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://youtu.be/SvLKKGwk-EU?si=Sfi40ZCsDF8gL8eT&quot;&gt;pov: you are in middle school from 2009-2012 :3 (Part 1)&lt;/a&gt;lmfao&lt;/p&gt;
+&lt;p&gt;
+    The cosplayer had the techno dangling earring too. Darn. I should keep more
+    regular backups or smth.
+&lt;/p&gt;
+
+&lt;p&gt;
+    &lt;a href=&quot;https://youtu.be/SvLKKGwk-EU?si=Sfi40ZCsDF8gL8eT&quot;&gt;
+        pov: you are in middle school from 2009-2012 :3 (Part 1)
+    &lt;/a&gt;
+    lmfao
+&lt;/p&gt;
 </content>
   </entry>
 </feed>

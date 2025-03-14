@@ -1,83 +1,94 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>amuffin's settings</title>
-    <meta name="description" content="a personal webbed site">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/style.css" rel="stylesheet" type="text/css">
-    <link rel="prefetch" href="/assets/nighttime.png"/>
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/heart16x16.png">
-    
-    <script>
-    const THEMES = {
-      dark: {
-        "--bg": "#20384B",
-        "--text": "#E1F2FF",
-        "--code-bg": "#E1F2FF",
-        "--code-text": "#20384B",
-      },
-      light: {
-        "--bg": "white",
-        "--text": "black",
-        "--code-bg": "#363636",
-        "--code-text": "#E3E3E3",
-      }
-    }
-    function checkDarkmode() {
-      //console.log("got here");
-      let root = document.documentElement.style;
-      
-      Object.entries(THEMES[localStorage.getItem("theme")]).forEach((propval) =>
-        root.setProperty(propval[0], propval[1])
-      );
-    }
+    <head>
+        <meta charset="utf-8" />
+        <title>amuffin's settings</title>
+        <meta name="description" content="a personal webbed site" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="/style.css" rel="stylesheet" type="text/css" />
+        <link rel="prefetch" href="/assets/nighttime.png" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/assets/heart16x16.png"
+        />
 
-    checkDarkmode();
-    </script>
-  </head>
+        <script>
+            const THEMES = {
+                dark: {
+                    "--bg": "#20384B",
+                    "--text": "#E1F2FF",
+                    "--code-bg": "#E1F2FF",
+                    "--code-text": "#20384B",
+                },
+                light: {
+                    "--bg": "white",
+                    "--text": "black",
+                    "--code-bg": "#363636",
+                    "--code-text": "#E3E3E3",
+                },
+            };
+            function checkDarkmode() {
+                //console.log("got here");
+                let root = document.documentElement.style;
 
-  <body>
-    <div id=site-container>
-  
-      <div class="left-spacer"></div>
+                Object.entries(THEMES[localStorage.getItem("theme")]).forEach(
+                    (propval) => root.setProperty(propval[0], propval[1]),
+                );
+            }
 
-      <nav>
-        <a href="/">home</a>
-        <a href="/blog/">blog</a>
-        <a href="/poetry/">poetry</a>
-        <a href="/stuff/">stuff</a>
-        <a class="settings-btn" href="/settings/">settings</a>
-        <img src="/assets/nighttime.png" alt="">
-      </nav>
+            checkDarkmode();
+        </script>
+    </head>
 
-      <header>
-        <h1>settings</h1>
-      </header>
+    <body>
+        <div id="site-container">
+            <div class="left-spacer"></div>
 
-      
+            <nav>
+                <a href="/">home</a>
+                <a href="/blog/">blog</a>
+                <a href="/poetry/">poetry</a>
+                <a href="/stuff/">stuff</a>
+                <a class="settings-btn" href="/settings/">settings</a>
+                <img src="/assets/nighttime.png" alt="" />
+            </nav>
+
+            <header>
+                <h1>settings</h1>
+            </header>
+
+            
 <ul class="settings-bar">
-  <li><a onClick = "toggleDarkMode();" tabindex="0" role="button">toggle dark mode</a></li>
+    <li>
+        <a onClick="toggleDarkMode();" tabindex="0" role="button">
+            toggle dark mode
+        </a>
+    </li>
 </ul>
 
-<script>  
-  function toggleDarkMode() {
-    if(localStorage.getItem("theme") == "light" || localStorage.getItem("theme") === null){
-	  localStorage.setItem("theme", "dark");
-	} else {
-	  localStorage.setItem("theme", "light");
+<script>
+    function toggleDarkMode() {
+        if (
+            localStorage.getItem("theme") == "light" ||
+            localStorage.getItem("theme") === null
+        ) {
+            localStorage.setItem("theme", "dark");
+        } else {
+            localStorage.setItem("theme", "light");
+        }
+        checkDarkmode();
     }
-	checkDarkmode();
-  }
 
-  document.querySelectorAll('a').forEach(function(button) {
-    button.addEventListener('keydown', function(evt) { 
-      if(evt.keyCode == 13 || evt.keyCode == 32) {
-        button.click();
-      }
-    });  
-  });
+    document.querySelectorAll("a").forEach(function (button) {
+        button.addEventListener("keydown", function (evt) {
+            if (evt.keyCode == 13 || evt.keyCode == 32) {
+                button.click();
+            }
+        });
+    });
 </script>
 
 <!--
@@ -108,6 +119,6 @@
 
 -->
 
-    </div>
-  </body>
+        </div>
+    </body>
 </html>

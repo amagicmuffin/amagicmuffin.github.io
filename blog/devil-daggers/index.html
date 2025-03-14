@@ -1,77 +1,112 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>amuffin's Devil daggers and i got a sword</title>
-    <meta name="description" content="a personal webbed site">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/style.css" rel="stylesheet" type="text/css">
-    <link rel="prefetch" href="/assets/nighttime.png"/>
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/heart16x16.png">
-    
-    <script>
-    const THEMES = {
-      dark: {
-        "--bg": "#20384B",
-        "--text": "#E1F2FF",
-        "--code-bg": "#E1F2FF",
-        "--code-text": "#20384B",
-      },
-      light: {
-        "--bg": "white",
-        "--text": "black",
-        "--code-bg": "#363636",
-        "--code-text": "#E3E3E3",
-      }
-    }
-    function checkDarkmode() {
-      //console.log("got here");
-      let root = document.documentElement.style;
-      
-      Object.entries(THEMES[localStorage.getItem("theme")]).forEach((propval) =>
-        root.setProperty(propval[0], propval[1])
-      );
-    }
+    <head>
+        <meta charset="utf-8" />
+        <title>amuffin's Devil daggers and i got a sword</title>
+        <meta name="description" content="a personal webbed site" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="/style.css" rel="stylesheet" type="text/css" />
+        <link rel="prefetch" href="/assets/nighttime.png" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/assets/heart16x16.png"
+        />
 
-    checkDarkmode();
-    </script>
-  </head>
+        <script>
+            const THEMES = {
+                dark: {
+                    "--bg": "#20384B",
+                    "--text": "#E1F2FF",
+                    "--code-bg": "#E1F2FF",
+                    "--code-text": "#20384B",
+                },
+                light: {
+                    "--bg": "white",
+                    "--text": "black",
+                    "--code-bg": "#363636",
+                    "--code-text": "#E3E3E3",
+                },
+            };
+            function checkDarkmode() {
+                //console.log("got here");
+                let root = document.documentElement.style;
 
-  <body>
-    <div id=site-container>
-  
-      <div class="left-spacer"></div>
+                Object.entries(THEMES[localStorage.getItem("theme")]).forEach(
+                    (propval) => root.setProperty(propval[0], propval[1]),
+                );
+            }
 
-      <nav>
-        <a href="/">home</a>
-        <a href="/blog/">blog</a>
-        <a href="/poetry/">poetry</a>
-        <a href="/stuff/">stuff</a>
-        <a class="settings-btn" href="/settings/">settings</a>
-        <img src="/assets/nighttime.png" alt="">
-      </nav>
+            checkDarkmode();
+        </script>
+    </head>
 
-      <header>
-        <h1>Devil daggers and i got a sword</h1>
-      </header>
+    <body>
+        <div id="site-container">
+            <div class="left-spacer"></div>
 
-      <p>written 4 January 2023</p>
+            <nav>
+                <a href="/">home</a>
+                <a href="/blog/">blog</a>
+                <a href="/poetry/">poetry</a>
+                <a href="/stuff/">stuff</a>
+                <a class="settings-btn" href="/settings/">settings</a>
+                <img src="/assets/nighttime.png" alt="" />
+            </nav>
+
+            <header>
+                <h1>Devil daggers and i got a sword</h1>
+            </header>
+
+            
+<p>written 4 January 2023</p>
 
 
 <p>Devil Daggers is a really cool game.</p>
 
-<p>here's the stupidly in-depth (in a good way) review video i watched:
-<a href="https://youtu.be/63hIc-i1bY4" target="_blank" rel="noopener noreferrer">How This Game Controls Your Heartbeat by Mental Checkpoint</a></p>
+<p>
+    here's the stupidly in-depth (in a good way) review video i watched:
+    <a
+        href="https://youtu.be/63hIc-i1bY4"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        How This Game Controls Your Heartbeat by Mental Checkpoint
+    </a>
+</p>
 
-<p>here's some gameplay. skip to the end if you want to see the crazy stuff: 
-<a href="https://youtu.be/Bc3ecpuQU5o" target="_blank" rel="noopener noreferrer">Devil Daggers V3.2 1222.9550 (Ex-World Record) by c</a></p>
+<p>
+    here's some gameplay. skip to the end if you want to see the crazy stuff:
+    <a
+        href="https://youtu.be/Bc3ecpuQU5o"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        Devil Daggers V3.2 1222.9550 (Ex-World Record) by c
+    </a>
+</p>
 
-<p>also, i got a red dragon synthetic sparring longsword. cool as hell, looking to get into solo hema</p>
+<p>
+    also, i got a red dragon synthetic sparring longsword. cool as hell, looking
+    to get into solo hema
+</p>
 
-<p>also been loving <a href="https://youtu.be/7SM5laxokpg" target="_blank" rel="noopener noreferrer">Helena</a> by MCR. 
-I keep on subsituting in "stars in your eyes" for some of the lyrics. I'm a sucker for stuff like that.</p>
+<p>
+    also been loving
+    <a
+        href="https://youtu.be/7SM5laxokpg"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        Helena
+    </a>
+    by MCR. I keep on subsituting in "stars in your eyes" for some of the
+    lyrics. I'm a sucker for stuff like that.
+</p>
 
-    </div>
-  </body>
+
+        </div>
+    </body>
 </html>

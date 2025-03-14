@@ -1,129 +1,163 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>amuffin's interesting articles</title>
-    <meta name="description" content="a personal webbed site">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/style.css" rel="stylesheet" type="text/css">
-    <link rel="prefetch" href="/assets/nighttime.png"/>
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/heart16x16.png">
-    
-    <script>
-    const THEMES = {
-      dark: {
-        "--bg": "#20384B",
-        "--text": "#E1F2FF",
-        "--code-bg": "#E1F2FF",
-        "--code-text": "#20384B",
-      },
-      light: {
-        "--bg": "white",
-        "--text": "black",
-        "--code-bg": "#363636",
-        "--code-text": "#E3E3E3",
-      }
-    }
-    function checkDarkmode() {
-      //console.log("got here");
-      let root = document.documentElement.style;
-      
-      Object.entries(THEMES[localStorage.getItem("theme")]).forEach((propval) =>
-        root.setProperty(propval[0], propval[1])
-      );
-    }
+    <head>
+        <meta charset="utf-8" />
+        <title>amuffin's interesting articles</title>
+        <meta name="description" content="a personal webbed site" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="/style.css" rel="stylesheet" type="text/css" />
+        <link rel="prefetch" href="/assets/nighttime.png" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/assets/heart16x16.png"
+        />
 
-    checkDarkmode();
-    </script>
-  </head>
+        <script>
+            const THEMES = {
+                dark: {
+                    "--bg": "#20384B",
+                    "--text": "#E1F2FF",
+                    "--code-bg": "#E1F2FF",
+                    "--code-text": "#20384B",
+                },
+                light: {
+                    "--bg": "white",
+                    "--text": "black",
+                    "--code-bg": "#363636",
+                    "--code-text": "#E3E3E3",
+                },
+            };
+            function checkDarkmode() {
+                //console.log("got here");
+                let root = document.documentElement.style;
 
-  <body>
-    <div id=site-container>
-  
-      <div class="left-spacer"></div>
+                Object.entries(THEMES[localStorage.getItem("theme")]).forEach(
+                    (propval) => root.setProperty(propval[0], propval[1]),
+                );
+            }
 
-      <nav>
-        <a href="/">home</a>
-        <a href="/blog/">blog</a>
-        <a href="/poetry/">poetry</a>
-        <a href="/stuff/">stuff</a>
-        <a class="settings-btn" href="/settings/">settings</a>
-        <img src="/assets/nighttime.png" alt="">
-      </nav>
+            checkDarkmode();
+        </script>
+    </head>
 
-      <header>
-        <h1>interesting articles</h1>
-      </header>
+    <body>
+        <div id="site-container">
+            <div class="left-spacer"></div>
 
-      <p>written 17 January 2023</p>
+            <nav>
+                <a href="/">home</a>
+                <a href="/blog/">blog</a>
+                <a href="/poetry/">poetry</a>
+                <a href="/stuff/">stuff</a>
+                <a class="settings-btn" href="/settings/">settings</a>
+                <img src="/assets/nighttime.png" alt="" />
+            </nav>
 
+            <header>
+                <h1>interesting articles</h1>
+            </header>
 
-<p>
-  This'll be a list of more full-length articles I've thought were interesting.
-  At some point, I'll find a way to "pin" this to the top. 
-</p>
-
-<p>
-  <a href="https://pudding.cool/2017/05/song-repetition/" target="_blank" rel="noopener noreferrer">
-    Are Pop Lyrics Getting More Repetitive? By Colin Morris
-  </a>
-  One part of this was really funny to me because I forgot what the lyrics to the most 
-  repetitive song were 
-</p>
-
-<p>
-  <a href="https://www.unix-ninja.com/p/your_xkcd_passwords_are_pwned" target="_blank" rel="noopener noreferrer">
-    Your xkcd passwords are pwned By unix-ninja
-  </a>
-  
-</p>
-
-<p>
-  <a href="https://qz.com/646467/how-one-programmer-broke-the-internet-by-deleting-a-tiny-piece-of-code" target="_blank" rel="noopener noreferrer">
-    How one programmer broke the internet by deleting a tiny piece of code By Keith Collins
-  </a>
-  relevant xkcd: <a href="https://www.explainxkcd.com/wiki/index.php/2347:_Dependency" target="_blank" rel="noopener noreferrer"></a>.
-  The discussion section is pretty interesting here. On the topic of xkcd, check out the 
-  explainxkcd on the "Time" and "Click and Drag" strips. I use comic strip loosely here.
-</p>
-
-<p>
-  <a href="https://maggieappleton.com/garden-history" target="_blank" rel="noopener noreferrer">
-    A Brief History & Ethos of the Digital Garden By Maggie Appleton
-  </a>
-  this concept is cute ^^
-</p>
-
-<p>
-  <a href="https://wiby.me/about/" target="_blank" rel="noopener noreferrer">
-    Why Wiby?
-  </a>
-  a search engine that scrapes personal websites :)
-</p>
-
-<p>
-  <a href="http://leapsecond.com/pages/atomic-bill/" target="_blank" rel="noopener noreferrer">
-    First Atomic Clock Wristwatch
-  </a>
-  lmfao
-</p>
-
-<p>
-  <a href="https://blog.regehr.org/archives/861" target="_blank" rel="noopener noreferrer">
-    Operant Conditioning by Software Bugs
-  </a>
-  lmfao
-</p>
+            
+<p>written 17 January 2023</p>
 
 
 <p>
-  let this blog post's last paragraph be a tribute to all of the songs I don't remember.
-  And now that I think of it, also the Tribute horn quartet(?) that I can't seem to find
-  on youtube.
+    This'll be a list of more full-length articles I've thought were
+    interesting. At some point, I'll find a way to "pin" this to the top.
+</p>
+
+<p>
+    <a
+        href="https://pudding.cool/2017/05/song-repetition/"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        Are Pop Lyrics Getting More Repetitive? By Colin Morris
+    </a>
+    One part of this was really funny to me because I forgot what the lyrics to
+    the most repetitive song were
+</p>
+
+<p>
+    <a
+        href="https://www.unix-ninja.com/p/your_xkcd_passwords_are_pwned"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        Your xkcd passwords are pwned By unix-ninja
+    </a>
+</p>
+
+<p>
+    <a
+        href="https://qz.com/646467/how-one-programmer-broke-the-internet-by-deleting-a-tiny-piece-of-code"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        How one programmer broke the internet by deleting a tiny piece of code
+        By Keith Collins
+    </a>
+    relevant xkcd:
+    <a
+        href="https://www.explainxkcd.com/wiki/index.php/2347:_Dependency"
+        target="_blank"
+        rel="noopener noreferrer"
+    ></a>
+    . The discussion section is pretty interesting here. On the topic of xkcd,
+    check out the explainxkcd on the "Time" and "Click and Drag" strips. I use
+    comic strip loosely here.
+</p>
+
+<p>
+    <a
+        href="https://maggieappleton.com/garden-history"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        A Brief History & Ethos of the Digital Garden By Maggie Appleton
+    </a>
+    this concept is cute ^^
+</p>
+
+<p>
+    <a href="https://wiby.me/about/" target="_blank" rel="noopener noreferrer">
+        Why Wiby?
+    </a>
+    a search engine that scrapes personal websites :)
+</p>
+
+<p>
+    <a
+        href="http://leapsecond.com/pages/atomic-bill/"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        First Atomic Clock Wristwatch
+    </a>
+    lmfao
+</p>
+
+<p>
+    <a
+        href="https://blog.regehr.org/archives/861"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        Operant Conditioning by Software Bugs
+    </a>
+    lmfao
+</p>
+
+<p>
+    let this blog post's last paragraph be a tribute to all of the songs I don't
+    remember. And now that I think of it, also the Tribute horn quartet(?) that
+    I can't seem to find on youtube.
 </p>
 
 
-    </div>
-  </body>
+        </div>
+    </body>
 </html>

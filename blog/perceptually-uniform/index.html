@@ -1,79 +1,99 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>amuffin's perceptual color spaces</title>
-    <meta name="description" content="a personal webbed site">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/style.css" rel="stylesheet" type="text/css">
-    <link rel="prefetch" href="/assets/nighttime.png"/>
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/heart16x16.png">
-    
-    <script>
-    const THEMES = {
-      dark: {
-        "--bg": "#20384B",
-        "--text": "#E1F2FF",
-        "--code-bg": "#E1F2FF",
-        "--code-text": "#20384B",
-      },
-      light: {
-        "--bg": "white",
-        "--text": "black",
-        "--code-bg": "#363636",
-        "--code-text": "#E3E3E3",
-      }
-    }
-    function checkDarkmode() {
-      //console.log("got here");
-      let root = document.documentElement.style;
-      
-      Object.entries(THEMES[localStorage.getItem("theme")]).forEach((propval) =>
-        root.setProperty(propval[0], propval[1])
-      );
-    }
+    <head>
+        <meta charset="utf-8" />
+        <title>amuffin's perceptual color spaces</title>
+        <meta name="description" content="a personal webbed site" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="/style.css" rel="stylesheet" type="text/css" />
+        <link rel="prefetch" href="/assets/nighttime.png" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/assets/heart16x16.png"
+        />
 
-    checkDarkmode();
-    </script>
-  </head>
+        <script>
+            const THEMES = {
+                dark: {
+                    "--bg": "#20384B",
+                    "--text": "#E1F2FF",
+                    "--code-bg": "#E1F2FF",
+                    "--code-text": "#20384B",
+                },
+                light: {
+                    "--bg": "white",
+                    "--text": "black",
+                    "--code-bg": "#363636",
+                    "--code-text": "#E3E3E3",
+                },
+            };
+            function checkDarkmode() {
+                //console.log("got here");
+                let root = document.documentElement.style;
 
-  <body>
-    <div id=site-container>
-  
-      <div class="left-spacer"></div>
+                Object.entries(THEMES[localStorage.getItem("theme")]).forEach(
+                    (propval) => root.setProperty(propval[0], propval[1]),
+                );
+            }
 
-      <nav>
-        <a href="/">home</a>
-        <a href="/blog/">blog</a>
-        <a href="/poetry/">poetry</a>
-        <a href="/stuff/">stuff</a>
-        <a class="settings-btn" href="/settings/">settings</a>
-        <img src="/assets/nighttime.png" alt="">
-      </nav>
+            checkDarkmode();
+        </script>
+    </head>
 
-      <header>
-        <h1>perceptual color spaces</h1>
-      </header>
+    <body>
+        <div id="site-container">
+            <div class="left-spacer"></div>
 
-      <p>written 27 February 2025</p>
+            <nav>
+                <a href="/">home</a>
+                <a href="/blog/">blog</a>
+                <a href="/poetry/">poetry</a>
+                <a href="/stuff/">stuff</a>
+                <a class="settings-btn" href="/settings/">settings</a>
+                <img src="/assets/nighttime.png" alt="" />
+            </nav>
+
+            <header>
+                <h1>perceptual color spaces</h1>
+            </header>
+
+            
+<p>written 27 February 2025</p>
 
 
 <p>
-Have I really not made a post about perceptually uniform color spaces yet? They're pretty cool.
+    Have I really not made a post about perceptually uniform color spaces yet?
+    They're pretty cool.
 </p>
 
-<p>
-check out these links!
+<p>check out these links!</p>
+
 <ul>
-    <li><a href="https://bottosson.github.io/posts/colorwrong/">https://bottosson.github.io/posts/colorwrong/</a></li>
-    <li><a href="https://bottosson.github.io/misc/colorpicker/">https://bottosson.github.io/misc/colorpicker/</a></li>
-    <li><a href="https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html">https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html</a></li>
+    <li>
+        <a href="https://bottosson.github.io/posts/colorwrong/">
+            https://bottosson.github.io/posts/colorwrong/
+        </a>
+    </li>
+    <li>
+        <a href="https://bottosson.github.io/misc/colorpicker/">
+            https://bottosson.github.io/misc/colorpicker/
+        </a>
+    </li>
+    <li>
+        <a
+            href="https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html"
+        >
+            https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html
+        </a>
+    </li>
 </ul>
-</p>
 
-<p>Hollow Knight soundtrack is pretty nice. </p>
+<p>Hollow Knight soundtrack is pretty nice.</p>
 
-    </div>
-  </body>
+
+        </div>
+    </body>
 </html>

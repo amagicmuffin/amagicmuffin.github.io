@@ -1,103 +1,139 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>amuffin's poetry</title>
-    <meta name="description" content="a personal webbed site">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/style.css" rel="stylesheet" type="text/css">
-    <link rel="prefetch" href="/assets/nighttime.png"/>
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/heart16x16.png">
-    
-    <script>
-    const THEMES = {
-      dark: {
-        "--bg": "#20384B",
-        "--text": "#E1F2FF",
-        "--code-bg": "#E1F2FF",
-        "--code-text": "#20384B",
-      },
-      light: {
-        "--bg": "white",
-        "--text": "black",
-        "--code-bg": "#363636",
-        "--code-text": "#E3E3E3",
-      }
-    }
-    function checkDarkmode() {
-      //console.log("got here");
-      let root = document.documentElement.style;
-      
-      Object.entries(THEMES[localStorage.getItem("theme")]).forEach((propval) =>
-        root.setProperty(propval[0], propval[1])
-      );
-    }
+    <head>
+        <meta charset="utf-8" />
+        <title>amuffin's poetry</title>
+        <meta name="description" content="a personal webbed site" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="/style.css" rel="stylesheet" type="text/css" />
+        <link rel="prefetch" href="/assets/nighttime.png" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/assets/heart16x16.png"
+        />
 
-    checkDarkmode();
-    </script>
-  </head>
+        <script>
+            const THEMES = {
+                dark: {
+                    "--bg": "#20384B",
+                    "--text": "#E1F2FF",
+                    "--code-bg": "#E1F2FF",
+                    "--code-text": "#20384B",
+                },
+                light: {
+                    "--bg": "white",
+                    "--text": "black",
+                    "--code-bg": "#363636",
+                    "--code-text": "#E3E3E3",
+                },
+            };
+            function checkDarkmode() {
+                //console.log("got here");
+                let root = document.documentElement.style;
 
-  <body>
-    <div id=site-container>
-  
-      <div class="left-spacer"></div>
+                Object.entries(THEMES[localStorage.getItem("theme")]).forEach(
+                    (propval) => root.setProperty(propval[0], propval[1]),
+                );
+            }
 
-      <nav>
-        <a href="/">home</a>
-        <a href="/blog/">blog</a>
-        <a href="/poetry/">poetry</a>
-        <a href="/stuff/">stuff</a>
-        <a class="settings-btn" href="/settings/">settings</a>
-        <img src="/assets/nighttime.png" alt="">
-      </nav>
+            checkDarkmode();
+        </script>
+    </head>
 
-      <header>
-        <h1>poetry</h1>
-      </header>
+    <body>
+        <div id="site-container">
+            <div class="left-spacer"></div>
 
-      
-<p>I dislike the mortifying ordeal of not being known. And so I write poetry and so I write blog posts :3</p>
+            <nav>
+                <a href="/">home</a>
+                <a href="/blog/">blog</a>
+                <a href="/poetry/">poetry</a>
+                <a href="/stuff/">stuff</a>
+                <a class="settings-btn" href="/settings/">settings</a>
+                <img src="/assets/nighttime.png" alt="" />
+            </nav>
 
-<p>These aren't dated but should be ordered most recent towards the top, as I add them.</p>
+            <header>
+                <h1>poetry</h1>
+            </header>
 
-<p><a href="/assets/poetry/airport_231014_174555.txt_Feb2025update.pdf">airport_231014_174555.txt</a> - 
-gave this an update formatting wise. meant to be printed out and folded into a pamphlet.</p>
-
+            
 <p>
-    <a href="/assets/poetry/hollow_viscus_injury.pdf">hollow viscus injury</a><br>
-    read like the first narrator in the game Disco Elysium. about having homework, or something.
+    I dislike the mortifying ordeal of not being known. And so I write poetry
+    and so I write blog posts :3
 </p>
 
 <p>
-    <a href="/assets/poetry/mystery_man.pdf">mystery man, hand, car door hook gun, etc etc.</a><br>
+    These aren't dated but should be ordered most recent towards the top, as I
+    add them.
+</p>
+
+<p>
+    <a href="/assets/poetry/airport_231014_174555.txt_Feb2025update.pdf">
+        airport_231014_174555.txt
+    </a>
+    - gave this an update formatting wise. meant to be printed out and folded
+    into a pamphlet.
+</p>
+
+<p>
+    <a href="/assets/poetry/hollow_viscus_injury.pdf">hollow viscus injury</a>
+    <br />
+    read like the first narrator in the game Disco Elysium. about having
+    homework, or something.
+</p>
+
+<p>
+    <a href="/assets/poetry/mystery_man.pdf">
+        mystery man, hand, car door hook gun, etc etc.
+    </a>
+    <br />
     this is another ars poetica.
 </p>
 
 <p>
-    <a href="/assets/poetry/death_of_the_author.pdf">The death of the author</a><br>
-    I joined a student poetry class at school! More poetry to probably come, then. Here's one I wrote
-    about feelings on the death of the author: sometimes it's bad (but other times it's like the woah! two cakes! meme, and good).
+    <a href="/assets/poetry/death_of_the_author.pdf">The death of the author</a>
+    <br />
+    I joined a student poetry class at school! More poetry to probably come,
+    then. Here's one I wrote about feelings on the death of the author:
+    sometimes it's bad (but other times it's like the woah! two cakes! meme, and
+    good).
 </p>
 
 <p>
-    <a href="/assets/poetry/author.pdf">unnamed</a><br>
-    <a href="/assets/poetry/yell.pdf">unnamed</a><br>
-    <a href="/assets/poetry/lacerate_palms.pdf">lacerate palms</a><br>
-    I seem to only write poetry while in bad states of mind haha. interesting. Here's a poetry dump from 
-    what I have in storage that just got around to uploading.
+    <a href="/assets/poetry/author.pdf">unnamed</a>
+    <br />
+    <a href="/assets/poetry/yell.pdf">unnamed</a>
+    <br />
+    <a href="/assets/poetry/lacerate_palms.pdf">lacerate palms</a>
+    <br />
+    I seem to only write poetry while in bad states of mind haha. interesting.
+    Here's a poetry dump from what I have in storage that just got around to
+    uploading.
 </p>
 
-
-<p><a href="/assets/poetry/airport_231014_174555.txt.pdf">airport_231014_174555.txt</a> - this started out as my notes app 
-todo list as I was packing up to go home from college. Then I started writing poetry skull emoji slkdj</p>
-
-<p><a href="/assets/poetry/digging_fingernails_into_skin.txt">[redacted]</a> - thats not the name of the poem but
-    it's one that I wrote during a mental breakdown kinda sorta lol sooo :p
+<p>
+    <a href="/assets/poetry/airport_231014_174555.txt.pdf">
+        airport_231014_174555.txt
+    </a>
+    - this started out as my notes app todo list as I was packing up to go home
+    from college. Then I started writing poetry skull emoji slkdj
 </p>
 
-<p><a href="/assets/poetry/tollund.pdf">tollund</a> - me when I am at a grocery store for real for real
+<p>
+    <a href="/assets/poetry/digging_fingernails_into_skin.txt">[redacted]</a>
+    - thats not the name of the poem but it's one that I wrote during a mental
+    breakdown kinda sorta lol sooo :p
+</p>
 
-    </div>
-  </body>
+<p>
+    <a href="/assets/poetry/tollund.pdf">tollund</a>
+    - me when I am at a grocery store for real for real
+</p>
+
+        </div>
+    </body>
 </html>

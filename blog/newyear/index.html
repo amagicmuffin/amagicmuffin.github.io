@@ -1,88 +1,137 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>amuffin's new years!</title>
-    <meta name="description" content="a personal webbed site">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/style.css" rel="stylesheet" type="text/css">
-    <link rel="prefetch" href="/assets/nighttime.png"/>
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/heart16x16.png">
-    
-    <script>
-    const THEMES = {
-      dark: {
-        "--bg": "#20384B",
-        "--text": "#E1F2FF",
-        "--code-bg": "#E1F2FF",
-        "--code-text": "#20384B",
-      },
-      light: {
-        "--bg": "white",
-        "--text": "black",
-        "--code-bg": "#363636",
-        "--code-text": "#E3E3E3",
-      }
-    }
-    function checkDarkmode() {
-      //console.log("got here");
-      let root = document.documentElement.style;
-      
-      Object.entries(THEMES[localStorage.getItem("theme")]).forEach((propval) =>
-        root.setProperty(propval[0], propval[1])
-      );
-    }
+    <head>
+        <meta charset="utf-8" />
+        <title>amuffin's new years!</title>
+        <meta name="description" content="a personal webbed site" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="/style.css" rel="stylesheet" type="text/css" />
+        <link rel="prefetch" href="/assets/nighttime.png" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/assets/heart16x16.png"
+        />
 
-    checkDarkmode();
-    </script>
-  </head>
+        <script>
+            const THEMES = {
+                dark: {
+                    "--bg": "#20384B",
+                    "--text": "#E1F2FF",
+                    "--code-bg": "#E1F2FF",
+                    "--code-text": "#20384B",
+                },
+                light: {
+                    "--bg": "white",
+                    "--text": "black",
+                    "--code-bg": "#363636",
+                    "--code-text": "#E3E3E3",
+                },
+            };
+            function checkDarkmode() {
+                //console.log("got here");
+                let root = document.documentElement.style;
 
-  <body>
-    <div id=site-container>
-  
-      <div class="left-spacer"></div>
+                Object.entries(THEMES[localStorage.getItem("theme")]).forEach(
+                    (propval) => root.setProperty(propval[0], propval[1]),
+                );
+            }
 
-      <nav>
-        <a href="/">home</a>
-        <a href="/blog/">blog</a>
-        <a href="/poetry/">poetry</a>
-        <a href="/stuff/">stuff</a>
-        <a class="settings-btn" href="/settings/">settings</a>
-        <img src="/assets/nighttime.png" alt="">
-      </nav>
+            checkDarkmode();
+        </script>
+    </head>
 
-      <header>
-        <h1>new years!</h1>
-      </header>
+    <body>
+        <div id="site-container">
+            <div class="left-spacer"></div>
 
-      <p>written 3 January 2024</p>
+            <nav>
+                <a href="/">home</a>
+                <a href="/blog/">blog</a>
+                <a href="/poetry/">poetry</a>
+                <a href="/stuff/">stuff</a>
+                <a class="settings-btn" href="/settings/">settings</a>
+                <img src="/assets/nighttime.png" alt="" />
+            </nav>
+
+            <header>
+                <h1>new years!</h1>
+            </header>
+
+            
+<p>written 3 January 2024</p>
 
 
 <p>Welcome to the new year I guess!</p>
 
-<p>Plenty of sitewide changes to move things off third party hosting (hedgehog in /stuff.html), update /stuff buttons, improve readability, etc.</p>
+<p>
+    Plenty of sitewide changes to move things off third party hosting (hedgehog
+    in /stuff.html), update /stuff buttons, improve readability, etc.
+</p>
 
-<p>On the topic of readability, I've always really liked clean websites instead of the wacky massive modern stuff. <a href="https://seirdy.one/posts/2020/11/23/website-best-practices/">Seirdy's post</a>
-about this and <a href="http://bettermotherfuckingwebsite.com/">http://bettermotherfuckingwebsite.com/</a> are both super helpful and really interesting reads.
-Well, maybe that's misleading. I like websites that have a personal charm to them and modern ones often don't. Clean websites are amazing but so is 
-absolute tomfoolery like <a href="https://www.webdesignmuseum.org/gallery/pepsi-1996">the one Pepsi used to have</a>.</p>
+<p>
+    On the topic of readability, I've always really liked clean websites instead
+    of the wacky massive modern stuff.
+    <a href="https://seirdy.one/posts/2020/11/23/website-best-practices/">
+        Seirdy's post
+    </a>
+    about this and
+    <a href="http://bettermotherfuckingwebsite.com/">
+        http://bettermotherfuckingwebsite.com/
+    </a>
+    are both super helpful and really interesting reads. Well, maybe that's
+    misleading. I like websites that have a personal charm to them and modern
+    ones often don't. Clean websites are amazing but so is absolute tomfoolery
+    like
+    <a href="https://www.webdesignmuseum.org/gallery/pepsi-1996">
+        the one Pepsi used to have
+    </a>
+    .
+</p>
 
-<p>On the topic of reading things, holy hell there is a lot of that to be done in college. Most of the readings I've had this year, both for humanities and
-    STEM have been pretty engaging though, so I'm very thankful for that. I also dug out some of my old readings from 
-    <a href="https://en.wikipedia.org/wiki/AP_English_Language_and_Composition">AP Lang</a> back in the day. Here is a tiny selection of some I found that I
-    thought were really interesting:
+<p>
+    On the topic of reading things, holy hell there is a lot of that to be done
+    in college. Most of the readings I've had this year, both for humanities and
+    STEM have been pretty engaging though, so I'm very thankful for that. I also
+    dug out some of my old readings from
+    <a href="https://en.wikipedia.org/wiki/AP_English_Language_and_Composition">
+        AP Lang
+    </a>
+    back in the day. Here is a tiny selection of some I found that I thought
+    were really interesting:
 </p>
 
 <ul>
-    <li><a href="https://www.theatlantic.com/magazine/archive/2019/06/how-to-predict-the-future/588040/">The Peculiar Blindness of Experts</a>. "Credentialed authorities are comically bad at predicting the future. But reliable forecasting is possible." </li>
-    <li><a href="https://theamericanscholar.org/the-disadvantages-of-an-elite-education/">The Disadvantages of an Elite Education</a>. "Our best universities have forgotten that the reason they exist is to make minds, not careers"</li>
-    <li><a href="https://www.gutenberg.org/files/1080/1080-h/1080-h.htm">A Modest Proposal</a></li>
+    <li>
+        <a
+            href="https://www.theatlantic.com/magazine/archive/2019/06/how-to-predict-the-future/588040/"
+        >
+            The Peculiar Blindness of Experts
+        </a>
+        . "Credentialed authorities are comically bad at predicting the future.
+        But reliable forecasting is possible."
+    </li>
+    <li>
+        <a
+            href="https://theamericanscholar.org/the-disadvantages-of-an-elite-education/"
+        >
+            The Disadvantages of an Elite Education
+        </a>
+        . "Our best universities have forgotten that the reason they exist is to
+        make minds, not careers"
+    </li>
+    <li>
+        <a href="https://www.gutenberg.org/files/1080/1080-h/1080-h.htm">
+            A Modest Proposal
+        </a>
+    </li>
 </ul>
 
 <p>Went to Arizona and found Numb by Linkin Park on some alt radio station</p>
 
 
-    </div>
-  </body>
+        </div>
+    </body>
 </html>
