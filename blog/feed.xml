@@ -10,6 +10,30 @@
     <name>amuffin</name>
   </author>
   <entry>
+    <title>prettier code</title>
+    <link href="https://amuffin.is-a.dev/blog/prettier-fmt/" />
+    <updated>2025-03-14T00:00:00Z</updated>
+    <id>https://amuffin.is-a.dev/blog/prettier-fmt/</id>
+    <content type="html">
+&lt;p&gt;
+    content html files that generate this website are now fed through
+    &lt;a href=&quot;https://prettier.io/&quot;&gt;prettier&lt;/a&gt;
+    ! neat!
+&lt;/p&gt;
+
+&lt;p&gt;
+    I&#39;m a big fan of well formatted code. I wish there was a good solution to
+    SML code formatting... Haven&#39;t gotten around to implementing any of the
+    current solutions
+&lt;/p&gt;
+
+&lt;p&gt;
+    Juliana Chahayed&#39;s cover of No Surprises by Radiohead is really nice. Audio
+    fed into an old phone.
+&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
     <title>bookbinding and conversation</title>
     <link href="https://amuffin.is-a.dev/blog/bookbinding-and-convos/" />
     <updated>2025-03-14T00:00:00Z</updated>
@@ -332,45 +356,6 @@ for src, dest in mapping.items():
 &lt;/p&gt;
 
 &lt;p&gt;what a time to be alive&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>techno cosplayer</title>
-    <link href="https://amuffin.is-a.dev/blog/lost-techno/" />
-    <updated>2024-05-28T00:00:00Z</updated>
-    <id>https://amuffin.is-a.dev/blog/lost-techno/</id>
-    <content type="html">
-&lt;p&gt;
-    I had to hard reset my phone so I lost all non-backed up photos but I just
-    realized that means I also lost selfies I took with a cosplay Technoblade :(
-&lt;/p&gt;
-
-&lt;p&gt;
-    I miss Techno, he&#39;s probably the only person I would be fine with watching
-    youtube for. I don&#39;t really care about any other content creator&#39;s content,
-    they&#39;re all not really as captivating? Not sure how to put it. Michael
-    Reeves is pretty nice though, but that doesn&#39;t count because I&#39;m moving the
-    goalposts. Techno made probably the only vlogs I&#39;ll ever be excited to
-    watch. Sad I won&#39;t get to see new ones.
-&lt;/p&gt;
-
-&lt;p&gt;
-    His visual persona is so cool as well, with so many fan fiction (text,
-    image, animation, etc) made with it and others. Philza is cool too, crow god
-    and all. Passerine is a good fanfiction. I printed out and hand bound it.
-&lt;/p&gt;
-
-&lt;p&gt;
-    The cosplayer had the techno dangling earring too. Darn. I should keep more
-    regular backups or smth.
-&lt;/p&gt;
-
-&lt;p&gt;
-    &lt;a href=&quot;https://youtu.be/SvLKKGwk-EU?si=Sfi40ZCsDF8gL8eT&quot;&gt;
-        pov: you are in middle school from 2009-2012 :3 (Part 1)
-    &lt;/a&gt;
-    lmfao
-&lt;/p&gt;
 </content>
   </entry>
 </feed>
