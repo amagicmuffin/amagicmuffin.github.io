@@ -4,11 +4,83 @@
   <subtitle>various microblogs, ramblings, fun thematic gatherings of links, and other blog posts.</subtitle>
   <link href="https://amuffin.is-a.dev/blog/feed.xml" rel="self" />
   <link href="https://amuffin.is-a.dev/" />
-  <updated>2025-03-01T00:00:00Z</updated>
+  <updated>2025-03-14T00:00:00Z</updated>
   <id>https://amuffin.is-a.dev/</id>
   <author>
     <name>amuffin</name>
   </author>
+  <entry>
+    <title>bookbinding and conversation</title>
+    <link href="https://amuffin.is-a.dev/blog/bookbinding-and-convos/" />
+    <updated>2025-03-14T00:00:00Z</updated>
+    <id>https://amuffin.is-a.dev/blog/bookbinding-and-convos/</id>
+    <content type="html">
+&lt;p&gt;
+&lt;/p&gt;&lt;ul&gt;
+    &lt;li&gt;
+        I first learned how to bookbind from this wonderful YouTube video by
+        Jess Less:
+        &lt;a href=&quot;https://www.youtube.com/watch?v=y3jae1cuvSo&quot;&gt;
+            Turning Fanfiction Into the Hardcover Book it Deserves
+        &lt;/a&gt;
+        .
+    &lt;/li&gt;
+    &lt;li&gt;
+        This
+        &lt;a href=&quot;https://www.bookbindingworkshopsg.com/pdf-to-book-printing/&quot;&gt;
+            blog post
+        &lt;/a&gt;
+        has a list of really good pdf-to-book-format converters. (because if you
+        think about how a book is bound, with multiple sets of paper
+        (&quot;signatures&quot;), it doesn&#39;t make sense to just take a book pdf as-is and
+        just print that). Jess used Adobe Acrobat, but I hate that software, so
+        slow to load D: I now use
+        &lt;a href=&quot;https://momijizukamori.github.io/bookbinder-js&quot;&gt;
+            bookbinder-js
+        &lt;/a&gt;
+        . Careful, doesn&#39;t seem to download output files on Firefox! :0
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a href=&quot;https://pagedjs.org/about/&quot;&gt;pagedjs.org&lt;/a&gt;
+        is a... uh... &quot;JavaScript library that paginates content in the browser
+        to create PDF output from any HTML content. This means you can design
+        works for print (eg. books) using HTML and CSS!&quot; Yeah, that. I was
+        googling for bookbinder-js because I didn&#39;t want to endorse Adobe
+        Acrobat, but found this on the way.
+    &lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;
+    Topic switch: I have a friend who&#39;s really into meta conversation (i.e. they converse
+    about conversation often (isn&#39;t meta a fun word and concept? see: wikipedia
+    or stackoverflow meta pages)). They make me want to be better at conversing.
+    So, I found this
+    &lt;a href=&quot;https://www.reddit.com/r/socialskills/comments/buk459/my_list_of_the_35_best_social_skills_books_i/&quot;&gt;
+        reddit post
+    &lt;/a&gt;
+    aggregating some apparently good books on the topic. In that post is this other
+    &lt;a href=&quot;https://socialself.com/blog/books-making-conversation/&quot;&gt;blog post&lt;/a&gt;
+    from socialself.com that has another list. I&#39;ve been looking at that second
+    list. In particular, Conversationally Speaking by Alan Garner is REALLY GOOD!
+    It reads like a textbook, so I&#39;m right at home. socialself&#39;s blog post ITSELF is
+    also really really good. Each book on the list is accompanied by a summary 
+    of its contents and themes that might draw you to or turn you away from a book.
+&lt;/p&gt;
+
+&lt;p&gt;
+    On top of Conversationally Speaking (&lt;code&gt;ISBN-10 9781565656291&lt;/code&gt;), I&#39;ll hopefully be looking into these:
+    &lt;/p&gt;&lt;ul&gt;
+        &lt;li&gt;How to speak, how to listen (&lt;code&gt;ISBN-10 9780684846477&lt;/code&gt;)&lt;/li&gt;
+        &lt;li&gt;The fine art of small talk: how to start a conversation in any situation (&lt;code&gt;ISBN-10 1401302262&lt;/code&gt;)&lt;/li&gt;
+        &lt;li&gt;power questions build relationships, win new business, and influence others (&lt;code&gt;ISBN-10 1118119630&lt;/code&gt;)&lt;/li&gt;
+        &lt;li&gt;If I Understood You, Would I Have This Look on My Face? (&lt;code&gt;ISBN-10 9780812989151&lt;/code&gt;)&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;2007 Called, They Want Their Jeans Back is really fun and emoish.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>kebab-cased</title>
     <link href="https://amuffin.is-a.dev/blog/kebab-cased/" />
@@ -196,30 +268,6 @@ bm&#39;d me with &quot;What is your strategy?&quot; &quot;Attack the enemy with 
 &lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://youtu.be/SvLKKGwk-EU?si=Sfi40ZCsDF8gL8eT&quot;&gt;pov: you are in middle school from 2009-2012 :3 (Part 1)&lt;/a&gt;lmfao&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>league nostalgia</title>
-    <link href="https://amuffin.is-a.dev/blog/league/" />
-    <updated>2024-05-28T00:00:00Z</updated>
-    <id>https://amuffin.is-a.dev/blog/league/</id>
-    <content type="html">
-&lt;p&gt;
-    played a couple of games of league, recently we&#39;ve gotten a few of the friend group into it and it&#39;s actually pretty
-    nice sometimes, i have my ye olden days middle school nostalgia of also being guided through my first few, then 
-    ten, then hundred, then many games. 
-&lt;/p&gt;
-
-&lt;p&gt;
-    wejust had such a silly and fun game being friendly with the enemies and our team, me on brand mid, the friend on nami 
-    support, a random adc&#39;ing them that hard carried, a off meta yi top against our illaoi, a enemy bot duo that was an
-    adc ez also coaching a supp lux on her third ever game in the moba genre. it really was memories of the good times.
-&lt;/p&gt;
-
-&lt;p&gt;league soundtrack is good and their music videos, especially the worlds anthems, have so much lore put into them. (irl 
-    comp league lore). 
-    ignite is an old but good one. legends never die is a classic. RISE, too.
-&lt;/p&gt;
 </content>
   </entry>
 </feed>
