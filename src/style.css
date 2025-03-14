@@ -1,7 +1,20 @@
 :root {
   --max-width: 544px;
+  --bg: white;
+  --text: black;
+  --code-bg: #363636;
+  --code-text: #E3E3E3;
   /* --bg: white; */
   /* --text: black; */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #20384B;
+    --text: #E1F2FF;
+    --code-bg: #E1F2FF;
+    --code-text: #20384B;
+  }
 }
 
 body {
