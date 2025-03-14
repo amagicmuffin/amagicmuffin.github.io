@@ -10,6 +10,48 @@
     <name>amuffin</name>
   </author>
   <entry>
+    <title>wug puzzle</title>
+    <link href="https://amuffin.is-a.dev/blog/wug-puzzle/" />
+    <updated>2025-03-14T00:00:00Z</updated>
+    <id>https://amuffin.is-a.dev/blog/wug-puzzle/</id>
+    <content type="html">
+&lt;p&gt;
+    someone asked me to help make a program to typeset &quot;wugs&quot; for them.
+    apparently for a puzzle. it&#39;s pretty hilarious, check this out:
+&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://amuffin.is-a.dev/blog/wug-puzzle/wugs.pdf&quot;&gt;./wugs.pdf&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;// setup code
+#let bird(body) = {
+    image(&quot;wug.png&quot;, height: 6em)
+    place(
+    dx: -20pt, 
+    dy: -25pt
+    )[#text(font: &quot;Libertinus Serif&quot;, body, size: 14pt)]
+}
+
+#let birds(x) = {
+    let xx = x.map(it =&gt; [
+    #image(&quot;wug.png&quot;, height: 6em)
+        #place(
+            dx: -20pt, 
+            dy: -25pt
+        )[#text(font: &quot;Libertinus Serif&quot;, it, size: 14pt)]
+    ])
+    
+    xx.join([,])
+}
+
+// examples
+
+${ #bird[tɹ̝̊], #bird[t̪θ], ... }$
+
+$A subset.eq { #birds((&quot;ʡʢ&quot;,&quot;dʑ&quot;,&quot;tꞎ&quot;)) }$
+&lt;/code&gt;&lt;/pre&gt;
+</content>
+  </entry>
+  <entry>
     <title>prettier code</title>
     <link href="https://amuffin.is-a.dev/blog/prettier-fmt/" />
     <updated>2025-03-14T00:00:00Z</updated>
@@ -340,22 +382,6 @@ for src, dest in mapping.items():
     &lt;/a&gt;
     sounds really nice. Found them from Bunny Goes 2 Business School on youtube.
 &lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>league story</title>
-    <link href="https://amuffin.is-a.dev/blog/LMFAOshaco/" />
-    <updated>2024-06-02T00:00:00Z</updated>
-    <id>https://amuffin.is-a.dev/blog/LMFAOshaco/</id>
-    <content type="html">
-&lt;p&gt;
-    Just playing a game of league, shaco mirror matchup support. Ours was
-    winning and we were hard winning as a team, but the enemy shaco got so
-    tilted in all chat that our fed master yi had such a good laugh they started
-    a surrender vote and we voted 3 yes/2 no to surrender LMFAO
-&lt;/p&gt;
-
-&lt;p&gt;what a time to be alive&lt;/p&gt;
 </content>
   </entry>
 </feed>
