@@ -12,11 +12,7 @@ body {
   margin: 0;
   padding: 0;
   font-size: 1.2em;
-}
-
-p {
-  line-height: 1.6;
-}
+  line-height: 1.5;}
 
 #site-container {
   max-width: var(--max-width);
