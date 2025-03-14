@@ -8,13 +8,16 @@
   },
   "scripts": {
     "start": "eleventy --serve",
-    "build": "eleventy"
+    "build": "eleventy",
+    "fmt": "npx prettier src/**/*.njk --write",
+    "check": "npx prettier src/**/*.njk --check"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^3.0.0"
+    "@11ty/eleventy": "^3.0.0",
+    "prettier": "3.5.3"
   },
   "dependencies": {
     "@11ty/eleventy-plugin-rss": "^2.0.3"
