@@ -1,0 +1,42 @@
+---
+title: wug puzzle
+tags: blog-post
+date: 2025-03-14
+description: someone asked me to help make a program to typeset "wugs" for them. apparently for a puzzle
+layout: "blog_post.njk"
+---
+
+<p>
+    someone asked me to help make a program to typeset "wugs" for them.
+    apparently for a puzzle. it's pretty hilarious, check this out:
+</p>
+
+<p><a href="./wugs.pdf">./wugs.pdf</a></p>
+
+<pre><code>// setup code
+#let bird(body) = {
+    image("wug.png", height: 6em)
+    place(
+    dx: -20pt, 
+    dy: -25pt
+    )[#text(font: "Libertinus Serif", body, size: 14pt)]
+}
+
+#let birds(x) = {
+    let xx = x.map(it => [
+    #image("wug.png", height: 6em)
+        #place(
+            dx: -20pt, 
+            dy: -25pt
+        )[#text(font: "Libertinus Serif", it, size: 14pt)]
+    ])
+    
+    xx.join([,])
+}
+
+// examples
+
+${ #bird[tɹ̝̊], #bird[t̪θ], ... }$
+
+$A subset.eq { #birds(("ʡʢ","dʑ","tꞎ")) }$
+</code></pre>
