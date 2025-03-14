@@ -4,26 +4,33 @@ layout: "base.njk"
 ---
 
 <ul class="settings-bar">
-  <li><a onClick = "toggleDarkMode();" tabindex="0" role="button">toggle dark mode</a></li>
+    <li>
+        <a onClick="toggleDarkMode();" tabindex="0" role="button">
+            toggle dark mode
+        </a>
+    </li>
 </ul>
 
-<script>  
-  function toggleDarkMode() {
-    if(localStorage.getItem("theme") == "light" || localStorage.getItem("theme") === null){
-	  localStorage.setItem("theme", "dark");
-	} else {
-	  localStorage.setItem("theme", "light");
+<script>
+    function toggleDarkMode() {
+        if (
+            localStorage.getItem("theme") == "light" ||
+            localStorage.getItem("theme") === null
+        ) {
+            localStorage.setItem("theme", "dark");
+        } else {
+            localStorage.setItem("theme", "light");
+        }
+        checkDarkmode();
     }
-	checkDarkmode();
-  }
 
-  document.querySelectorAll('a').forEach(function(button) {
-    button.addEventListener('keydown', function(evt) { 
-      if(evt.keyCode == 13 || evt.keyCode == 32) {
-        button.click();
-      }
-    });  
-  });
+    document.querySelectorAll("a").forEach(function (button) {
+        button.addEventListener("keydown", function (evt) {
+            if (evt.keyCode == 13 || evt.keyCode == 32) {
+                button.click();
+            }
+        });
+    });
 </script>
 
 <!--
