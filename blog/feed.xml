@@ -4,11 +4,77 @@
   <subtitle>various microblogs, ramblings, fun thematic gatherings of links, and other blog posts.</subtitle>
   <link href="https://amuffin.is-a.dev/blog/feed.xml" rel="self" />
   <link href="https://amuffin.is-a.dev/" />
-  <updated>2025-03-14T00:00:00Z</updated>
+  <updated>2025-03-21T00:00:00Z</updated>
   <id>https://amuffin.is-a.dev/</id>
   <author>
     <name>amuffin</name>
   </author>
+  <entry>
+    <title>how to lose time and money</title>
+    <link href="https://amuffin.is-a.dev/blog/lost-time/" />
+    <updated>2025-03-21T00:00:00Z</updated>
+    <id>https://amuffin.is-a.dev/blog/lost-time/</id>
+    <content type="html">
+&lt;p&gt;
+    I&#39;ve been reading lots of neat tech blogs! I use the Millet extension by
+    &lt;a href=&quot;https://azdavis.net/&quot;&gt;azdavis&lt;/a&gt;, and I&#39;ve spent some time on his
+    blog, which rabbit-holed me throughout the interwebs. The Millet extension
+    cover image is drawn by
+    &lt;a href=&quot;https://yixinhe.me/index.html&quot;&gt;Yixin He&lt;/a&gt;, who has some other
+    great art and code! That real-time stylization presentation is really cool,
+    love that kind of stuff. I&#39;ve seen a YouTube video somewhere of a similar
+    concept in action and it&#39;s really interesting.
+&lt;/p&gt;
+
+&lt;p&gt;
+    Anyways, azdavis linked to a
+    &lt;a href=&quot;https://danluu.com/writing-non-advice/&quot;&gt;post&lt;/a&gt;
+    by a tech blogger about writing, which mentioned a Paul Graham who writes
+    in, apparently, a clean and simple &quot;classical style&quot; which I appreciate! So
+    I followed that thread, which brings us to the title of this blog post,
+    &lt;a href=&quot;https://www.paulgraham.com/selfindulgence.html&quot;&gt;
+        How to Lose Time and Money&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+    There&#39;s a few interesting related ideas in that work (one of which being
+    investment which is neat because I think he&#39;s a founder/CEO of ycombinator?
+    don&#39;t remember). But I wanted to focus on this quote: &quot;The most dangerous
+    way to lose time is not to spend it having fun, but to spend it doing fake
+    work.&quot;
+&lt;/p&gt;
+
+&lt;p&gt;
+    And that&#39;s really neat! Here I am doing fake work by writing a blog post
+    right now. Although I enjoy archiving memories. This one side of &quot;fake
+    work,&quot; doing work that is more like play seems productive to me in a good
+    way. Hobbies are important, I think? Taking time to embroider and hobby code
+    and go outside is good. But sometimes, I get the feeling of unproductivity
+    he mentions even though I partake in a hobby. This is usually when I am
+    procrastinating work :/.
+&lt;/p&gt;
+
+&lt;p&gt;
+    The other side of &quot;fake work&quot; is actual work that isn&#39;t fun. (We&#39;re
+    investigating the two diagonals of the Punnett square here, not really work
+    and fun vs really work and not fun.) I also feel the icky unproductivity
+    when I &quot;procrastinate&quot; on more important work by doing sort of work (e.g.
+    clearing so so so many email or touching up a resume instead of doing a
+    problem set). But that&#39;s interesting because technically this is productive
+    work... Unfortunate.
+&lt;/p&gt;
+
+&lt;p&gt;
+    Not sure what I wanted to get at here, but the thoughts have been put down.
+    Cheers!
+&lt;/p&gt;
+
+&lt;p&gt;
+    I&#39;ve already recommended Line without a Hook, but it&#39;s on the mind again.
+    Good song.
+&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>wug puzzle</title>
     <link href="https://amuffin.is-a.dev/blog/wug-puzzle/" />
@@ -59,8 +125,7 @@ $A subset.eq { #birds((&quot;ʡʢ&quot;,&quot;dʑ&quot;,&quot;tꞎ&quot;)) }$
     <content type="html">
 &lt;p&gt;
     content html files that generate this website are now fed through
-    &lt;a href=&quot;https://prettier.io/&quot;&gt;prettier&lt;/a&gt;
-    ! neat!
+    &lt;a href=&quot;https://prettier.io/&quot;&gt;prettier&lt;/a&gt;! neat!
 &lt;/p&gt;
 
 &lt;p&gt;
@@ -86,9 +151,7 @@ $A subset.eq { #birds((&quot;ʡʢ&quot;,&quot;dʑ&quot;,&quot;tꞎ&quot;)) }$
         I first learned how to bookbind from this wonderful YouTube video by
         Jess Less:
         &lt;a href=&quot;https://www.youtube.com/watch?v=y3jae1cuvSo&quot;&gt;
-            Turning Fanfiction Into the Hardcover Book it Deserves
-        &lt;/a&gt;
-        .
+            Turning Fanfiction Into the Hardcover Book it Deserves&lt;/a&gt;.
     &lt;/li&gt;
     &lt;li&gt;
         This
@@ -101,9 +164,7 @@ $A subset.eq { #birds((&quot;ʡʢ&quot;,&quot;dʑ&quot;,&quot;tꞎ&quot;)) }$
         just print that). Jess used Adobe Acrobat, but I hate that software, so
         slow to load D: I now use
         &lt;a href=&quot;https://momijizukamori.github.io/bookbinder-js&quot;&gt;
-            bookbinder-js
-        &lt;/a&gt;
-        . Careful, doesn&#39;t seem to download output files on Firefox! :0
+            bookbinder-js&lt;/a&gt;. Careful, doesn&#39;t seem to download output files on Firefox! :0
     &lt;/li&gt;
     &lt;li&gt;
         &lt;a href=&quot;https://pagedjs.org/about/&quot;&gt;pagedjs.org&lt;/a&gt;
@@ -221,21 +282,19 @@ for src, dest in mapping.items():
 &lt;p&gt;
     Found this one guy&#39;s really cool blog post/website while I was at it:
     &lt;a href=&quot;https://kevincox.ca/2023/06/27/decade-of-rss-via-email/&quot;&gt;
-        https://kevincox.ca/2023/06/27/decade-of-rss-via-email/
-    &lt;/a&gt;
-    . I love low CSS sites like this one. Hmmm, I should get an RSS reader so I
+        https://kevincox.ca/2023/06/27/decade-of-rss-via-email/ &lt;/a&gt;. I love low CSS sites like this one. Hmmm, I should get an RSS reader so I
     can look at this kind of stuff.
 &lt;/p&gt;
 
 &lt;p&gt;
     Transgender by Crystal Castles is pretty nice. found a video of some youtube
     channel &quot;wontbelong&quot; dancing to it some while back:
-    &lt;a href=&quot;https://youtu.be/aWvS7i7Eri4&quot;&gt;https://youtu.be/aWvS7i7Eri4&lt;/a&gt;
-    . Has a nice pixel filter that makes it feel real old. Speaking of old
-    things, check out this cool video/channel CS Ghost with that tangential vibe
+    &lt;a href=&quot;https://youtu.be/aWvS7i7Eri4&quot;&gt;https://youtu.be/aWvS7i7Eri4&lt;/a&gt;. Has
+    a nice pixel filter that makes it feel real old. Speaking of old things,
+    check out this cool video/channel CS Ghost with that tangential vibe
     (flipnote haneta style):
-    &lt;a href=&quot;https://youtu.be/nso9U0jlGfY&quot;&gt;https://youtu.be/nso9U0jlGfY&lt;/a&gt;
-    . Highly rec the entire channel.
+    &lt;a href=&quot;https://youtu.be/nso9U0jlGfY&quot;&gt;https://youtu.be/nso9U0jlGfY&lt;/a&gt;.
+    Highly rec the entire channel.
 &lt;/p&gt;
 
 &lt;p&gt;
@@ -311,17 +370,13 @@ for src, dest in mapping.items():
 &lt;p&gt;
     I found a wave function collapse explanation that was really cool:
     &lt;a href=&quot;https://robertheaton.com/2018/12/17/wavefunction-collapse-algorithm/&quot;&gt;
-        https://robertheaton.com/2018/12/17/wavefunction-collapse-algorithm/
-    &lt;/a&gt;
-    .
+        https://robertheaton.com/2018/12/17/wavefunction-collapse-algorithm/ &lt;/a&gt;.
 &lt;/p&gt;
 
 &lt;p&gt;
     reminds me of
     &lt;a href=&quot;https://puzzles.mit.edu/2000/set5/6/Puzzle.html&quot;&gt;
-        The Duck Konundrum
-    &lt;/a&gt;
-    , somehow.
+        The Duck Konundrum&lt;/a&gt;, somehow.
 &lt;/p&gt;
 </content>
   </entry>
@@ -343,45 +398,6 @@ for src, dest in mapping.items():
 &lt;/p&gt;
 
 &lt;p&gt;go listen/watch Giant Steps the jazz thing&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>dithering and age of empires 2</title>
-    <link href="https://amuffin.is-a.dev/blog/dithering/" />
-    <updated>2025-02-13T00:00:00Z</updated>
-    <id>https://amuffin.is-a.dev/blog/dithering/</id>
-    <content type="html">
-&lt;p&gt;
-    oooo dithering ooooo! it makes things look really pretty. I think i have a
-    laptop sticker somewhere that&#39;s dithered clouds or something and it looks
-    real nice. Check out this tool for dithering:
-    &lt;a href=&quot;https://doodad.dev/dither-me-this/&quot;&gt;
-        https://doodad.dev/dither-me-this/
-    &lt;/a&gt;
-    . Ordered dithering with mat height 2 or 4 looks great. the Commodore pallet
-    is great. b and w is fine.
-&lt;/p&gt;
-
-&lt;p&gt;
-    Also aoe2 is really funny for having a
-    &lt;a href=&quot;https://ageofempires.fandom.com/wiki/Taunt&quot;&gt;soundboard&lt;/a&gt;
-    with taunts that get played globally when you type in numbers. I&#39;ve been
-    using number 7 &quot;aaaaaaa.&quot; pretty often. In a game once where I did something
-    stupid with monks, the enemy team bm&#39;d me with &quot;What is your strategy?&quot;
-    &quot;Attack the enemy with monks.&quot; Had me on the floor.
-&lt;/p&gt;
-
-&lt;p&gt;
-    Some honorable mentions are dadgum (sounds like &quot;Dad? Gone!&quot;) and the iconic
-    wololo.
-&lt;/p&gt;
-
-&lt;p&gt;
-    &lt;a href=&quot;https://idialedyournumber.bandcamp.com/album/hourglass&quot;&gt;
-        idialedyournumber
-    &lt;/a&gt;
-    sounds really nice. Found them from Bunny Goes 2 Business School on youtube.
-&lt;/p&gt;
 </content>
   </entry>
 </feed>
