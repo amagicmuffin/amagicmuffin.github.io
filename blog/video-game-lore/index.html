@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>amuffin's video game lore</title>
+        <meta name="description" content="a personal webbed site" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="/style.css" rel="stylesheet" type="text/css" />
+        <link rel="prefetch" href="/assets/nighttime.png" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/assets/heart16x16.png"
+        />
+
+        <script>
+            const THEMES = {
+                dark: {
+                    "--bg": "#20384B",
+                    "--text": "#E1F2FF",
+                    "--code-bg": "#E1F2FF",
+                    "--code-text": "#20384B",
+                },
+                light: {
+                    "--bg": "white",
+                    "--text": "black",
+                    "--code-bg": "#363636",
+                    "--code-text": "#E3E3E3",
+                },
+            };
+            function checkDarkmode() {
+                //console.log("got here");
+                let root = document.documentElement.style;
+
+                Object.entries(THEMES[localStorage.getItem("theme")]).forEach(
+                    (propval) => root.setProperty(propval[0], propval[1]),
+                );
+            }
+
+            checkDarkmode();
+        </script>
+    </head>
+
+    <body>
+        <div id="site-container">
+            <div class="left-spacer"></div>
+
+            <nav>
+                <a href="/">home</a>
+                <a href="/blog/">blog</a>
+                <a href="/poetry/">poetry</a>
+                <a href="/stuff/">stuff</a>
+                <a class="settings-btn" href="/settings/">settings</a>
+                <img src="/assets/nighttime.png" alt="" />
+            </nav>
+
+            <header>
+                <h1>video game lore</h1>
+            </header>
+
+            
+<p>written 22 March 2025</p>
+
+
+<p>
+    wait wait hold on <a href="https://nier.fandom.com/">nier automata</a> is
+    really cool lore :0. Here's a really nice summary of it in a reddit comment:
+    <a href="https://www.reddit.com/r/nier/comments/fr1nqv/comment/fltcpot/"
+        >https://www.reddit.com/r/nier/comments/fr1nqv/comment/fltcpot/</a
+    >.
+</p>
+
+<p>
+    they also have a really neat (spoiler)
+    <span class="spoiler">"fuck it, soul linked plague"</span> gimmick that a
+    really good webcomic,
+    <a href="https://sssscomic.com/">stand still stay silent</a>
+    uses.
+</p>
+
+<p><a href="https://soma.fandom.com/">SOMA</a> is also really cool :0</p>
+
+
+        </div>
+    </body>
+</html>

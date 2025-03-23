@@ -4,11 +4,34 @@
   <subtitle>various microblogs, ramblings, fun thematic gatherings of links, and other blog posts.</subtitle>
   <link href="https://amuffin.is-a.dev/blog/feed.xml" rel="self" />
   <link href="https://amuffin.is-a.dev/" />
-  <updated>2025-03-21T00:00:00Z</updated>
+  <updated>2025-03-22T00:00:00Z</updated>
   <id>https://amuffin.is-a.dev/</id>
   <author>
     <name>amuffin</name>
   </author>
+  <entry>
+    <title>video game lore</title>
+    <link href="https://amuffin.is-a.dev/blog/video-game-lore/" />
+    <updated>2025-03-22T00:00:00Z</updated>
+    <id>https://amuffin.is-a.dev/blog/video-game-lore/</id>
+    <content type="html">
+&lt;p&gt;
+    wait wait hold on &lt;a href=&quot;https://nier.fandom.com/&quot;&gt;nier automata&lt;/a&gt; is
+    really cool lore :0. Here&#39;s a really nice summary of it in a reddit comment:
+    &lt;a href=&quot;https://www.reddit.com/r/nier/comments/fr1nqv/comment/fltcpot/&quot;&gt;https://www.reddit.com/r/nier/comments/fr1nqv/comment/fltcpot/&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+    they also have a really neat (spoiler)
+    &lt;span class=&quot;spoiler&quot;&gt;&quot;fuck it, soul linked plague&quot;&lt;/span&gt; gimmick that a
+    really good webcomic,
+    &lt;a href=&quot;https://sssscomic.com/&quot;&gt;stand still stay silent&lt;/a&gt;
+    uses.
+&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://soma.fandom.com/&quot;&gt;SOMA&lt;/a&gt; is also really cool :0&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>how to lose time and money</title>
     <link href="https://amuffin.is-a.dev/blog/lost-time/" />
@@ -378,26 +401,6 @@ for src, dest in mapping.items():
     &lt;a href=&quot;https://puzzles.mit.edu/2000/set5/6/Puzzle.html&quot;&gt;
         The Duck Konundrum&lt;/a&gt;, somehow.
 &lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>eleventy and more updates</title>
-    <link href="https://amuffin.is-a.dev/blog/eleventy/" />
-    <updated>2025-02-13T00:00:00Z</updated>
-    <id>https://amuffin.is-a.dev/blog/eleventy/</id>
-    <content type="html">
-&lt;p&gt;site generated with eleventy. now. ouch so much work.&lt;/p&gt;
-
-&lt;p&gt;
-    see:
-    &lt;a href=&quot;https://brandur.org/fragments/dark-mode-notes&quot;&gt;
-        https://brandur.org/fragments/dark-mode-notes
-    &lt;/a&gt;
-    where apparently I should apparently have had that darkmode.js inline. and
-    so it is, now.
-&lt;/p&gt;
-
-&lt;p&gt;go listen/watch Giant Steps the jazz thing&lt;/p&gt;
 </content>
   </entry>
 </feed>
