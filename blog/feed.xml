@@ -4,11 +4,22 @@
   <subtitle>various microblogs, ramblings, fun thematic gatherings of links, and other blog posts.</subtitle>
   <link href="https://amuffin.is-a.dev/blog/feed.xml" rel="self" />
   <link href="https://amuffin.is-a.dev/" />
-  <updated>2025-03-22T00:00:00Z</updated>
+  <updated>2025-03-24T00:00:00Z</updated>
   <id>https://amuffin.is-a.dev/</id>
   <author>
     <name>amuffin</name>
   </author>
+  <entry>
+    <title>math notation convention survey</title>
+    <link href="https://amuffin.is-a.dev/blog/math-notation/" />
+    <updated>2025-03-24T00:00:00Z</updated>
+    <id>https://amuffin.is-a.dev/blog/math-notation/</id>
+    <content type="html">
+&lt;p&gt;
+    &lt;a href=&quot;https://cims.nyu.edu/~tjl8195/survey/results.html#q1&quot;&gt;https://cims.nyu.edu/~tjl8195/survey/results.html#q1&lt;/a&gt;. That&#39;s pretty cool.
+&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>video game lore</title>
     <link href="https://amuffin.is-a.dev/blog/video-game-lore/" />
@@ -454,25 +465,6 @@ for src, dest in mapping.items():
 &lt;/p&gt;
 
 &lt;p&gt;Should be fixed now?&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>wave function collapse and the duck konundrum</title>
-    <link href="https://amuffin.is-a.dev/blog/wave-fn-duck/" />
-    <updated>2025-02-15T00:00:00Z</updated>
-    <id>https://amuffin.is-a.dev/blog/wave-fn-duck/</id>
-    <content type="html">
-&lt;p&gt;
-    I found a wave function collapse explanation that was really cool:
-    &lt;a href=&quot;https://robertheaton.com/2018/12/17/wavefunction-collapse-algorithm/&quot;&gt;
-        https://robertheaton.com/2018/12/17/wavefunction-collapse-algorithm/ &lt;/a&gt;.
-&lt;/p&gt;
-
-&lt;p&gt;
-    reminds me of
-    &lt;a href=&quot;https://puzzles.mit.edu/2000/set5/6/Puzzle.html&quot;&gt;
-        The Duck Konundrum&lt;/a&gt;, somehow.
-&lt;/p&gt;
 </content>
   </entry>
 </feed>
