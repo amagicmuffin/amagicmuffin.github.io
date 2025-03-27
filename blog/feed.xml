@@ -4,11 +4,64 @@
   <subtitle>various microblogs, ramblings, fun thematic gatherings of links, and other blog posts.</subtitle>
   <link href="https://amuffin.is-a.dev/blog/feed.xml" rel="self" />
   <link href="https://amuffin.is-a.dev/" />
-  <updated>2025-03-24T00:00:00Z</updated>
+  <updated>2025-03-27T00:00:00Z</updated>
   <id>https://amuffin.is-a.dev/</id>
   <author>
     <name>amuffin</name>
   </author>
+  <entry>
+    <title>nixos</title>
+    <link href="https://amuffin.is-a.dev/blog/nixos/" />
+    <updated>2025-03-27T00:00:00Z</updated>
+    <id>https://amuffin.is-a.dev/blog/nixos/</id>
+    <content type="html">
+&lt;p&gt;
+    I&#39;ve been taking looks at NixOS, and it&#39;s real cool. I&#39;ve been using the
+    &lt;code&gt;uv&lt;/code&gt; python project/package manager recently, as well as being
+    exposed to stuff like &lt;code&gt;npm&lt;/code&gt;. These have declarative environments
+    (&lt;code&gt;pyproject.toml&lt;/code&gt; and &lt;code&gt;package.json&lt;/code&gt;) that makes
+    coding in different places a treat.
+&lt;/p&gt;
+
+&lt;p&gt;
+    In general, being able to set-and-forget a configuration for something is
+    really really comforting. My current setup runs an Ubuntu LTS with so many
+    mods that getting them all back after a system reset or new install or Bad
+    Thing happening would take up all those hours and hours of googling again.
+&lt;/p&gt;
+
+&lt;p&gt;
+    I&#39;d like to learn NixOS and solve this problem, but apparently it still has
+    its compatibility problems of its own.
+    &lt;code&gt;uv&lt;/code&gt; itself is terribly painful, it seems, and python isn&#39;t much
+    better if at all. Anyways, here&#39;s a list of links I&#39;ve found on NixOS.
+&lt;/p&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;
+        &lt;a href=&quot;https://youtu.be/a67Sv4Mbxmc&quot;&gt;youtube video&lt;/a&gt; guide to NixOS,
+        namedropped by
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a href=&quot;https://youtu.be/CwfKlX3rA6E&quot;&gt;youtube video&lt;/a&gt; by No
+        Boilerplate.
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a href=&quot;https://www.reddit.com/r/NixOS/comments/1fv4hyg/anyone_using_python_uv_on_nixos/&quot;&gt;reddit thread&lt;/a&gt;
+        about &lt;code&gt;uv&lt;/code&gt; on NixOS being terrible
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a href=&quot;https://www.reddit.com/r/NixOS/comments/1fdxpam/help_request_python_development_specifically_with/&quot;&gt;reddit thread&lt;/a&gt;
+        about &lt;code&gt;uv&lt;/code&gt; again, with link to an open &lt;code&gt;uv&lt;/code&gt; github
+        issue.
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a href=&quot;https://discourse.nixos.org/t/how-to-set-up-r-and-rstudio-on-nix-os/55182&quot;&gt;NixOS help forum thread&lt;/a&gt;
+        about R and Rstudio on NixOS.
+    &lt;/li&gt;
+&lt;/ul&gt;
+</content>
+  </entry>
   <entry>
     <title>math notation convention survey</title>
     <link href="https://amuffin.is-a.dev/blog/math-notation/" />
@@ -450,21 +503,6 @@ for src, dest in mapping.items():
 &lt;/ul&gt;
 
 &lt;p&gt;Hollow Knight soundtrack is pretty nice.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>grr tedium</title>
-    <link href="https://amuffin.is-a.dev/blog/tedium/" />
-    <updated>2025-02-25T00:00:00Z</updated>
-    <id>https://amuffin.is-a.dev/blog/tedium/</id>
-    <content type="html">
-&lt;p&gt;
-    This is a lot of work because this is such an old project that my repo is
-    still named &quot;master&quot; instead of &quot;main,&quot; which is what I think is messing
-    things up.
-&lt;/p&gt;
-
-&lt;p&gt;Should be fixed now?&lt;/p&gt;
 </content>
   </entry>
 </feed>
