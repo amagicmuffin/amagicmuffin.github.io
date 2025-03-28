@@ -4,11 +4,50 @@
   <subtitle>various microblogs, ramblings, fun thematic gatherings of links, and other blog posts.</subtitle>
   <link href="https://amuffin.is-a.dev/blog/feed.xml" rel="self" />
   <link href="https://amuffin.is-a.dev/" />
-  <updated>2025-03-27T00:00:00Z</updated>
+  <updated>2025-03-28T00:00:00Z</updated>
   <id>https://amuffin.is-a.dev/</id>
   <author>
     <name>amuffin</name>
   </author>
+  <entry>
+    <title>don&#39;t eat these, and digital gardens</title>
+    <link href="https://amuffin.is-a.dev/blog/food-avoiding/" />
+    <updated>2025-03-28T00:00:00Z</updated>
+    <id>https://amuffin.is-a.dev/blog/food-avoiding/</id>
+    <content type="html">
+&lt;p&gt;
+    I really need to keep a list of foods I should never buy again when I
+    encounter them in the wrong scenarios. Tangentially, I should start making a
+    digital garden to complement one-off blog posts. I&#39;ve heard &quot;digital garden&quot;
+    described as a website style where you cultivate a garden of continually
+    changing pages instead of releasing things post by post.
+&lt;/p&gt;
+
+&lt;p&gt;
+    For example, this list of foods would make more sense as a garden plot
+    instead of being in the blog section. Hmm, I&#39;ll make a new page or section
+    for a garden soon I think.
+&lt;/p&gt;
+
+&lt;p&gt;Anyways, here&#39;s my current list to myself:&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;
+        ramen: I swear, this is always so mid. It&#39;s alright, but like, it&#39;s
+        always JUST noodles. I could make this at home. Don&#39;t waste your money.
+    &lt;/li&gt;
+    &lt;li&gt;
+        double scoop of ice cream: TOO MUCH ICE CREAM! YEOWCH! This extends to
+        all things that you think might be too much sweet. Ice cream floats are
+        delish though.
+    &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+    Tears Over Beers by Modern Baseball is heartachey. Most of midwest emo is
+    nice in that way.
+&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>nixos</title>
     <link href="https://amuffin.is-a.dev/blog/nixos/" />
@@ -469,40 +508,6 @@ for src, dest in mapping.items():
     &lt;code&gt;SCREAMING_SNAKE_CASE&lt;/code&gt;
     !!!).
 &lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>perceptual color spaces</title>
-    <link href="https://amuffin.is-a.dev/blog/perceptually-uniform/" />
-    <updated>2025-02-27T00:00:00Z</updated>
-    <id>https://amuffin.is-a.dev/blog/perceptually-uniform/</id>
-    <content type="html">
-&lt;p&gt;
-    Have I really not made a post about perceptually uniform color spaces yet?
-    They&#39;re pretty cool.
-&lt;/p&gt;
-
-&lt;p&gt;check out these links!&lt;/p&gt;
-
-&lt;ul&gt;
-    &lt;li&gt;
-        &lt;a href=&quot;https://bottosson.github.io/posts/colorwrong/&quot;&gt;
-            https://bottosson.github.io/posts/colorwrong/
-        &lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-        &lt;a href=&quot;https://bottosson.github.io/misc/colorpicker/&quot;&gt;
-            https://bottosson.github.io/misc/colorpicker/
-        &lt;/a&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-        &lt;a href=&quot;https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html&quot;&gt;
-            https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html
-        &lt;/a&gt;
-    &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Hollow Knight soundtrack is pretty nice.&lt;/p&gt;
 </content>
   </entry>
 </feed>

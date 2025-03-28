@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>amuffin's don&#39;t eat these, and digital gardens</title>
+        <meta name="description" content="a personal webbed site" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="/style.css" rel="stylesheet" type="text/css" />
+        <link rel="prefetch" href="/assets/nighttime.png" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/assets/heart16x16.png"
+        />
+
+        <script>
+            const THEMES = {
+                dark: {
+                    "--bg": "#20384B",
+                    "--text": "#E1F2FF",
+                    "--code-bg": "#E1F2FF",
+                    "--code-text": "#20384B",
+                },
+                light: {
+                    "--bg": "white",
+                    "--text": "black",
+                    "--code-bg": "#363636",
+                    "--code-text": "#E3E3E3",
+                },
+            };
+            function checkDarkmode() {
+                //console.log("got here");
+                let root = document.documentElement.style;
+
+                Object.entries(THEMES[localStorage.getItem("theme")]).forEach(
+                    (propval) => root.setProperty(propval[0], propval[1]),
+                );
+            }
+
+            checkDarkmode();
+        </script>
+    </head>
+
+    <body>
+        <div id="site-container">
+            <div class="left-spacer"></div>
+
+            <nav>
+                <a href="/">home</a>
+                <a href="/blog/">blog</a>
+                <a href="/poetry/">poetry</a>
+                <a href="/stuff/">stuff</a>
+                <a class="settings-btn" href="/settings/">settings</a>
+                <img src="/assets/nighttime.png" alt="" />
+            </nav>
+
+            <header>
+                <h1>don&#39;t eat these, and digital gardens</h1>
+            </header>
+
+            
+<p>written 28 March 2025</p>
+
+
+<p>
+    I really need to keep a list of foods I should never buy again when I
+    encounter them in the wrong scenarios. Tangentially, I should start making a
+    digital garden to complement one-off blog posts. I've heard "digital garden"
+    described as a website style where you cultivate a garden of continually
+    changing pages instead of releasing things post by post.
+</p>
+
+<p>
+    For example, this list of foods would make more sense as a garden plot
+    instead of being in the blog section. Hmm, I'll make a new page or section
+    for a garden soon I think.
+</p>
+
+<p>Anyways, here's my current list to myself:</p>
+<ul>
+    <li>
+        ramen: I swear, this is always so mid. It's alright, but like, it's
+        always JUST noodles. I could make this at home. Don't waste your money.
+    </li>
+    <li>
+        double scoop of ice cream: TOO MUCH ICE CREAM! YEOWCH! This extends to
+        all things that you think might be too much sweet. Ice cream floats are
+        delish though.
+    </li>
+</ul>
+
+<p>
+    Tears Over Beers by Modern Baseball is heartachey. Most of midwest emo is
+    nice in that way.
+</p>
+
+
+        </div>
+    </body>
+</html>
