@@ -4,11 +4,24 @@
   <subtitle>various microblogs, ramblings, fun thematic gatherings of links, and other blog posts.</subtitle>
   <link href="https://amuffin.is-a.dev/blog/feed.xml" rel="self" />
   <link href="https://amuffin.is-a.dev/" />
-  <updated>2025-03-28T00:00:00Z</updated>
+  <updated>2025-03-30T00:00:00Z</updated>
   <id>https://amuffin.is-a.dev/</id>
   <author>
     <name>amuffin</name>
   </author>
+  <entry>
+    <title>ubuntu installing R</title>
+    <link href="https://amuffin.is-a.dev/blog/ubuntu-r/" />
+    <updated>2025-03-30T00:00:00Z</updated>
+    <id>https://amuffin.is-a.dev/blog/ubuntu-r/</id>
+    <content type="html">
+&lt;p&gt;
+    note to self: can install an up-to-date version of R from posit&#39;s cdn, of
+    all places:
+    &lt;a href=&quot;https://docs.posit.co/resources/install-r.html&quot;&gt;https://docs.posit.co/resources/install-r.html&lt;/a&gt;
+&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>don&#39;t eat these, and digital gardens</title>
     <link href="https://amuffin.is-a.dev/blog/food-avoiding/" />
@@ -467,47 +480,6 @@ input(&quot;continue? (ctrl c to exit)&quot;)
 for src, dest in mapping.items():
     shutil.move(src, dest)
 &lt;/code&gt;&lt;/pre&gt;
-</content>
-  </entry>
-  <entry>
-    <title>blog has RSS now!</title>
-    <link href="https://amuffin.is-a.dev/blog/blogRSS/" />
-    <updated>2025-02-28T00:00:00Z</updated>
-    <id>https://amuffin.is-a.dev/blog/blogRSS/</id>
-    <content type="html">
-&lt;p&gt;Eleventy lets me do this really really painlessly. Cool!&lt;/p&gt;
-
-&lt;p&gt;
-    Found this one guy&#39;s really cool blog post/website while I was at it:
-    &lt;a href=&quot;https://kevincox.ca/2023/06/27/decade-of-rss-via-email/&quot;&gt;
-        https://kevincox.ca/2023/06/27/decade-of-rss-via-email/ &lt;/a&gt;. I love low CSS sites like this one. Hmmm, I should get an RSS reader so I
-    can look at this kind of stuff.
-&lt;/p&gt;
-
-&lt;p&gt;
-    Transgender by Crystal Castles is pretty nice. found a video of some youtube
-    channel &quot;wontbelong&quot; dancing to it some while back:
-    &lt;a href=&quot;https://youtu.be/aWvS7i7Eri4&quot;&gt;https://youtu.be/aWvS7i7Eri4&lt;/a&gt;. Has
-    a nice pixel filter that makes it feel real old. Speaking of old things,
-    check out this cool video/channel CS Ghost with that tangential vibe
-    (flipnote haneta style):
-    &lt;a href=&quot;https://youtu.be/nso9U0jlGfY&quot;&gt;https://youtu.be/nso9U0jlGfY&lt;/a&gt;.
-    Highly rec the entire channel.
-&lt;/p&gt;
-
-&lt;p&gt;
-    footnote reminder: I should really turn all these blog post links from
-    &lt;code&gt;camelCase&lt;/code&gt;
-    to kebab-
-    &lt;code&gt;case&lt;/code&gt;
-    . (love this naming convention, here&#39;s some more:
-    &lt;code&gt;PascalCase&lt;/code&gt;
-    ,
-    &lt;code&gt;snake_case&lt;/code&gt;
-    ,
-    &lt;code&gt;SCREAMING_SNAKE_CASE&lt;/code&gt;
-    !!!).
-&lt;/p&gt;
 </content>
   </entry>
 </feed>
