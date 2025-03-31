@@ -13,3 +13,23 @@ layout: "blog_post.njk"
         >https://docs.posit.co/resources/install-r.html</a
     >
 </p>
+
+<p>
+    update: make sure you grab the correct versions! I use Ubuntu 22, and tried
+    to install for Ubuntu 24, which gave a scary unfixable error message:
+</p>
+
+<pre><code>Some packages could not be installed. This may mean that you have
+requested an impossible situation or if you are using the unstable
+distribution that some required packages have not yet been created
+or been moved out of Incoming.
+The following information may help to resolve the situation:
+
+The following packages have unmet dependencies:
+    r-4.4.3 : Depends: libcurl4t64 but it is not installable
+            Depends: libglib2.0-0t64 but it is not installable
+            Depends: libpng16-16t64 but it is not installable
+            Depends: libreadline8t64 but it is not installable
+            Depends: libtiff6 but it is not installable
+            Depends: libxt6t64 but it is not installable
+E: Unable to correct problems, you have held broken packages.</code></pre>
