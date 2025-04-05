@@ -10,5 +10,5 @@ quotes = [
 window.onload = function() {
     quote = quotes[Math.floor(Math.random()*quotes.length)];
     
-    document.getElementById("quote").innerHTML += `<a href=\"${quote[0]}\">${quote[1]}</a>`;
+    document.getElementById("quote").innerHTML += ` <a href=\"${quote[0]}\">${quote[1]}</a>`;
 };
