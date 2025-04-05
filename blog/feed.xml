@@ -4,11 +4,22 @@
   <subtitle>various microblogs, ramblings, fun thematic gatherings of links, and other blog posts.</subtitle>
   <link href="https://amuffin.is-a.dev/blog/feed.xml" rel="self" />
   <link href="https://amuffin.is-a.dev/" />
-  <updated>2025-03-30T00:00:00Z</updated>
+  <updated>2025-04-05T00:00:00Z</updated>
   <id>https://amuffin.is-a.dev/</id>
   <author>
     <name>amuffin</name>
   </author>
+  <entry>
+    <title>digital garden created</title>
+    <link href="https://amuffin.is-a.dev/blog/digital-gardened/" />
+    <updated>2025-04-05T00:00:00Z</updated>
+    <id>https://amuffin.is-a.dev/blog/digital-gardened/</id>
+    <content type="html">
+&lt;p&gt;It&#39;s here!&lt;/p&gt;
+
+&lt;a href=&quot;https://amuffin.is-a.dev/garden/&quot;&gt;/garden/&lt;/a&gt;
+</content>
+  </entry>
   <entry>
     <title>ubuntu installing R</title>
     <link href="https://amuffin.is-a.dev/blog/ubuntu-r/" />
@@ -460,46 +471,6 @@ $A subset.eq { #birds((&quot;ʡʢ&quot;,&quot;dʑ&quot;,&quot;tꞎ&quot;)) }$
 &lt;/ul&gt;
 
 &lt;p&gt;2007 Called, They Want Their Jeans Back is really fun and emoish.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>kebab-cased</title>
-    <link href="https://amuffin.is-a.dev/blog/kebab-cased/" />
-    <updated>2025-03-01T00:00:00Z</updated>
-    <id>https://amuffin.is-a.dev/blog/kebab-cased/</id>
-    <content type="html">
-&lt;p&gt;
-    &lt;code&gt;kebab-case&lt;/code&gt;
-    is the standard for web links, so I did a conversion. Here&#39;s the script:
-&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;
-import shutil 
-import string
-import os
-dirs = os.listdir()
-
-EXCEPTIONS = {
-    &quot;blogRSS.njk&quot;,
-    &quot;LMFAOshaco.njk&quot;,
-}
-
-mapping = dict()
-for d in dirs:
-    x = d
-    if d not in EXCEPTIONS:
-        for c in string.ascii_uppercase:
-            x = x.replace(c, &quot;-&quot; + c.lower())
-    
-    mapping[d] = x
-for i in mapping.items():
-    print(i)
-
-input(&quot;continue? (ctrl c to exit)&quot;)
-
-for src, dest in mapping.items():
-    shutil.move(src, dest)
-&lt;/code&gt;&lt;/pre&gt;
 </content>
   </entry>
 </feed>
