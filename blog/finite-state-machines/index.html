@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>amuffin's finite state machines</title>
+        <meta name="description" content="a personal webbed site" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- https://css-tricks.com/essential-meta-tags-social-media/ -->
+        <meta property="og:title" content="amuffin's website" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://amuffin.is-a.dev/" />
+        <meta
+            property="og:image"
+            content="https://amuffin.is-a.dev/assets/nighttime.png"
+        />
+
+        <link href="/style.css" rel="stylesheet" type="text/css" />
+        <link rel="prefetch" href="/assets/nighttime.png" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/assets/heart16x16.png"
+        />
+
+        <script>
+            const THEMES = {
+                dark: {
+                    "--bg": "#20384B",
+                    "--text": "#E1F2FF",
+                    "--code-bg": "#E1F2FF",
+                    "--code-text": "#20384B",
+                },
+                light: {
+                    "--bg": "white",
+                    "--text": "black",
+                    "--code-bg": "#363636",
+                    "--code-text": "#E3E3E3",
+                },
+            };
+            function checkDarkmode() {
+                //console.log("got here");
+                let root = document.documentElement.style;
+
+                Object.entries(THEMES[localStorage.getItem("theme")]).forEach(
+                    (propval) => root.setProperty(propval[0], propval[1]),
+                );
+            }
+
+            checkDarkmode();
+        </script>
+    </head>
+
+    <body>
+        <div id="site-container">
+            <div class="left-spacer"></div>
+
+            <nav>
+                <a href="/">home</a>
+                <a href="/blog/">blog</a>
+                <a href="/garden/">garden</a>
+                <a href="/poetry/">poetry</a>
+                <a href="/stuff/">stuff</a>
+                <a class="settings-btn" href="/settings/">settings</a>
+                <img src="/assets/nighttime.png" alt="" />
+            </nav>
+
+            <header>
+                <h1>finite state machines</h1>
+            </header>
+
+            
+<p>written 8 May 2025</p>
+
+
+<p>
+    I've been trying to learn how to make my pygame code not bad.
+    <a href="https://gameprogrammingpatterns.com/"
+        >https://gameprogrammingpatterns.com/</a
+    >
+    by Robert Nystrom is pretty nice.
+</p>
+
+<p>
+    I've done some learning with that book, particularly being in the middle of
+    a project using state machines. This is making me a bit annoyed with python.
+</p>
+
+<p>
+    I've been wanting to learn Rust to a non-trival degree for a bit now
+    (because new languages really rewire the brain). SO here are some other
+    state machine stuff (in Rust) that I've poked around and found:
+</p>
+
+<ul>
+    <li>
+        <a href="https://crates.io/crates/moku"
+            >https://crates.io/crates/moku</a
+        >
+    </li>
+    <li>
+        <a href="https://crates.io/crates/sm">https://crates.io/crates/sm</a>
+    </li>
+    <li>
+        <a href="https://crates.io/crates/rust-fsm"
+            >https://crates.io/crates/rust-fsm</a
+        >
+    </li>
+    <li>
+        psych, python:
+        <a href="https://github.com/pytransitions/transitions"
+            >https://github.com/pytransitions/transitions</a
+        >
+    </li>
+</ul>
+
+<p>
+    Along with that vibe, Rust and ocaml both have bindings to raylib, a library
+    for coding games. So that's cool I guess.
+</p>
+
+<p>eepy.</p>
+
+
+<p>
+    <small><a href="/blog/">back to blog</a></small>
+</p>
+
+        </div>
+    </body>
+</html>
