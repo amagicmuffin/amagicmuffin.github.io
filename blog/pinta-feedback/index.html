@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>amuffin's pinta feedback</title>
+        <meta name="description" content="a personal webbed site" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- https://css-tricks.com/essential-meta-tags-social-media/ -->
+        <meta property="og:title" content="amuffin's website" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://amuffin.is-a.dev/" />
+        <meta
+            property="og:image"
+            content="https://amuffin.is-a.dev/assets/nighttime.png"
+        />
+
+        <link href="/style.css" rel="stylesheet" type="text/css" />
+        <link rel="prefetch" href="/assets/nighttime.png" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/assets/heart16x16.png"
+        />
+
+        <script>
+            const THEMES = {
+                dark: {
+                    "--bg": "#20384B",
+                    "--text": "#E1F2FF",
+                    "--code-bg": "#E1F2FF",
+                    "--code-text": "#20384B",
+                },
+                light: {
+                    "--bg": "white",
+                    "--text": "black",
+                    "--code-bg": "#363636",
+                    "--code-text": "#E3E3E3",
+                },
+            };
+            function checkDarkmode() {
+                //console.log("got here");
+                let root = document.documentElement.style;
+
+                Object.entries(THEMES[localStorage.getItem("theme")]).forEach(
+                    (propval) => root.setProperty(propval[0], propval[1]),
+                );
+            }
+
+            checkDarkmode();
+        </script>
+    </head>
+
+    <body>
+        <div id="site-container">
+            <div class="left-spacer"></div>
+
+            <nav>
+                <a href="/">home</a>
+                <a href="/blog/">blog</a>
+                <a href="/garden/">garden</a>
+                <a href="/poetry/">poetry</a>
+                <a href="/stuff/">stuff</a>
+                <a class="settings-btn" href="/settings/">settings</a>
+                <img src="/assets/nighttime.png" alt="" />
+            </nav>
+
+            <header>
+                <h1>pinta feedback</h1>
+            </header>
+
+            
+<p>written 2 September 2025</p>
+
+
+<p>
+    Hi, I'm also of the opinion that the current UI is confusing. This is with
+    the caveat that the first time I was confused by such fundamental design
+    motifs in user interface is probably my youth with Word 2007 and such. This
+    is to say that I grew up on and am familiar with the "windows-style" user
+    interfaces with a menu bar named File and such.
+</p>
+<p>With this explained about me, here are the things I have found confusing:</p>
+<ul>
+    <li>
+        what I perceive to be "multiple menus" in the top right. Many times I've
+        clicked through the hamburger menu thinking "man, I have no idea where
+        to find this thing," and then look through the docs and realize it's in
+        one of the other icons, which isn't even styled like a menu-opener
+        anyways! (From my windows-style point of view.)
+        <ul>
+            <li>
+                As an interesting note, I think I would have been less confused
+                if you had even put the entire menu hierarchy into the hamburger
+                menu, such that expanding the hamburger menu essentially reveals
+                a windows-style taskbar. Shrug.
+            </li>
+        </ul>
+    </li>
+    <li>
+        "multiple things" in the top left. This is slightly better, I've quickly
+        learned that the top left is pretty useless to me (as a long-time
+        software user, I've memorized the common mnemonic keyboard shortcuts C
+        for copy, O for open, and so on). But because of this shortcut, I've
+        only now (after reading these UI discussions) realized that these are
+        meant to be frequently-used actions. Previously, when I click on the top
+        left, I was scared a menu would jump out at me, and when I click on the
+        top right, I was scared a menu would not jump out at me! This is
+        possibly simply a fear that someone used to GTK would not have.
+    </li>
+</ul>
+
+<p>
+    Let me additionally add some of my user stories from UI I believe to be good
+    (or I am at least familiar with).
+</p>
+
+<ul>
+    <li>
+        I am "good at" VSCode. I am worse at
+        [photopea](https://www.photopea.com/). In both, I almost exclusively use
+        their features via command pallets! (except the most obvious ones like
+        clicking on the brush lets me use the brush, and the VSCode file
+        explorer functions like my file explorer.) I am aware there's a separate
+        discussion somewhere around here about that.
+    </li>
+    <li>
+        Observe Firefox. When I click on the extension menu, I am told it I am
+        looking at extensions. This teaches me that button is for the extension
+        menu. When I click on the downloads button, text says "show all
+        downloads." This teaches me this is something that lists downloads of
+        some kind. The hamburger menu has a very well-known idiom, and for every
+        other unlabeled button up there, that button teaches you what it is. I
+        had no idea what the three buttons that open menus (that aren't the
+        hamburger menu) are meant to show me until reading this forum, when I
+        realized that hovering over them for long enough shows me their names.
+        Perhaps emulating the Firefox extension menu and showing a bold title,
+        separator line, and then content would help?
+        <ul>
+            <li></li>
+        </ul>
+    </li>
+    <li>
+        Interestingly, I also don't use the Firefox main menu bar at all, and
+        whenever I have to open it, I am confused. (I didn't even know you could
+        print from it!) This corroborates #1243's peeve about it for Chrome. For
+        reference, I instead use the context-sensitive, more easily memorizable
+        way to do things. Do I want to inspect the source code? Either I keybind
+        to *I*nspect element, or right click on the area I want to inspect.
+        *P*rint? Keybind or webapp-provided button. New tab? Press the "+"
+        button that "adds" a new tab. The only items that I have remembered as
+        idiomatic for the menu button across different apps is the about section
+        and any settings.
+    </li>
+</ul>
+
+
+<p>
+    <small><a href="/blog/">back to blog</a></small>
+</p>
+
+        </div>
+    </body>
+</html>
