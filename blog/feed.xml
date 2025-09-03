@@ -10,6 +10,32 @@
     <name>amuffin</name>
   </author>
   <entry>
+    <title>python prof</title>
+    <link href="https://amuffin.is-a.dev/blog/python-profiling/" />
+    <updated>2025-09-02T00:00:00Z</updated>
+    <id>https://amuffin.is-a.dev/blog/python-profiling/</id>
+    <content type="html">
+&lt;p&gt;read a blog post, and some interesting links from its hacker news post.&lt;/p&gt;
+
+&lt;ul&gt;
+    &lt;li&gt;
+        &lt;a href=&quot;https://ohadravid.github.io/posts/2023-03-rusty-python/&quot;&gt;https://ohadravid.github.io/posts/2023-03-rusty-python/&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a href=&quot;https://github.com/pyutils/line_profiler&quot;&gt;https://github.com/pyutils/line_profiler&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a href=&quot;https://github.com/plasma-umass/scalene&quot;&gt;https://github.com/plasma-umass/scalene&lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+    also note snakeviz, which is mentioned with some frequency on the pygame
+    discord.
+&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
     <title>pinta feedback</title>
     <link href="https://amuffin.is-a.dev/blog/pinta-feedback/" />
     <updated>2025-09-02T00:00:00Z</updated>
@@ -402,72 +428,6 @@ E: Unable to correct problems, you have held broken packages.&lt;/code&gt;&lt;/p
         &quot;live.&quot; Eventually this got through to them and they began developing
         their own complex logic and came to know sentience and &quot;free will&quot;
     &lt;/span&gt;
-&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>how to lose time and money</title>
-    <link href="https://amuffin.is-a.dev/blog/lost-time/" />
-    <updated>2025-03-21T00:00:00Z</updated>
-    <id>https://amuffin.is-a.dev/blog/lost-time/</id>
-    <content type="html">
-&lt;p&gt;
-    I&#39;ve been reading lots of neat tech blogs! I use the Millet extension by
-    &lt;a href=&quot;https://azdavis.net/&quot;&gt;azdavis&lt;/a&gt;, and I&#39;ve spent some time on his
-    blog, which rabbit-holed me throughout the interwebs. The Millet extension
-    cover image is drawn by
-    &lt;a href=&quot;https://yixinhe.me/index.html&quot;&gt;Yixin He&lt;/a&gt;, who has some other
-    great art and code! That real-time stylization presentation is really cool,
-    love that kind of stuff. I&#39;ve seen a YouTube video somewhere of a similar
-    concept in action and it&#39;s really interesting.
-&lt;/p&gt;
-
-&lt;p&gt;
-    Anyways, azdavis linked to a
-    &lt;a href=&quot;https://danluu.com/writing-non-advice/&quot;&gt;post&lt;/a&gt;
-    by a tech blogger about writing, which mentioned a Paul Graham who writes
-    in, apparently, a clean and simple &quot;classical style&quot; which I appreciate! So
-    I followed that thread, which brings us to the title of this blog post,
-    &lt;a href=&quot;https://www.paulgraham.com/selfindulgence.html&quot;&gt;
-        How to Lose Time and Money&lt;/a&gt;.
-&lt;/p&gt;
-
-&lt;p&gt;
-    There&#39;s a few interesting related ideas in that work (one of which being
-    investment which is neat because I think he&#39;s a founder/CEO of ycombinator?
-    don&#39;t remember). But I wanted to focus on this quote: &quot;The most dangerous
-    way to lose time is not to spend it having fun, but to spend it doing fake
-    work.&quot;
-&lt;/p&gt;
-
-&lt;p&gt;
-    And that&#39;s really neat! Here I am doing fake work by writing a blog post
-    right now. Although I enjoy archiving memories. This one side of &quot;fake
-    work,&quot; doing work that is more like play seems productive to me in a good
-    way. Hobbies are important, I think? Taking time to embroider and hobby code
-    and go outside is good. But sometimes, I get the feeling of unproductivity
-    he mentions even though I partake in a hobby. This is usually when I am
-    procrastinating work :/.
-&lt;/p&gt;
-
-&lt;p&gt;
-    The other side of &quot;fake work&quot; is actual work that isn&#39;t fun. (We&#39;re
-    investigating the two diagonals of the Punnett square here, not really work
-    and fun vs really work and not fun.) I also feel the icky unproductivity
-    when I &quot;procrastinate&quot; on more important work by doing sort of work (e.g.
-    clearing so so so many email or touching up a resume instead of doing a
-    problem set). But that&#39;s interesting because technically this is productive
-    work... Unfortunate.
-&lt;/p&gt;
-
-&lt;p&gt;
-    Not sure what I wanted to get at here, but the thoughts have been put down.
-    Cheers!
-&lt;/p&gt;
-
-&lt;p&gt;
-    I&#39;ve already recommended Line without a Hook, but it&#39;s on the mind again.
-    Good song.
 &lt;/p&gt;
 </content>
   </entry>

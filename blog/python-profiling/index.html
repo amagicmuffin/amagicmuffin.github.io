@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>amuffin's python prof</title>
+        <meta name="description" content="a personal webbed site" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- https://css-tricks.com/essential-meta-tags-social-media/ -->
+        <meta property="og:title" content="amuffin's website" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://amuffin.is-a.dev/" />
+        <meta
+            property="og:image"
+            content="https://amuffin.is-a.dev/assets/nighttime.png"
+        />
+
+        <link href="/style.css" rel="stylesheet" type="text/css" />
+        <link rel="prefetch" href="/assets/nighttime.png" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/assets/heart16x16.png"
+        />
+
+        <script>
+            const THEMES = {
+                dark: {
+                    "--bg": "#20384B",
+                    "--text": "#E1F2FF",
+                    "--code-bg": "#E1F2FF",
+                    "--code-text": "#20384B",
+                },
+                light: {
+                    "--bg": "white",
+                    "--text": "black",
+                    "--code-bg": "#363636",
+                    "--code-text": "#E3E3E3",
+                },
+            };
+            function checkDarkmode() {
+                //console.log("got here");
+                let root = document.documentElement.style;
+
+                Object.entries(THEMES[localStorage.getItem("theme")]).forEach(
+                    (propval) => root.setProperty(propval[0], propval[1]),
+                );
+            }
+
+            checkDarkmode();
+        </script>
+    </head>
+
+    <body>
+        <div id="site-container">
+            <div class="left-spacer"></div>
+
+            <nav>
+                <a href="/">home</a>
+                <a href="/blog/">blog</a>
+                <a href="/garden/">garden</a>
+                <a href="/poetry/">poetry</a>
+                <a href="/stuff/">stuff</a>
+                <a class="settings-btn" href="/settings/">settings</a>
+                <img src="/assets/nighttime.png" alt="" />
+            </nav>
+
+            <header>
+                <h1>python prof</h1>
+            </header>
+
+            
+<p>written 2 September 2025</p>
+
+
+<p>read a blog post, and some interesting links from its hacker news post.</p>
+
+<ul>
+    <li>
+        <a href="https://ohadravid.github.io/posts/2023-03-rusty-python/"
+            >https://ohadravid.github.io/posts/2023-03-rusty-python/</a
+        >
+    </li>
+    <li>
+        <a href="https://github.com/pyutils/line_profiler"
+            >https://github.com/pyutils/line_profiler</a
+        >
+    </li>
+    <li>
+        <a href="https://github.com/plasma-umass/scalene"
+            >https://github.com/plasma-umass/scalene</a
+        >
+    </li>
+</ul>
+
+<p>
+    also note snakeviz, which is mentioned with some frequency on the pygame
+    discord.
+</p>
+
+
+<p>
+    <small><a href="/blog/">back to blog</a></small>
+</p>
+
+        </div>
+    </body>
+</html>
